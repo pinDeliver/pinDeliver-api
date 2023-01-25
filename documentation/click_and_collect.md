@@ -1,68 +1,234 @@
-# Click & Collect
+API
 
-With pinDeliver Click & Collect functionality you get a professional approach when your customers come to your warehouse to pickup their goods themselves. The customer orders are created in the same way as regular delivery orders. Remember that when using Click & Collect your *Delivery Group* must be setup to use depot.
+docfx init -q
+docfx "C:\temp\pinDeliver-api\docfx_project\docfx.json" --serve
 
-If you upload order from Excel it is recommended to upload all customer orders for a day at once. Then you will have all customer orders grouped in one collection order. If you upload through Excel you need to mark the checkbox *Make the order a collection order*, see image below. If the orders instead are created through an integration the order type should be **collect** and then it is also possible to add orders to an existing collection order, even if the collection order has been locked or started.
+Såhär gör du blablabla `Exempel på JSON`
 
-![Click & Collect Create](/images/click_collect_create_1.png)
+>>> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
 
-When the collection order has been created it is time to start the collection process, so the customers can pickup their goods. Click the **Lock** button to lock the collection order and after that you click **Start collection** button. This can often be done right after each other but if you want to start the collection at a later time of the day it is recommended to start the collection then. That would mean that you prepare and lock the collection order for example the day before and trigger SMS messages to the customers the day after when you click **Start collection**.
+Upplagt efter ex order och när man klickar på order kommer olika requests och när man klickar på en request kommer olika versioner
 
-![Click & Collect Lock](/images/click_collect_1.png)
+Se hela flödet på en order
 
-![Click & Collect Start collection](/images/click_collect_2.png)
+https://martinservera-test.pindeliver.com/ApiDocs/docs/1.2/getOrder
+https://dev.azure.com/pindeliver/pinDeliver/_wiki/wikis/pinDeliver.wiki/62/Hub
+https://dev.azure.com/pindeliver/pinDeliver/_git/pinDeliver-Cloud-Office?path=/api-tests/customer_14.http
 
-You can see the progress on the collection order. Collected customer orders will be moved to the lower left corner when they have been picked up. Normally you do not have to select not collected orders if you don´t want to.
 
-### Customer information for collect orders
-The information to the customer is very similar for collect orders compared to delivery orders. A very common setup for messages is according to the table below and it is a little different if the customer orders are uploaded from Excel or via an integration.
+Exempel på API
 
-The messagsing setup is done from [Admin/Settings/SMS](settings_sms.md) or if you want sender unique messages you can setup that for each [Sender](senders.md).
+https://martinservera-test.pindeliver.com/api/v1_2/Order/get/:order_id
 
-|Event|Description|Excel upload|Integration|
-|---|-----|:---:|:---:|
-|Send SMS when a customer is created|With integration a customer is often added to an existing collection order so the buttons **Lock** and **Start collection** has already been pushed. In this case we recommend to write the SMS as if the collection has started.|X|X|
-|Send SMS to customers when the driver starts collect|The SMS will be sent when **Start collection** is pushed.|X||
-|Send SMS to customers when delivery is not collected|SMS sent to all customer that has not picked up their orders when the collection orders is marked as finished.|X|X|
+## Authentication
+Headers: <br>
+  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX <br>
+  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
 
-The images below shows examples of SMS messages for these three steps.
+## Method
+GET
 
-<p float="center">
-  <img src="/images/cc_sms_customer_1.png" width="300" />
-  <img src="/images/cc_sms_customer_2.png" width="300" />
-  <img src="/images/cc_sms_customer_3.png" width="300" />
-</p>
+## Example request
+```C
+curl --location --request GET 'https://martinservera-test.pindeliver.com/api/v2_0/Order/get/{ORDER-ID}' \
+--header 'X-PINDELIVER-API-KEY: {API-KEY}' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: {CLIENT-KEY}' \
+--data-raw ''
+```
 
-The images below shows examples of the customer information page that the customer can see. The QR code is accessed by clicking the package icon in the lower right corner of the map picture and is used when the warehouse uses the Hub App to deliver the collect orders.
+## Example error response
+```JSON
+Error Response
+[
+  {
+    "result": "error",
+    "status": 404,
+    "response": {
+      "error_description": "No such order available"
+    }
+  }
+]
+```
 
-<p float="center">
-  <img src="/images/cc_customer_info_1.png" width="300" />
-  <img src="/images/cc_customer_info_2.png" width="300" />
-  <img src="/images/cc_customer_info_3.png" width="300" />
-</p>
+## Example success response
+```JSON
+Success Response
+{
+  "id": "2567",
+  "name": "Magazine Deliveries",
+  "created_date": "2017-05-18 09:02:57",
+  "scheduled_date": "2017-05-18 09:02:57",
+  "order_type": "DELIVERY",
+  "delivery_group": "Derry01",
+  "order_info": {
+    "status": "NOT_STARTED",
+    "num_deliveries": 46
+  },
+  "routes": [
+    {
+      "id": "4671",
+      "name": "Derry van 01",
+      "locked": false,
+      "assigned": false,
+      "scheduled_start_time": "2017-05-18 09:41:00",
+      "scheduled_start_time_from_depot": "2017-05-18 09:54:00",
+      "actual_start_time": "2017-05-18 09:42:32",
+      "actual_start_time_from_depot": "2017-05-18 09:56:12",
+      "started": false,
+      "ended": false,
+      "url": "https://martinservera-test.pindeliver.com/api/v1_2/route/get/4671",
+      "depot_address": "Derry's Depot, 230 High Street, TUCSON AZ 85705",
+      "num_deliveries": 40,
+      "num_subroutes": 2
+    },
+    {
+      "id": "4670",
+      "name": "Derry van 05",
+      "locked": false,
+      "assigned": false,
+      "scheduled_start_time": "2017-05-18 09:54:00",
+      "scheduled_start_time_from_depot": "2017-05-18 10:12:00",
+      "actual_start_time": "2017-05-18 09:52:32",
+      "actual_start_time_from_depot": "2017-05-18 10:11:48",
+      "started": false,
+      "ended": false,
+      "url": "https://martinservera-test.pindeliver.com/api/v1_2/route/get/4670",
+      "depot_address": "Derry's Depot, 230 High Street, TUCSON AZ 85705",
+      "num_deliveries": 12,
+      "num_subroutes": 1
+    },
+    {
+      "id": "4669",
+      "name": "Derry van 03",
+      "locked": true,
+      "assigned": true,
+      "scheduled_start_time": "2017-05-18 09:56:00",
+      "scheduled_start_time_from_depot": "2017-05-18 10:11:00",
+      "actual_start_time": null,
+      "actual_start_time_from_depot": null,
+      "started": false,
+      "ended": false,
+      "url": "https://martinservera-test.pindeliver.com/api/v1_2/route/get/4669",
+      "depot_address": "Derry's Depot, 230 High Street, TUCSON AZ 85705",
+      "num_deliveries": 47,
+      "num_subroutes": 3
+    },
+    {
+      "id": "4672",
+      "name": "Derry van 07",
+      "locked": false,
+      "assigned": false,
+      "scheduled_start_time": "2017-05-18 14:00:00",
+      "scheduled_start_time_from_depot": "2017-05-18 14:24:00",
+      "actual_start_time": null,
+      "actual_start_time_from_depot": null,
+      "started": false,
+      "ended": false,
+      "url": "https://martinservera-test.pindeliver.com/api/v1_2/route/get/4672",
+      "depot_address": "Derry's Depot, 230 High Street, TUCSON AZ 85705",
+      "num_deliveries": 31,
+      "num_subroutes": 2
+    }
+  ]
+}
+```
 
-### Deliver a collect order
-When the customer arrives for pickup you have two different ways of check the order as picked up.
 
-* Office - just click the button <span style="color:green">**OK**</span>
-* Hub App - scan a QR code form the customer information page, see below.
 
-#### Delivery from Office
-To mark a customer order as picked up from Office you just click <span style="color:green">**OK**</span> button. Choose <span style="color:red">**Not collected**</span> if you know that the customer will now pick up the order. In that case you need to move the order to another collection order if the customer will come another day. this is done by checking the order to the right an from the drop-down menu you can select to move to another collection order, for example a collection order for tomorrow.
 
-![Click & Collect Lock](/images/click_collect_3.png)
 
-When all customer order have been picked up you finish the collection order by clicking
 
-#### Delivery from the Hub App
-A very easy way of mark a customer order as picked up is to use the Hub App. Just choose the button **Scan QR**. This will open the camera and you just scan the QR code from the customer´s telephone. Confirm pickup on the popup window and you are done.
 
-<p float="center">
-  <img src="/images/cc_hubapp_1.png" width="300" />
-  <img src="/images/cc_hubapp_2.png" width="300" />
-</p>
 
-#### Complete collection order
-When you want to complete the collection order (normally when all collect orders have been picked up) you just click **Complete collection**. If an orders have not been picked up these customers will get SMS messages if you have setup that as above.
 
-![Click & Collect Complete collection](/images/click_collect_4.png)
+
+
+
+
+
+```C
+curl --location --request POST 'https://martinservera-test.pindeliver.com/api/v1_4/customer/add' \
+--header 'X-PINDELIVER-API-KEY: 1212-1212-1212-1212' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: 030dc9f7-9f86-11ec-b8fc-0242c0a85005' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "linehaul_order": true,
+    "validation_request":false,
+    "preliminary":false,
+    "allow_adding_to_locked":false,
+    "order_id":31561,
+    "route_id":143762,
+    "position_in_route":1,
+    "name":"Linehaul",
+    "postal_address":"Andra Långgatan",
+    "country_code": "sv",
+    "address_2":"",
+    "zipcode": "41161",
+    "city":"Göteborg",
+    "delivery_info": {
+        "stop_type":"delivery",
+        "timewindow_start":"00:00",
+        "timewindow_end":"23:59"
+    }
+}'
+```
+
+```JSON
+{
+    "id": 8774325,
+    "delivery_type": "PICKUP",
+    "delivery_group": "Beleco - Sthlm",
+    "order_id": 98987,
+    "route_id": 418472,
+    "subroute": 1,
+    "position_in_subroute": 4,
+    "tracking_number": "1032669_pickup_8d926f",
+    "tracking_url": "https:\/\/my.pindeliver.com\/8bollt5on9d",
+    "name": "Harald Cavalli-Bj\u00f6rkman - Re:Newcell AB",
+    "postal_address": "Cardellgatan 1",
+    "zipcode": "11436",
+    "city": "Stockholm",
+    "phone_cell": "0705903204",
+    "phone_alt": "",
+    "position_lat": "59.3389407",
+    "position_lng": "18.0755887",
+    "sms_sender": "Beleco",
+    "sender_name": "Beleco",
+    "vehicle_tags": "",
+    "external_sender_id": "Beleco",
+    "delivery_info": {
+        "requested_delivery_date": "2022-11-25",
+        "timewindow_start": "09:00",
+        "timewindow_end": "17:00",
+        "estimated_service_time": 1200,
+        "volume": 5.148,
+        "priority": "normal",
+        "time_estimated": "2022-11-25 13:35:57",
+        "time_estimated_updated": "2022-11-25 14:07:42",
+        "time_handled": "2022-11-25 15:51:02",
+        "stop_time": 20,
+        "status": "delivered",
+        "handled_lat": 59.3389407,
+        "handled_lng": 18.0755887,
+        "stop_type": "pickup",
+        "pickup_identifier": "scpi-991630142",
+        "pods": [],
+        "recycling": [],
+        "packages": [{
+            "id": 7025805,
+            "name": "B2241-616831EE-4",
+            "shared": false,
+            "quantity": 1,
+            "status_code": "DELIVERED",
+            "status": "DELIVERED",
+            "status_time": "2022-12-05 15:29:29",
+            "quantity_loaded": 0,
+            "quantity_delivered": 1,
+            "deviation_code": "NONE",
+            "driver_comment": ""
+        }],
+        "package_type": "1 st B2241-616831EE-4",
+        "quantity": 1
+    }
+}'
+```

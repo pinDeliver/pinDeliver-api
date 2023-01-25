@@ -1,0 +1,28 @@
+- name: Index
+  href: index/
+  homepage: api/index.md
+
+- name: Carrier
+  href: carrier/
+  homepage: articles/carrier.md
+- name: Customer
+  href: customer/
+  homepage: articles/customer.md
+- name: Delivery group
+  href: delivery_group/
+  homepage: articles/delivery_group.md
+- name: Order
+  href: order/
+  homepage: articles/order.md
+- name: Package
+  href: package/
+  homepage: articles/package.md
+- name: Route
+  href: route/
+  homepage: articles/route.md
+- name: Sender
+  href: Sender/
+  homepage: articles/sender.md
+- name: Vehicle
+  href: vehicle/
+  homepage: articles/vehicle.md

@@ -3,8 +3,8 @@
     "content": [
       {
         "files": [
-          "documentation/**.md",
-          "documentation/**/toc.yml",
+          "articles/**.md",
+          "docfx_project/**/toc.yml",
           "toc.yml",
           "*.md"
         ]
