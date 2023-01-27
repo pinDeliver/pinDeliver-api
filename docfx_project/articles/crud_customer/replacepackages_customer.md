@@ -72,6 +72,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/r
 }
 ```
 
+---
+
 # Replace packages using external id
 
 Brödtext

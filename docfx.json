@@ -5,7 +5,6 @@
         "files": [
           "articles/**.md",
           "docfx_project/**/toc.yml",
-          "toc.yml",
           "*.md"
         ]
       }

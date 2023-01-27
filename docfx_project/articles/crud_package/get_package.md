@@ -57,6 +57,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/package/get
 }
 ```
 
+---
+
 # Get Package using external id
 
 Brödtext
@@ -115,6 +117,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/package/get
     "status_time": "2023-01-25 09:48:58"
 }
 ```
+
+---
 
 # Get Package using scan code
 

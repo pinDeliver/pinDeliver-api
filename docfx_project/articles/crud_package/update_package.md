@@ -73,6 +73,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/package/up
 }
 ```
 
+---
+
 # Update package using scan code
 
 Brödtext

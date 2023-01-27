@@ -26,11 +26,6 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/get/{
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 ```
 
-### Example data
-```JSON
-
-```
-
 ### Example error response
 ```JSON
 [
@@ -84,6 +79,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/get/{
     }
 }
 ```
+
+---
 
 # Get all routes
 

@@ -48,6 +48,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/carrier/get
 }
 ```
 
+---
+
 # Get carrier using external id
 
 Brödtext
@@ -97,6 +99,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/carrier/get
     }
 }
 ```
+
+---
 
 # Get all carriers
 

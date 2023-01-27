@@ -32,7 +32,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/vehicle/up
         "timewindow_start": "08:30",
         "timewindow_end": "18:30",
         "start_location_address": "Valhallavägen 1, Göteborg, Sverige",
-        "end_location_address": "Ullevigatan, Göteborg, Sverige"
+        "end_location_address": "Ullevigatan 5, Göteborg, Sverige"
     }
 }'
 ```
@@ -46,7 +46,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/vehicle/up
         "timewindow_start": "08:30",
         "timewindow_end": "18:30",
         "start_location_address": "Valhallavägen 1, Göteborg, Sverige",
-        "end_location_address": "Ullevigatan, Göteborg, Sverige"
+        "end_location_address": "Ullevigatan 5, Göteborg, Sverige"
     }
 }
 ```

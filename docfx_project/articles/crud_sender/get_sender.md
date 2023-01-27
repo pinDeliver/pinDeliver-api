@@ -51,6 +51,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/sender/get/
 }
 ```
 
+---
+
 # Get sender using external id
 
 Brödtext
@@ -103,6 +105,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/sender/get/
     }
 }
 ```
+
+---
 
 # Get all senders
 

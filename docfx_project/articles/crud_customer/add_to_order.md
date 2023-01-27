@@ -57,7 +57,11 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/addC
 
 ### Example error response
 ```JSON
-
+{
+    "result": "error",
+    "status": 404,
+    "data": "No such order available"
+}
 ```
 
 ### Example success response

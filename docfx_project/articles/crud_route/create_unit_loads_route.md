@@ -4,7 +4,7 @@ Brödtext
 
 ### Endpoint
 ```
-
+https://cloud.pindeliver.com/api/v2_1/route/create_unit_loads/{route_id}
 ```
 
 ### Authentication
@@ -21,20 +21,14 @@ POST
 
 ### Example request
 ```C
-
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/create_unit_loads/{route_id}' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--data-raw ''
 ```
 
-### Example data
-```JSON
-
-```
-
-### Example error response
-```JSON
-
-```
 
 ### Example success response
 ```JSON
-
+[]
 ```

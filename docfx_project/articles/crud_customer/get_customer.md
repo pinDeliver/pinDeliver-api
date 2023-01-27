@@ -74,6 +74,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/ge
 }
 ```
 
+---
+
 # Get customer using external id
 
 Brödtext

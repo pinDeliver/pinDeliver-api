@@ -60,6 +60,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/u
 }
 ```
 
+---
+
 # Update customer using external id
 
 Brödtext

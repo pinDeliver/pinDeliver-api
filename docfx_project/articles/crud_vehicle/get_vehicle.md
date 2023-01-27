@@ -62,6 +62,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/vehicle/get
 }
 ```
 
+---
 
 # Get all vehicles
 

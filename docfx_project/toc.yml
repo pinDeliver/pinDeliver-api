@@ -1,7 +1,3 @@
-- name: Index
-  href: index/
-  homepage: api/index.md
-
 - name: Carrier
   href: carrier/
   homepage: articles/carrier.md
@@ -21,7 +17,7 @@
   href: route/
   homepage: articles/route.md
 - name: Sender
-  href: Sender/
+  href: sender/
   homepage: articles/sender.md
 - name: Vehicle
   href: vehicle/

@@ -42,11 +42,16 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/packa
 [
     {
         "packaging_type": null,
-        "quantity": 24,
-        "quantity_assigned": 0,
+        "quantity": 1,
+        "quantity_assigned": 1,
         "unit_load_type": null,
         "quantity_per_unit_load": null,
-        "unit_loads": []
+        "unit_loads": [
+            {
+                "sscc": "10",
+                "customer_order_ids": []
+            }
+        ]
     }
 ]
 ```

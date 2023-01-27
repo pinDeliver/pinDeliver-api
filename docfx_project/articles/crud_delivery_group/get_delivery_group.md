@@ -56,6 +56,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/delivery_gr
 }
 ```
 
+---
+
 # Get all delivery groups
 
 Brödtext
