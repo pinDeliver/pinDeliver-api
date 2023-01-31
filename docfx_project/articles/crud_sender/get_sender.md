@@ -4,7 +4,7 @@ Brödtext
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_0/sender/get/{sender_id}
+https://cloud.pindeliver.com/api/v2_1/sender/get/{sender_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/sender/get/{sender_id}' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/sender/get/{sender_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 ```
@@ -59,7 +59,7 @@ Brödtext
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_0/sender/get/extid/pinDeliver
+https://cloud.pindeliver.com/api/v2_1/sender/get/extid/pinDeliver
 ```
 
 ### Authentication
@@ -76,7 +76,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/sender/get/extid/pinDeliver' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/sender/get/extid/pinDeliver' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 ```
@@ -114,7 +114,7 @@ Brödtext
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_0/sender/get
+https://cloud.pindeliver.com/api/v2_1/sender/get
 ```
 
 ### Authentication
@@ -131,7 +131,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/sender/get' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/sender/get' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 ```

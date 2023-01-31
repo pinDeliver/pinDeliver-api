@@ -63,8 +63,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
 --header 'Content-Type: application/json' \
 --data-raw '{
     "customer": {
-        "order_id":{order_id},
-        "route_id":{route_id},
+        "order_id":"{order_id}",
+        "route_id":"{route_id}",
         "delivery_group": "Smallwood DG",
         "name": "Steve Harris",
         "language_code": "sv_SE",
@@ -75,7 +75,6 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
         "phone_cell": "0700000000",
         "position_lat": 57.699432,
         "position_lng": 11.950743,
-        "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}",
         "service": {
             "type": "dropoff",
             "sms_sender": "Ovning",
@@ -86,11 +85,13 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
             "vehicle_tags": "Tag1",
             "timewindow_start": "01:01",
             "timewindow_end": "23:15",
-            "requested_delivery_date": "2023-01-23",
-            "priority": "normal",
-            "tracking_url": "https://my.pindeliver.com/8ottrbilqbt"
+            "requested_delivery_date": "1980-10-10",
+            "priority": "normal"
         },
-        "customer_type": "b2c"
+        "customer_type": "b2c",
+        "delivery_info": {
+            "unattended_ok": false
+        }
     }
 }'
 ```
@@ -111,7 +112,6 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
         "phone_cell": "0700000000",
         "position_lat": 57.699432,
         "position_lng": 11.950743,
-        "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}",
         "service": {
             "type": "dropoff",
             "sms_sender": "Ovning",
@@ -122,11 +122,13 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
             "vehicle_tags": "Tag1",
             "timewindow_start": "01:01",
             "timewindow_end": "23:15",
-            "requested_delivery_date": "2023-01-23",
-            "priority": "normal",
-            "tracking_url": "https://my.pindeliver.com/8ottrbilqbt"
+            "requested_delivery_date": "1980-10-10",
+            "priority": "normal"
         },
-        "customer_type": "b2c"
+        "customer_type": "b2c",
+        "delivery_info": {
+            "unattended_ok": false
+        }
     }
 }
 ```
@@ -149,3 +151,12 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
     "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}"
 }
 ```
+
+---
+
+# Output format
+
+### Customer Object Properties
+
+|Property              |Type     |Description          |Example      |  
+|----------------------|---------|---------------------|-------------|

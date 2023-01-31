@@ -1,5 +1,5 @@
-# Process
+# Customer
 
-This segment describes different processes you go through in the daily work with pinDeliver.
+The customer API allows for a variety of actions, including adding, retrieving, deleting, and updating customer information, as well as searching for specific customers and managing packages associated with them. An order must be created first in order to link a customer to it, while customers created without an order will be placed in the inbox. The API also allows for packages to be linked to a customer, and for the connection between a customer and a sender to be established. Finally, after a vehicle has been created and linked to a route, the API facilitates linking the customer to that route.
 
-If you do not have any integration with you ERP, WMS or e-commerce system it is common to upload the orders via Excel. But if you have an integration your orders should already be waiting for you to start the route optimization.
+![Customer](/images/flowchart_customer.jpg)

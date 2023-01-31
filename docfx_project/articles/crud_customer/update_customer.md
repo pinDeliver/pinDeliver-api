@@ -1,6 +1,6 @@
 # Update customer
 
-Brödtext
+Update customer using the costumer id
 
 ### Endpoint
 ```
@@ -127,3 +127,12 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/u
     "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{external_id}"
 }
 ```
+
+---
+
+# Output format
+
+### Customer Object Properties
+
+|Property              |Type     |Description          |Example      |Default|
+|----------------------|---------|---------------------|-------------|-------|

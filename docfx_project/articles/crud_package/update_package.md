@@ -149,3 +149,28 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/package/up
     }
 }
 ```
+
+---
+
+# Output format
+
+### Package Object Properties
+
+Fields marked with <font color='red'>*</font> are required
+
+|Property             |Type     |Description          |Example      |  
+|---------------------|---------|---------------------|-------------|
+|name|string||Package|
+|package_id|string or null||98765|
+|quantity|integer or null||5|
+|quantity_loaded|integer or null||3|
+|quantity_delivered|integer or null||2|
+|weight|number or null||17|
+|volume|number or null||4,5|
+|volume_2|number or null||6,5|
+|shipment_number|string or null||999|
+|url|string or null|||
+|status_code|string or null||ARRIVED_AT_TERMINAL|
+|status_time|string or null|||
+|packaging_type_identifier|string or null|||
+|packaging_type_id|integer or null|||

@@ -1,6 +1,6 @@
 # Add route
 
-Brödtext
+Connected to an [order](/articles/crud_order/add_order.html) and a [vehicle](/articles/crud_vehicle/add_vehicle.html). Make sure you've created an order and a vehicle before creating a route
 
 ### Endpoint
 ```
@@ -168,3 +168,19 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
     "url": "https://cloud.pindeliver.com/api/v2_1/Route/get/{route_id}"
 }
 ```
+
+---
+
+# Output format
+
+### Route Object Properties
+
+Fields marked with <font color='red'>*</font> are required
+
+|Property             |Type     |Description          |Example      |  
+|---------------------|---------|---------------------|-------------|
+|order_id<font color='red'>*</font>|integer|Id of the order that the route is getting connected to|12345|
+|name<font color='red'>*</font>|string|Name of this route|Scandinavium|
+|predefined_route_name|string or null|||
+|scheduled<font color='red'>*</font>|string|||
+|vehicle<font color='red'>*</font>|||Details in [add vehicle](/articles/crud_vehicle/add_vehicle.html) under output format|

@@ -1,1 +1,13 @@
 # API-documentation
+
+API (Application Programming Interface) documentation is a set of information and instructions that explain how to effectively use and integrate an API into a software application. It is an important tool for developers as it helps them understand the capabilities and limitations of the API, as well as how to properly make requests and handle responses.
+
+API documentation typically includes information such as the endpoint URL, the types of requests that can be made (e.g. GET, POST, PUT, DELETE), the format of the data that is expected in requests and responses, and any authentication or authorization requirements. It may also include code examples, tutorials, and best practices for using the API.
+
+# pinDeliver
+
+Pindeliver is a technology-driven logistics company that provides on-demand delivery and transportation services to businesses and consumers. It operates as a platform that connects businesses with a network of delivery drivers. Pindeliver provides businesses with tools to manage their delivery operations, track shipments, and communicate with customers. Some of its services include same-day delivery, scheduled delivery, and long-distance delivery. The company also provides real-time tracking and delivery updates, allowing businesses and customers to monitor the progress of their shipments. Pindeliver operates in multiple countries and provides delivery services across various industries, including retail, e-commerce, food and beverage, and more. The company's mission is to make delivery operations more efficient, cost-effective, and customer-friendly.
+
+Pindeliver's last mile delivery service is designed to streamline the final leg of the delivery journey, from the transportation hub to the recipient's doorstep. It leverages technology to optimize delivery routes and ensure timely and efficient delivery. Pindeliver's last mile delivery service is customizable, allowing businesses to choose the delivery options that best meet their needs, such as same-day delivery, scheduled delivery, or real-time delivery updates.
+
+Pindeliver's next generation Transportation Management System (TMS) is a cloud-based platform that provides businesses with real-time visibility into their delivery operations. It includes features such as route optimization, delivery tracking, and delivery management, among others. The TMS integrates with other systems, such as warehouse management and order management, to provide businesses with a comprehensive view of their delivery operations. The goal of Pindeliver's TMS is to make delivery operations more efficient, reduce costs, and improve customer satisfaction.

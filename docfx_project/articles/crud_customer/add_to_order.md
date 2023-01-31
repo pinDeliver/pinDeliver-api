@@ -74,3 +74,12 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/addC
     }
 ]
 ```
+
+---
+
+# Output format
+
+### Customer Object Properties
+
+|Property              |Type     |Description          |Example      |  
+|----------------------|---------|---------------------|-------------|

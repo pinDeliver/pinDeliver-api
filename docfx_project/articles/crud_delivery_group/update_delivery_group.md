@@ -1,10 +1,10 @@
 # Update delivery group
 
-Brödtext
+JSON Schema for updating Delivery group API
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_0/delivery_group/update/{delivery_group_id}
+https://cloud.pindeliver.com/api/v2_1/delivery_group/update/{delivery_group_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/delivery_group/update/{delivery_group_id}' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_group/update/{delivery_group_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -61,6 +61,18 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/delivery_g
     "result": "ok",
     "code": 200,
     "data": "{delivery_group_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}"
 }
 ```
+
+---
+
+# Input format
+
+### Delivery Group object properties
+
+Fields marked with <font color='red'>*</font> are required
+
+|Property|Type|Description|Example|
+|--------|----|-----------|-------|
+|delivery group<font color='red'>*</font>|||Details in [add delivery group](/articles/crud_delivery_group/add_delivery_group.html) under output format|

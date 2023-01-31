@@ -32,3 +32,12 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/creat
 ```JSON
 []
 ```
+
+---
+
+# Output format
+
+### Route Object Properties
+
+|Property             |Type     |Description          |Example      |  
+|---------------------|---------|---------------------|-------------|

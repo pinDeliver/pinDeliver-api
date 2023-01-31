@@ -1,6 +1,6 @@
 # Delete customer
 
-Brödtext
+Used to delete a customer from a route or directly from the inbox
 
 ### Endpoint
 ```

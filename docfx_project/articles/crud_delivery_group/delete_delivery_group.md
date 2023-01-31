@@ -4,7 +4,7 @@ Brödtext
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_0/delivery_group/delete/{delivery_group_id}
+https://cloud.pindeliver.com/api/v2_1/delivery_group/delete/{delivery_group_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/delivery_group/delete/{delivery_group_id}' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_group/delete/{delivery_group_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''

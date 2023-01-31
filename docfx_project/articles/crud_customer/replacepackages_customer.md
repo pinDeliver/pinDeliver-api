@@ -149,3 +149,12 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/r
     "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}"
 }
 ```
+
+---
+
+# Output format
+
+### Customer Object Properties
+
+|Property              |Type     |Description          |Example      |  
+|----------------------|---------|---------------------|-------------|

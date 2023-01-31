@@ -1,6 +1,6 @@
 # Update packages on customer
 
-Brödtext
+JSON Schema for updating packages of customer API, given id of customer as parameter in URL
 
 ### Endpoint
 ```
@@ -78,7 +78,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/u
 
 # Update packages on customer using external id
 
-Brödtext
+JSON Schema for updating packages of customer API, given external id of customer as parameter in URL
 
 ### Endpoint
 ```
@@ -151,3 +151,16 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/u
     "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}"
 }
 ```
+
+---
+
+# Output format
+
+### Customer Object Properties
+
+Fields marked with <font color='red'>*</font> are required
+
+|Property              |Type     |Description          |Example      |Default|
+|----------------------|---------|---------------------|-------------|-------|
+|packages<font color='red'>*</font>|||Details in [update package](/articles/crud_package/update_package.html) under output format|
+|status|string or null||delivered|

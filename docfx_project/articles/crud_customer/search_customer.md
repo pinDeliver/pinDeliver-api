@@ -1,6 +1,6 @@
 # Search customer
 
-Brödtext
+Used to search for a customer. Two search parameters is needed
 
 ### Endpoint
 ```
@@ -83,3 +83,32 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/s
   ]
 }
 ```
+
+---
+
+# Input format
+
+### Search Object Properties
+
+At least 2 search fields are required
+
+|Property              |Type     |Description          |Example      |Default|
+|----------------------|---------|---------------------|-------------|-------|
+|name|string|The customers first and last name|John Doe|NULL|
+|external_sender_id|string|Unique identifier for sender|pinDeliver|NULL|
+|requested_delivery_from_date|string|The customers requested_delivery_date must be equal to or greater then from_date.|YYYY-mm-dd|NULL|
+|requested_delivery_to_date|string|The customers requested_delivery_date must be equal to or less then from_date.|YYYY-mm-dd|NULL|
+|phone_cell|string|Customer cellphone number.|0701-12 34 56|NULL|
+|email|string|Customer email address.|name@example.com|NULL|
+|city|string|Customer address city.|Göteborg|NULL|
+|postal_address|string|Customer postal address street|Nils Ericsonsplatsen 3|NULL|
+|zipcode|string|Customer address zip code.|41103|NULL|
+|order_id|integer|Search only customers who belong to an order.|1337|NULL|
+|hub_id|string|Search only customers who belong to hub.|1 or a101 or ABC-123|NULL|
+|stop_type|enum|Search only customers who have stop_type.|dropoff or pickup or collect|NULL|
+|vehicle_tags|string|Tags used for pairing delivery with specific vehicle(s).|NULL|
+|timewindow_from|string|The customers requested timewindow start.|HH:ii|NULL|
+|timewindow_to|string|The customers requested timewindow end.|HH:ii|NULL|
+|pickup_identifier|string|Search only customers who share the same pickup point.|ABC-123|NULL|
+|customer_number|string|The customers customer_number.|123abc|NULL|
+|reference|string|The customers reference.|abc123|NULL|

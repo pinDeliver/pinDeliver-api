@@ -100,3 +100,14 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/impo
     "url": "https://cloud.pindeliver.com/api/v2_1/Order/get/{order_id}"
 }
 ```
+
+---
+
+# Output format
+
+### Order Object Properties
+
+Fields marked with <font color='red'>*</font> are required
+
+|Property             |Type     |Description          |Example      |  
+|---------------------|---------|---------------------|-------------|

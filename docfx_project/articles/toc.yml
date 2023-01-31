@@ -1,11 +1,11 @@
 - name: Carrier
   href: carrier.md
   items:
-  - name: Add
+  - name: Create carrier
     href: crud_carrier/add_carrier.md
-  - name: Get
+  - name: Retrieve carrier
     href: crud_carrier/get_carrier.md
-  - name: Delete
+  - name: Delete carrier
     href: crud_carrier/delete_carrier.md
 
 - name: Customer
@@ -13,6 +13,8 @@
   items:
   - name: Add
     href: crud_customer/add_customer.md
+  - name: Add customer order
+    href: crud_customer/add_customer_order.md
   - name: Add to order
     href: crud_customer/add_to_order.md
   - name: Get
@@ -47,8 +49,6 @@
     href: crud_order/add_order.md
   - name: Get
     href: crud_order/get_order.md
-  - name: Add customer
-    href: crud_order/addcustomer_order.md
   - name: Import
     href: crud_order/import_order.md
 
