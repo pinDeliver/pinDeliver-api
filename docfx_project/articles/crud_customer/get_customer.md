@@ -1,6 +1,6 @@
 # Get customer
 
-Get a customer based on the customer id
+Used to retrieve a customer using the customer id
 
 ### Endpoint
 ```
@@ -78,7 +78,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/ge
 
 # Get customer using external id
 
-Get a customer based on the customers external id
+Used to retrieve a customer using the customer external id
 
 ### Endpoint
 ```

@@ -1,6 +1,6 @@
 # Search customer
 
-Used to search for a customer. Two search parameters is needed
+Used to search for a customer. Two search parameters are needed
 
 ### Endpoint
 ```

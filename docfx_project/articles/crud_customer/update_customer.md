@@ -1,6 +1,6 @@
 # Update customer
 
-Update customer using the costumer id
+Used to update data on an existing customer using the customer id
 
 ### Endpoint
 ```
@@ -64,7 +64,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/u
 
 # Update customer using external id
 
-Brödtext
+Used to update data on an existing customer using the customer external id
 
 ### Endpoint
 ```
@@ -134,5 +134,6 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/u
 
 ### Customer Object Properties
 
-|Property              |Type     |Description          |Example      |Default|
-|----------------------|---------|---------------------|-------------|-------|
+|Property              |Type     |Description          |Example      |
+|----------------------|---------|---------------------|-------------|
+|customer<font color='red'>*</font>|||Details in [add_customer_order](/articles/crud_customer/add_customer_order.html) under output format|

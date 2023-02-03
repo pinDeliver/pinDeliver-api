@@ -29,6 +29,8 @@
     href: crud_customer/replacepackages_customer.md
   - name: Search
     href: crud_customer/search_customer.md
+  - name: Events
+    href: crud_customer/events_customer.md
 
 - name: Delivery group
   href: delivery_group.md
@@ -51,6 +53,8 @@
     href: crud_order/get_order.md
   - name: Import
     href: crud_order/import_order.md
+  - name: Events
+    href: crud_order/events_order.md
 
 - name: Package
   href: package.md
@@ -73,6 +77,8 @@
     href: crud_route/packaging_route.md
   - name: Create unit loads
     href: crud_route/create_unit_loads_route.md
+  - name: Events
+    href: crud_route/events_route.md
 
 - name: Sender
   href: sender.md
@@ -91,3 +97,5 @@
     href: crud_vehicle/update_vehicle.md
   - name: Delete
     href: crud_vehicle/delete_vehicle.md
+  - name: Events
+    href: crud_vehicle/events_vehicle.md

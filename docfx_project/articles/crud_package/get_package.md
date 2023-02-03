@@ -1,8 +1,6 @@
 # Get Package
 
-Brödtext
-
-
+Used to retrieve a package using the package id
 
 ### Endpoint
 ```
@@ -61,9 +59,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/package/get
 
 # Get Package using external id
 
-Brödtext
-
-
+Used to retrieve a package using the package external id
 
 ### Endpoint
 ```
@@ -122,9 +118,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/package/get
 
 # Get Package using scan code
 
-Brödtext
-
-
+Used to retrieve a package using a scan code
 
 ### Endpoint
 ```

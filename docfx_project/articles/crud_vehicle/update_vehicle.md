@@ -1,6 +1,6 @@
 # Update vehicle
 
-JSON Schema for updating vehicle API
+Used to update a vehicle using the vehicle id
 
 ### Endpoint
 ```

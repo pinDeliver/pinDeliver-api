@@ -1,8 +1,6 @@
 # Update package using external id
 
-Brödtext
-
-
+Used to update a package using the package external id
 
 ### Endpoint
 ```
@@ -77,9 +75,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/package/up
 
 # Update package using scan code
 
-Brödtext
-
-
+Used to update a package using a scan code
 
 ### Endpoint
 ```
@@ -160,17 +156,23 @@ Fields marked with <font color='red'>*</font> are required
 
 |Property             |Type     |Description          |Example      |  
 |---------------------|---------|---------------------|-------------|
-|name|string||Package|
-|package_id|string or null||98765|
-|quantity|integer or null||5|
-|quantity_loaded|integer or null||3|
-|quantity_delivered|integer or null||2|
-|weight|number or null||17|
-|volume|number or null||4,5|
-|volume_2|number or null||6,5|
-|shipment_number|string or null||999|
-|url|string or null|||
-|status_code|string or null||ARRIVED_AT_TERMINAL|
-|status_time|string or null|||
-|packaging_type_identifier|string or null|||
-|packaging_type_id|integer or null|||
+|packages<font color='red'>*</font>||Specific information about the current customer package|Details below|
+
+Fields marked with <font color='red'>*</font> are required
+
+|Property             |Type     |Description          |Example      |  
+|---------------------|---------|---------------------|-------------|
+|name|string|Name of the package type. Shown in driver app and exported excel driver sheet.|Package|
+|package_id|string or null|An external id for this package.|98765|
+|quantity|integer or null|Number of packages of this type. Shown in driver app and exported excel driver sheet.|5|
+|quantity_loaded|integer or null|The quantity of loaded packages|3|
+|quantity_delivered|integer or null|The quantity of packages delivered|2|
+|weight|number or null|The weight of a specific package|17|
+|volume|number or null|The volume of a specific package|4,5|
+|volume_2|number or null|The volume of a specific package|6,5|
+|shipment_number|string or null|An external number for the shipment|999|
+|url|string or null|A url linking to a page with information about the package, e.g. a product image.|https://pindeliver.com|
+|status_code|string or null|The status of a specific package|ARRIVED_AT_TERMINAL|
+|status_time|string or null|The time the package got it's latest status|1980-10-10 13:54:19|
+|packaging_type_identifier|string or null|The kind of packaging type the package is|Srs-back|
+|packaging_type_id|integer or null|The id of the packaging type|12345|

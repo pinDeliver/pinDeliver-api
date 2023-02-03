@@ -1,6 +1,6 @@
 # Get order
 
-Brödtext
+Used to retrieve an order using the order id
 
 ### Endpoint
 ```

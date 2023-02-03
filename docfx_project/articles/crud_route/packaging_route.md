@@ -1,6 +1,6 @@
 # Packaging route
 
-Brödtext
+Used to add packaging to a route using the route id
 
 ### Endpoint
 ```
@@ -55,12 +55,3 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/packa
     }
 ]
 ```
-
----
-
-# Output format
-
-### Route Object Properties
-
-|Property             |Type     |Description          |Example      |  
-|---------------------|---------|---------------------|-------------|

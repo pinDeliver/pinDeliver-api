@@ -1,5 +1,7 @@
 # Replace packages
 
+Used to replace packages on an existing customer using the customer id
+
 ### Endpoint
 ```
 https://cloud.pindeliver.com/api/v2_1/customer/replacePackages/{customer_id}
@@ -76,7 +78,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/r
 
 # Replace packages using external id
 
-Brödtext
+Used to replace packages on an existing customer using the customer external id
 
 ### Endpoint
 ```
@@ -158,3 +160,4 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/r
 
 |Property              |Type     |Description          |Example      |  
 |----------------------|---------|---------------------|-------------|
+|packages<font color='red'>*</font>|||Details in [update package](/articles/crud_package/update_package.html) under output format|

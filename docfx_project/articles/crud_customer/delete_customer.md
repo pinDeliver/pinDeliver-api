@@ -1,6 +1,6 @@
 # Delete customer
 
-Used to delete a customer from a route or directly from the inbox
+Used to delete a customer from a route or directly from the inbox using the customer id
 
 ### Endpoint
 ```

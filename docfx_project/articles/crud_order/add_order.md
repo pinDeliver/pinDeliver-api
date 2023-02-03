@@ -1,7 +1,6 @@
 # Add order
 
 Make sure a [delivery group](/articles/crud_delivery_group/add_delivery_group.html) is created before creating an order.
-
 You need to create an order before being able to create a [route](/articles/crud_route/add_route.html).
 
 ### Endpoint

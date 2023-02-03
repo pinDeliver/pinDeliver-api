@@ -179,8 +179,8 @@ Fields marked with <font color='red'>*</font> are required
 
 |Property             |Type     |Description          |Example      |  
 |---------------------|---------|---------------------|-------------|
-|order_id<font color='red'>*</font>|integer|Id of the order that the route is getting connected to|12345|
+|order_id<font color='red'>*</font>|integer|Id of the order that the route is added on to|12345|
 |name<font color='red'>*</font>|string|Name of this route|Scandinavium|
-|predefined_route_name|string or null|||
-|scheduled<font color='red'>*</font>|string|||
+|predefined_route_name|string or null|Name for the predefined routes that is created through the haulage portal|4TGG5|
+|scheduled<font color='red'>*</font>|string|The date a route is scheduled to start|1980-10-10T10:00:00.234+02:00|
 |vehicle<font color='red'>*</font>|||Details in [add vehicle](/articles/crud_vehicle/add_vehicle.html) under output format|

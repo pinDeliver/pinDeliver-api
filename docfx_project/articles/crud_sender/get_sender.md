@@ -1,6 +1,6 @@
 # Get sender
 
-Brödtext
+Used to retrieve a sender using the sender id
 
 ### Endpoint
 ```
@@ -55,7 +55,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/sender/get/
 
 # Get sender using external id
 
-Brödtext
+Used to retrieve a sender using the sender external id
 
 ### Endpoint
 ```
@@ -110,7 +110,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/sender/get/
 
 # Get all senders
 
-Brödtext
+Used to retrieve all senders
 
 ### Endpoint
 ```

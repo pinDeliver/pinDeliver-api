@@ -1,6 +1,6 @@
 # Update delivery group
 
-JSON Schema for updating Delivery group API
+Used to update a delivery group using the delivery group id
 
 ### Endpoint
 ```
@@ -69,10 +69,21 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_g
 
 # Input format
 
+---
+
+# Input format
+
 ### Delivery Group object properties
 
 Fields marked with <font color='red'>*</font> are required
 
 |Property|Type|Description|Example|
 |--------|----|-----------|-------|
-|delivery group<font color='red'>*</font>|||Details in [add delivery group](/articles/crud_delivery_group/add_delivery_group.html) under output format|
+|name<font color='red'>*</font>|string|Name of this delivery group.|Göteborg|
+|identifier<font color='red'>*</font>|string or null|Unique identifier of this delivery group. <br><font color='red'>If identifier is null the identifier will be set to this delivery group name.</font>|Göteborg|
+|base_stop_time|integer|Base stop time of this delivery group to be used in an optimization.|5|
+apartment_stop_time|integer|"base_stop_time" + "apartment_stop_time" equals the total stop time for customer who live in apartments, used in an optimization.|2|
+depot_reload_time_minutes|integer|Number of minutes it takes to reload a vehicle at a depot stop, used in an optimization.|65|
+depot_address|string|The address where the depot is located.|Nils Ericsonsplatsen 3, 411 03 Göteborg|
+depot_location_latitude|number|The latitude where the depot is located.|57.7091409|
+depot_location_longitude|number|The longitude where the depot is located.|11.9712367|

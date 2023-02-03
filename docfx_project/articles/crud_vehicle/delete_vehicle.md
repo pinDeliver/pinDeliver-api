@@ -1,6 +1,6 @@
 # Delete vehicle
 
-Brödtext
+Used to delete a vehicle using the vehicle id
 
 ### Endpoint
 ```

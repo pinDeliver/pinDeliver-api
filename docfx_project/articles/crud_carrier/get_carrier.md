@@ -1,6 +1,6 @@
 # Retrieve a carrier
 
-Brödtext
+Used to retrieve a carrier using the carrier id
 
 ### Endpoint
 ```
@@ -52,7 +52,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/carrier/get
 
 # Get carrier using external id
 
-Brödtext
+Used to retrieve a carrier using the carrier external id
 
 ### Endpoint
 ```
@@ -104,7 +104,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/carrier/get
 
 # Get all carriers
 
-Brödtext
+Used to retrieve all carriers
 
 ### Endpoint
 ```

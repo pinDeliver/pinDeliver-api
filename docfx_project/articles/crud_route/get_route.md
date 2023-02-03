@@ -1,6 +1,6 @@
 # Get route
 
-Brödtext
+Used to retrieve a route using the route id
 
 ### Endpoint
 ```
@@ -84,7 +84,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/get/{
 
 # Get all routes
 
-Brödtext
+Used to retrieve all routes
 
 ### Endpoint
 ```

@@ -1,6 +1,6 @@
 # Delete a carrier
 
-Brödtext
+Used to delete a carrier using the carrier id
 
 ### Endpoint
 ```

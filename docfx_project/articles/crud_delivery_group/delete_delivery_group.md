@@ -1,6 +1,6 @@
 # Delete delivery group
 
-Brödtext
+Used to delete a delivery group using the delivery group id
 
 ### Endpoint
 ```
