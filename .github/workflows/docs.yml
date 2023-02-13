@@ -35,7 +35,7 @@ jobs:
         args: install docfx
 
     - name: DocFX Build
-      working-directory: docs
+      working-directory: docfx_project
       run: docfx .\docfx.json
       continue-on-error: false
 
@@ -46,5 +46,3 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: docs
         force_orphan: true
-
-        
