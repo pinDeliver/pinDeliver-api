@@ -58,3 +58,24 @@ Success Response
     }
 }
 ```
+
+---
+
+# Query parameters
+
+### Endpoint example
+```
+https://cloud.pindeliver.com/api/v2_1/order/get/{order_id}?all
+```
+
+If you want to use multiple parameters at the same time you can add them after the first parameter using "&".
+For example: ?all&order&routes.
+
+### Parameters
+
+|Property|Description|
+|--------|-----------|
+|?all|Get all info for the specific order|
+|?routes|Get routes for the specific order|
+|?stops|Get stops for the specific order|
+|?customer|Get customers for the specific order|

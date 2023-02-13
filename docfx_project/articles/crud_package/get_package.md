@@ -172,3 +172,25 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/package/get
     "status_time": "2023-01-25 14:27:53"
 }
 ```
+
+---
+
+# Query parameters
+
+### Endpoint example
+```
+https://cloud.pindeliver.com/api/v2_1/package/get/{package_id}?all
+```
+
+If you want to use multiple parameters at the same time you can add them after the first parameter using "&".
+For example: ?all&order&routes.
+
+### Parameters
+
+|Property|Description|
+|--------|-----------|
+|?all|Get all info for the specific package|
+|?order|Get orders for the specific package|
+|?routes|Get routes for the specific package|
+|?stops|Get stops for the specific package|
+|?customer|Get customers for the specific package|

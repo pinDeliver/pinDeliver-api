@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example scenarios </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Example scenarios ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="example-scenarios" sourcefile="documentation/api.md" sourcestartlinenumber="1">Example scenarios</h1>
+
+<p sourcefile="documentation/api.md" sourcestartlinenumber="3">Here we have collected a few example scenarios that might help you in &quot;how to think&quot; when setting up pinDeliver. You always need to do the basic setup</p>
+<ul sourcefile="documentation/api.md" sourcestartlinenumber="5">
+<li sourcefile="documentation/api.md" sourcestartlinenumber="5"><strong sourcefile="documentation/api.md" sourcestartlinenumber="5">Small company with deliveries (no pickups)</strong>
+<ul sourcefile="documentation/api.md" sourcestartlinenumber="6">
+<li sourcefile="documentation/api.md" sourcestartlinenumber="6">Excel upload</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="7">1 terminal/warehouse</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="8">Loading is not handled by pinDeliver</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="9">2 vehicles</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="10">4 drivers</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="11">1 sender (your own company)</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="12">Communication with SMS when route is <em sourcefile="documentation/api.md" sourcestartlinenumber="12">Locked, Started</em> and for <em sourcefile="documentation/api.md" sourcestartlinenumber="12">Not home</em>- and <em sourcefile="documentation/api.md" sourcestartlinenumber="12">Not delivered</em>-deliveries</li>
+</ul>
+</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="13"><strong sourcefile="documentation/api.md" sourcestartlinenumber="13">Medium company with deliveries (no pickups)</strong>
+<ul sourcefile="documentation/api.md" sourcestartlinenumber="14">
+<li sourcefile="documentation/api.md" sourcestartlinenumber="14">Excel upload</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="15">2 terminals/warehouses</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="16">Loading and reloading possibility</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="17">5 vehicles</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="18">8 drivers</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="19">1 sender (your own company)</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="20">customer communication with SMS</li>
+</ul>
+</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="21"><strong sourcefile="documentation/api.md" sourcestartlinenumber="21">Click &amp; Collect</strong>
+<ul sourcefile="documentation/api.md" sourcestartlinenumber="22">
+<li sourcefile="documentation/api.md" sourcestartlinenumber="22">Excel upload</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="23">1 terminal/warehouse</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="24">1 sender (your own company)</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="25">Communication with SMS when <em sourcefile="documentation/api.md" sourcestartlinenumber="25">Click &amp; Collect</em> starts for the day and it not picked up.</li>
+<li sourcefile="documentation/api.md" sourcestartlinenumber="26">Use Hub App for delivering</li>
+</ul>
+</li>
+</ul>
+<h2 id="small-company-with-deliveries-no-pickups" sourcefile="documentation/api.md" sourcestartlinenumber="28">Small company with deliveries (no pickups)</h2>
+<p sourcefile="documentation/api.md" sourcestartlinenumber="29">This scenario describes a typical setup for a smaller company and you only have to setup a few things before you can start delivering with pinDeliver. Recommended order for your setup is according to the table below.</p>
+<table sourcefile="documentation/api.md" sourcestartlinenumber="31">
+<thead>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="31">
+<th style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="31">Step</th>
+<th sourcefile="documentation/api.md" sourcestartlinenumber="31">Area/Section</th>
+<th sourcefile="documentation/api.md" sourcestartlinenumber="31">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="33">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="33">1</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="33"><a href="delivery_groups.md" sourcefile="documentation/api.md" sourcestartlinenumber="33">Delivery Group</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="33">Create a delivery group and name it according to your terminal location. Do not activate the <strong sourcefile="documentation/api.md" sourcestartlinenumber="33">Use depots</strong> but at least add a default <em sourcefile="documentation/api.md" sourcestartlinenumber="33">Base stop time</em>.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="34">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="34">2</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="34"><a href="users.md" sourcefile="documentation/api.md" sourcestartlinenumber="34">Users</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="34">Add users that will work in the pinDeliver Office interface. This normally means users that will do route optimization and customer support.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="35">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="35">3</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="35"><a href="vehicles.md" sourcefile="documentation/api.md" sourcestartlinenumber="35">Vehicles</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="35">Create two vehicles and setup maximum limits for weight and volume if you will use weight and volume when uploading orders. Setup work hours and don´t forget to plan for breaks. If you are using electric vehicles you can add it´s maximum driving distance. If both vehicles are similar you can use the button <strong sourcefile="documentation/api.md" sourcestartlinenumber="35">Copy</strong> to create the second vehicle. Then you only need to change fields like name and other fields that are not the same, for example <strong sourcefile="documentation/api.md" sourcestartlinenumber="35">Maximum weight</strong>.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="36">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="36">4</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="36"><a href="drivers.md" sourcefile="documentation/api.md" sourcestartlinenumber="36">Drivers</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="36">Add four drivers and set correct language and cell phone number. This will ensure that the driver gets his SMS messages in correct language.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="37">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="37">5</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="37"><a href="senders.md" sourcefile="documentation/api.md" sourcestartlinenumber="37">Senders</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="37">Your account probably already has a default sender but you want to add your company logo and your colors for branding the customer page correct.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="38">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="38">6</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="38"><a href="settings_sms.md" sourcefile="documentation/api.md" sourcestartlinenumber="38">SMS Communication</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="38">Open <strong sourcefile="documentation/api.md" sourcestartlinenumber="38">Settings/SMS</strong> and activate the following SMS triggers for the deliveries (left side of page). Example/recommended messages including place holders can be seen in the blue boxes below each trigger.<ur><li>Send SMS when locking a route</li><li>Send SMS when the driver starts the route</li><li>Send SMS when a driver reports that a delivery has been made, but the customer was not home</li><li>Send SMS to customer when a driver reports that a delivery has not been made</li></ur></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="documentation/api.md" sourcestartlinenumber="40">Now you are ready to start uploading orders through Excel and start planning and executing you deliveries.</p>
+<h2 id="medium-company-with-deliveries-no-pickups" sourcefile="documentation/api.md" sourcestartlinenumber="42">Medium company with deliveries (no pickups)</h2>
+<p sourcefile="documentation/api.md" sourcestartlinenumber="43">This scenario describes a typical setup for a midsize company with two different warehouses and the drivers will load the vehicles. You only have to setup a few things before you can start delivering with pinDeliver. Recommended order for your setup is according to the table below.</p>
+<table sourcefile="documentation/api.md" sourcestartlinenumber="45">
+<thead>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="45">
+<th style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="45">Step</th>
+<th sourcefile="documentation/api.md" sourcestartlinenumber="45">Area/Section</th>
+<th sourcefile="documentation/api.md" sourcestartlinenumber="45">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="47">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="47">1</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="47"><a href="delivery_groups.md" sourcefile="documentation/api.md" sourcestartlinenumber="47">Delivery Group</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="47">Create a <em sourcefile="documentation/api.md" sourcestartlinenumber="47">Delivery group</em> for each warehouse and name them according to their location. Activate the <strong sourcefile="documentation/api.md" sourcestartlinenumber="47">Use depots</strong> and add your warehouse address and average time for loading the vehicles in <strong sourcefile="documentation/api.md" sourcestartlinenumber="47">Fixed stop time in depot</strong>. You also need to set <strong sourcefile="documentation/api.md" sourcestartlinenumber="47">Apply reloading at optimization</strong> as <em sourcefile="documentation/api.md" sourcestartlinenumber="47">Selectable at optimization</em> or <em sourcefile="documentation/api.md" sourcestartlinenumber="47">Always</em> to make it possible or forcing reloading as an option when rout optimization. **Finally add a default <em sourcefile="documentation/api.md" sourcestartlinenumber="47">Base stop time</em>.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="48">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="48">2</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="48"><a href="users.md" sourcefile="documentation/api.md" sourcestartlinenumber="48">Users</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="48">Add users that will work in the pinDeliver Office interface. This normally means users that will do route optimization and customer support. If your users should be limited to only work with one of the warehouses you can choose which <em sourcefile="documentation/api.md" sourcestartlinenumber="48">Delivery group</em> a user should be able to access instead of allowing all <em sourcefile="documentation/api.md" sourcestartlinenumber="48">Delivery groups</em>. You do that on the tab called <strong sourcefile="documentation/api.md" sourcestartlinenumber="48">Delivery groups</strong>.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="49">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="49">3</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="49"><a href="vehicles.md" sourcefile="documentation/api.md" sourcestartlinenumber="49">Vehicles</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="49">Create two vehicles and setup maximum limits for weight and volume if you will use weight and volume when uploading orders. Setup work hours and don´t forget to plan for breaks. If you are using electric vehicles you can add it´s maximum driving distance. If both vehicles are similar you can use the button <strong sourcefile="documentation/api.md" sourcestartlinenumber="49">Copy</strong> to create the second vehicle. Then you only need to change fields like name and other fields that are not the same, for example <strong sourcefile="documentation/api.md" sourcestartlinenumber="49">Maximum weight</strong>. A vehicle can only belong to one <em sourcefile="documentation/api.md" sourcestartlinenumber="49">Delivery group</em> so you have to specify for each vehicle which <em sourcefile="documentation/api.md" sourcestartlinenumber="49">Delivery group</em> this vehicle belongs to.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="50">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="50">4</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="50"><a href="drivers.md" sourcefile="documentation/api.md" sourcestartlinenumber="50">Drivers</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="50">Add four drivers and set correct language and cell phone number. This will ensure that the driver gets his SMS messages in correct language. A driver can belong to one or more <em sourcefile="documentation/api.md" sourcestartlinenumber="50">Delivery groups</em>. Just select/deselect <em sourcefile="documentation/api.md" sourcestartlinenumber="50">Delivery groups</em> that are appropriate for the driver.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="51">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="51">5</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="51"><a href="senders.md" sourcefile="documentation/api.md" sourcestartlinenumber="51">Senders</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="51">Your account probably already has a default sender but you want to add your company logo and your colors for branding the customer page correct.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="52">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="52">6</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="52"><a href="settings_sms.md" sourcefile="documentation/api.md" sourcestartlinenumber="52">SMS Communication</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="52">Open <strong sourcefile="documentation/api.md" sourcestartlinenumber="52">Settings/SMS</strong> and activate the following SMS triggers for the deliveries (left side of page). Example/recommended messages including place holders can be seen in the blue boxes below each trigger.<ur><li>Send SMS when locking a route</li><li>Send SMS when the driver starts the route</li><li>Send SMS when a driver reports that a delivery has been made, but the customer was not home</li><li>Send SMS to customer when a driver reports that a delivery has not been made</li></ur></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="documentation/api.md" sourcestartlinenumber="54">Now you are ready to start uploading orders through Excel and start planning and executing you deliveries.</p>
+<h2 id="click--collect" sourcefile="documentation/api.md" sourcestartlinenumber="56">Click &amp; Collect</h2>
+<p sourcefile="documentation/api.md" sourcestartlinenumber="57">This scenario describes a typical setup for a smaller company that will start with Click &amp; Collect</p>
+<table sourcefile="documentation/api.md" sourcestartlinenumber="59">
+<thead>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="59">
+<th style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="59">Step</th>
+<th sourcefile="documentation/api.md" sourcestartlinenumber="59">Area/Section</th>
+<th sourcefile="documentation/api.md" sourcestartlinenumber="59">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="61">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="61">1</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="61"><a href="delivery_groups.md" sourcefile="documentation/api.md" sourcestartlinenumber="61">Delivery Group</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="61">Create or update a delivery group and name it according to your terminal location. Activate the <strong sourcefile="documentation/api.md" sourcestartlinenumber="61">Use depots</strong> and add your warehouse address to show your customers where they should go for the collection.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="62">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="62">2</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="62"><a href="users.md" sourcefile="documentation/api.md" sourcestartlinenumber="62">Users</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="62">Add users that will work in the pinDeliver Office interface or in the Hub App. If you will deliver with the Hub App the users must have <em sourcefile="documentation/api.md" sourcestartlinenumber="62">Is Hub personal</em> as permission.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="63">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="63">3</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="63"><a href="senders.md" sourcefile="documentation/api.md" sourcestartlinenumber="63">Senders</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="63">Your account probably already has a default sender but you want to add your company logo and your colors for branding the customer page correct.</td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="64">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="64">4</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="64"><a href="settings_sms.md" sourcefile="documentation/api.md" sourcestartlinenumber="64">SMS Communication</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="64">Open <strong sourcefile="documentation/api.md" sourcestartlinenumber="64">Settings/SMS</strong> and activate the following SMS triggers for the Click &amp; Collect (right side of page). Example/recommended messages including place holders can be seen in the blue boxes below each trigger.<ur><li>Send SMS to customers when the driver starts collect</li>Send SMS to customers when delivery is not collected</ur></td>
+</tr>
+<tr sourcefile="documentation/api.md" sourcestartlinenumber="65">
+<td style="text-align: center;" sourcefile="documentation/api.md" sourcestartlinenumber="65">5</td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="65"><a href="settings_hub_app.md" sourcefile="documentation/api.md" sourcestartlinenumber="65">Hub App</a></td>
+<td sourcefile="documentation/api.md" sourcestartlinenumber="65">Install pinDeliver HubApp from Google Play. Login to the app and go to settings and choose <em sourcefile="documentation/api.md" sourcestartlinenumber="65">Delivery group/terminal</em>.</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="documentation/api.md" sourcestartlinenumber="68">Now you are ready to start uploading orders through Excel and start planning and executing you deliveries.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

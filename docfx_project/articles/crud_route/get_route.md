@@ -158,3 +158,25 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/Route/get' 
     "exec_time": 0.053381919860839844
 }
 ```
+
+---
+
+# Query parameters
+
+### Endpoint example
+```
+https://cloud.pindeliver.com/api/v2_1/route/get/{route_id}?all
+```
+
+If you want to use multiple parameters at the same time you can add them after the first parameter using "&".
+For example: ?all&order&routes.
+
+### Parameters
+
+|Property|Description|
+|--------|-----------|
+|?all|Get all info for the specific route|
+|?order|Get orders for the specific route|
+|?routes|Get routes for the specific route|
+|?stops|Get stops for the specific route|
+|?customer|Get customers for the specific route|

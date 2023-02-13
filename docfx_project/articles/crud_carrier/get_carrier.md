@@ -1,4 +1,4 @@
-# Retrieve a carrier
+# Get carrier
 
 Used to retrieve a carrier using the carrier id
 

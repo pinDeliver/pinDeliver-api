@@ -1,9 +1,9 @@
 - name: Carrier
   href: carrier/
   homepage: articles/carrier.md
-- name: Customer
-  href: customer/
-  homepage: articles/customer.md
+- name: Customer order
+  href: customer order/
+  homepage: articles/customer_order.md
 - name: Delivery group
   href: delivery_group/
   homepage: articles/delivery_group.md

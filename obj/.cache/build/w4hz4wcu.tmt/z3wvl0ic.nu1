@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Authentication </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Authentication ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="1">API</p>
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="3">docfx init -q
+docfx &quot;C:\temp\pinDeliver-api\docfx_project\docfx.json&quot; --serve</p>
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="6">Såhär gör du blablabla <code sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="6">Exempel på JSON</code></p>
+<blockquote sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="8">
+<blockquote sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="8">
+<blockquote sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="8">
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="10">Upplagt efter ex order och när man klickar på order kommer olika requests och när man klickar på en request kommer olika versioner</p>
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="12">Se hela flödet på en order</p>
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="14"><a href="https://martinservera-test.pindeliver.com/ApiDocs/docs/1.2/getOrder" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="14">https://martinservera-test.pindeliver.com/ApiDocs/docs/1.2/getOrder</a>
+<a href="https://dev.azure.com/pindeliver/pinDeliver/_wiki/wikis/pinDeliver.wiki/62/Hub" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="15">https://dev.azure.com/pindeliver/pinDeliver/_wiki/wikis/pinDeliver.wiki/62/Hub</a>
+<a href="https://dev.azure.com/pindeliver/pinDeliver/_git/pinDeliver-Cloud-Office?path=/api-tests/customer_14.http" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="16">https://dev.azure.com/pindeliver/pinDeliver/_git/pinDeliver-Cloud-Office?path=/api-tests/customer_14.http</a></p>
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="19">Exempel på API</p>
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="21"><a href="https://martinservera-test.pindeliver.com/api/v1_2/Order/get/:order_id" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="21">https://martinservera-test.pindeliver.com/api/v1_2/Order/get/:order_id</a></p>
+<h2 id="authentication" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="23">Authentication</h2>
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="24">Headers: <br>
+X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX <br>
+X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX</p>
+<h2 id="method" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="28">Method</h2>
+<p sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="29">GET</p>
+<h2 id="example-request" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="31">Example request</h2>
+<pre><code class="lang-C" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="32">curl --location --request GET 'https://martinservera-test.pindeliver.com/api/v2_0/Order/get/{ORDER-ID}' \
+--header 'X-PINDELIVER-API-KEY: {API-KEY}' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: {CLIENT-KEY}' \
+--data-raw ''
+</code></pre>
+<h2 id="example-error-response" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="39">Example error response</h2>
+<pre><code class="lang-JSON" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="40">Error Response
+[
+  {
+    &quot;result&quot;: &quot;error&quot;,
+    &quot;status&quot;: 404,
+    &quot;response&quot;: {
+      &quot;error_description&quot;: &quot;No such order available&quot;
+    }
+  }
+]
+</code></pre>
+<h2 id="example-success-response" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="53">Example success response</h2>
+<pre><code class="lang-JSON" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="54">Success Response
+{
+  &quot;id&quot;: &quot;2567&quot;,
+  &quot;name&quot;: &quot;Magazine Deliveries&quot;,
+  &quot;created_date&quot;: &quot;2017-05-18 09:02:57&quot;,
+  &quot;scheduled_date&quot;: &quot;2017-05-18 09:02:57&quot;,
+  &quot;order_type&quot;: &quot;DELIVERY&quot;,
+  &quot;delivery_group&quot;: &quot;Derry01&quot;,
+  &quot;order_info&quot;: {
+    &quot;status&quot;: &quot;NOT_STARTED&quot;,
+    &quot;num_deliveries&quot;: 46
+  },
+  &quot;routes&quot;: [
+    {
+      &quot;id&quot;: &quot;4671&quot;,
+      &quot;name&quot;: &quot;Derry van 01&quot;,
+      &quot;locked&quot;: false,
+      &quot;assigned&quot;: false,
+      &quot;scheduled_start_time&quot;: &quot;2017-05-18 09:41:00&quot;,
+      &quot;scheduled_start_time_from_depot&quot;: &quot;2017-05-18 09:54:00&quot;,
+      &quot;actual_start_time&quot;: &quot;2017-05-18 09:42:32&quot;,
+      &quot;actual_start_time_from_depot&quot;: &quot;2017-05-18 09:56:12&quot;,
+      &quot;started&quot;: false,
+      &quot;ended&quot;: false,
+      &quot;url&quot;: &quot;https://martinservera-test.pindeliver.com/api/v1_2/route/get/4671&quot;,
+      &quot;depot_address&quot;: &quot;Derry's Depot, 230 High Street, TUCSON AZ 85705&quot;,
+      &quot;num_deliveries&quot;: 40,
+      &quot;num_subroutes&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;4670&quot;,
+      &quot;name&quot;: &quot;Derry van 05&quot;,
+      &quot;locked&quot;: false,
+      &quot;assigned&quot;: false,
+      &quot;scheduled_start_time&quot;: &quot;2017-05-18 09:54:00&quot;,
+      &quot;scheduled_start_time_from_depot&quot;: &quot;2017-05-18 10:12:00&quot;,
+      &quot;actual_start_time&quot;: &quot;2017-05-18 09:52:32&quot;,
+      &quot;actual_start_time_from_depot&quot;: &quot;2017-05-18 10:11:48&quot;,
+      &quot;started&quot;: false,
+      &quot;ended&quot;: false,
+      &quot;url&quot;: &quot;https://martinservera-test.pindeliver.com/api/v1_2/route/get/4670&quot;,
+      &quot;depot_address&quot;: &quot;Derry's Depot, 230 High Street, TUCSON AZ 85705&quot;,
+      &quot;num_deliveries&quot;: 12,
+      &quot;num_subroutes&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;4669&quot;,
+      &quot;name&quot;: &quot;Derry van 03&quot;,
+      &quot;locked&quot;: true,
+      &quot;assigned&quot;: true,
+      &quot;scheduled_start_time&quot;: &quot;2017-05-18 09:56:00&quot;,
+      &quot;scheduled_start_time_from_depot&quot;: &quot;2017-05-18 10:11:00&quot;,
+      &quot;actual_start_time&quot;: null,
+      &quot;actual_start_time_from_depot&quot;: null,
+      &quot;started&quot;: false,
+      &quot;ended&quot;: false,
+      &quot;url&quot;: &quot;https://martinservera-test.pindeliver.com/api/v1_2/route/get/4669&quot;,
+      &quot;depot_address&quot;: &quot;Derry's Depot, 230 High Street, TUCSON AZ 85705&quot;,
+      &quot;num_deliveries&quot;: 47,
+      &quot;num_subroutes&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;4672&quot;,
+      &quot;name&quot;: &quot;Derry van 07&quot;,
+      &quot;locked&quot;: false,
+      &quot;assigned&quot;: false,
+      &quot;scheduled_start_time&quot;: &quot;2017-05-18 14:00:00&quot;,
+      &quot;scheduled_start_time_from_depot&quot;: &quot;2017-05-18 14:24:00&quot;,
+      &quot;actual_start_time&quot;: null,
+      &quot;actual_start_time_from_depot&quot;: null,
+      &quot;started&quot;: false,
+      &quot;ended&quot;: false,
+      &quot;url&quot;: &quot;https://martinservera-test.pindeliver.com/api/v1_2/route/get/4672&quot;,
+      &quot;depot_address&quot;: &quot;Derry's Depot, 230 High Street, TUCSON AZ 85705&quot;,
+      &quot;num_deliveries&quot;: 31,
+      &quot;num_subroutes&quot;: 2
+    }
+  ]
+}
+</code></pre>
+<pre><code class="lang-C" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="149">curl --location --request POST 'https://martinservera-test.pindeliver.com/api/v1_4/customer/add' \
+--header 'X-PINDELIVER-API-KEY: 1212-1212-1212-1212' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: 030dc9f7-9f86-11ec-b8fc-0242c0a85005' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    &quot;linehaul_order&quot;: true,
+    &quot;validation_request&quot;:false,
+    &quot;preliminary&quot;:false,
+    &quot;allow_adding_to_locked&quot;:false,
+    &quot;order_id&quot;:31561,
+    &quot;route_id&quot;:143762,
+    &quot;position_in_route&quot;:1,
+    &quot;name&quot;:&quot;Linehaul&quot;,
+    &quot;postal_address&quot;:&quot;Andra Långgatan&quot;,
+    &quot;country_code&quot;: &quot;sv&quot;,
+    &quot;address_2&quot;:&quot;&quot;,
+    &quot;zipcode&quot;: &quot;41161&quot;,
+    &quot;city&quot;:&quot;Göteborg&quot;,
+    &quot;delivery_info&quot;: {
+        &quot;stop_type&quot;:&quot;delivery&quot;,
+        &quot;timewindow_start&quot;:&quot;00:00&quot;,
+        &quot;timewindow_end&quot;:&quot;23:59&quot;
+    }
+}'
+</code></pre>
+<pre><code class="lang-JSON" sourcefile="documentation/click_and_collect.md" sourcestartlinenumber="176">{
+    &quot;id&quot;: 8774325,
+    &quot;delivery_type&quot;: &quot;PICKUP&quot;,
+    &quot;delivery_group&quot;: &quot;Beleco - Sthlm&quot;,
+    &quot;order_id&quot;: 98987,
+    &quot;route_id&quot;: 418472,
+    &quot;subroute&quot;: 1,
+    &quot;position_in_subroute&quot;: 4,
+    &quot;tracking_number&quot;: &quot;1032669_pickup_8d926f&quot;,
+    &quot;tracking_url&quot;: &quot;https:\/\/my.pindeliver.com\/8bollt5on9d&quot;,
+    &quot;name&quot;: &quot;Harald Cavalli-Bj\u00f6rkman - Re:Newcell AB&quot;,
+    &quot;postal_address&quot;: &quot;Cardellgatan 1&quot;,
+    &quot;zipcode&quot;: &quot;11436&quot;,
+    &quot;city&quot;: &quot;Stockholm&quot;,
+    &quot;phone_cell&quot;: &quot;0705903204&quot;,
+    &quot;phone_alt&quot;: &quot;&quot;,
+    &quot;position_lat&quot;: &quot;59.3389407&quot;,
+    &quot;position_lng&quot;: &quot;18.0755887&quot;,
+    &quot;sms_sender&quot;: &quot;Beleco&quot;,
+    &quot;sender_name&quot;: &quot;Beleco&quot;,
+    &quot;vehicle_tags&quot;: &quot;&quot;,
+    &quot;external_sender_id&quot;: &quot;Beleco&quot;,
+    &quot;delivery_info&quot;: {
+        &quot;requested_delivery_date&quot;: &quot;2022-11-25&quot;,
+        &quot;timewindow_start&quot;: &quot;09:00&quot;,
+        &quot;timewindow_end&quot;: &quot;17:00&quot;,
+        &quot;estimated_service_time&quot;: 1200,
+        &quot;volume&quot;: 5.148,
+        &quot;priority&quot;: &quot;normal&quot;,
+        &quot;time_estimated&quot;: &quot;2022-11-25 13:35:57&quot;,
+        &quot;time_estimated_updated&quot;: &quot;2022-11-25 14:07:42&quot;,
+        &quot;time_handled&quot;: &quot;2022-11-25 15:51:02&quot;,
+        &quot;stop_time&quot;: 20,
+        &quot;status&quot;: &quot;delivered&quot;,
+        &quot;handled_lat&quot;: 59.3389407,
+        &quot;handled_lng&quot;: 18.0755887,
+        &quot;stop_type&quot;: &quot;pickup&quot;,
+        &quot;pickup_identifier&quot;: &quot;scpi-991630142&quot;,
+        &quot;pods&quot;: [],
+        &quot;recycling&quot;: [],
+        &quot;packages&quot;: [{
+            &quot;id&quot;: 7025805,
+            &quot;name&quot;: &quot;B2241-616831EE-4&quot;,
+            &quot;shared&quot;: false,
+            &quot;quantity&quot;: 1,
+            &quot;status_code&quot;: &quot;DELIVERED&quot;,
+            &quot;status&quot;: &quot;DELIVERED&quot;,
+            &quot;status_time&quot;: &quot;2022-12-05 15:29:29&quot;,
+            &quot;quantity_loaded&quot;: 0,
+            &quot;quantity_delivered&quot;: 1,
+            &quot;deviation_code&quot;: &quot;NONE&quot;,
+            &quot;driver_comment&quot;: &quot;&quot;
+        }],
+        &quot;package_type&quot;: &quot;1 st B2241-616831EE-4&quot;,
+        &quot;quantity&quot;: 1
+    }
+}'
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

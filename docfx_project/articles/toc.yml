@@ -1,19 +1,17 @@
 - name: Carrier
   href: carrier.md
   items:
-  - name: Create carrier
+  - name: Add
     href: crud_carrier/add_carrier.md
-  - name: Retrieve carrier
+  - name: Get
     href: crud_carrier/get_carrier.md
-  - name: Delete carrier
+  - name: Delete
     href: crud_carrier/delete_carrier.md
 
-- name: Customer
-  href: customer.md
+- name: Customer order
+  href: customer_order.md
   items:
   - name: Add
-    href: crud_customer/add_customer.md
-  - name: Add customer order
     href: crud_customer/add_customer_order.md
   - name: Add to order
     href: crud_customer/add_to_order.md

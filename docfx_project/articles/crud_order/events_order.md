@@ -2,7 +2,13 @@
 
 ### Example
 
-
+```JSON
+{
+  "event": "ORDER_WAS_CREATED",
+  "id": "{order_id}",
+  "url": "https://cloud.pindeliver.com/api/v1_2/Order/get/{order_id}"
+}
+```
 
 ### Post data
 

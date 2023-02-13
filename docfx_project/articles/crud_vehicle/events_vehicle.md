@@ -2,7 +2,14 @@
 
 ### Example
 
-
+```JSON
+{
+  "event": "VEHICLE_WAS_UPDATED",
+  "id": "{vehicle_id}",
+  "url": "https://localhost/api/v2_1/vehicle/get/{vehicle_id}",
+    "external_id": "B1"
+}
+```
 
 ### Post data
 

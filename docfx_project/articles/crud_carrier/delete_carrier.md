@@ -1,4 +1,4 @@
-# Delete a carrier
+# Delete carrier
 
 Used to delete a carrier using the carrier id
 

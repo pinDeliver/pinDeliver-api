@@ -151,3 +151,26 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/ge
     }
 }
 ```
+
+---
+
+# Query parameters
+
+### Endpoint example
+```
+https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}?all
+```
+
+If you want to use multiple parameters at the same time you can add them after the first parameter using "&".
+For example: ?all&order&routes.
+
+### Parameters
+
+|Property|Description|
+|--------|-----------|
+|?all|Get all info for the specific customer|
+|?order|Get orders for the specific customer|
+|?routes|Get routes for the specific customer|
+|?stops|Get stops for the specific customer|
+|?shipping_labels|Get shipping labels for the specific customer|
+|?messages|Get messages for the specific customer|

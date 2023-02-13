@@ -2,6 +2,19 @@
 
 ### Example
 
+```JSON
+{
+  "event": "CUSTOMER_WAS_DELETED",
+  "id": "{customer_id}"
+}
+```
+```JSON
+{
+  "event": "DELIVERY_WAS_COMPLETED",
+  "id": "{customer_id}",
+  "url": "https://localhost/api/v1_2/Order/getCustomer/{customer_id}"
+}
+```
 
 
 ### Post data

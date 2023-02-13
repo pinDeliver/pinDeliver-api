@@ -2,7 +2,21 @@
 
 ### Example
 
-
+```JSON
+{
+  "event": "ROUTE_WAS_LOCKED",
+  "id": "{route_id}",
+  "url": "https://localhost/api/v1_2/Route/get/{route_id}"
+}
+```
+```JSON
+{
+  "event": "LOADING_WAS_COMPLETED",
+  "id": "{route_id}",
+  "subroute_number": 1,
+  "url": "https://localhost/api/v1_2/Route/get/{route_id}"
+}
+```
 
 ### Post data
 ```JSON
