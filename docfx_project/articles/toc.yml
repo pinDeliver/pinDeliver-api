@@ -41,6 +41,8 @@
     href: crud_delivery_group/update_delivery_group.md
   - name: Delete
     href: crud_delivery_group/delete_delivery_group.md
+  - name: Events
+    href: crud_delivery_group/events_delivery_group.md
 
 - name: Order
   href: order.md
