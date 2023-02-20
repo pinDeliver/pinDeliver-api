@@ -44,8 +44,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/ge
     "customer": {
         "id": "{customer_id}",
         "order_id": "{order_id}",
-        "delivery_group": "Smallwood DG",
-        "name": "Steve Harris",
+        "delivery_group": "DeliveryGroup",
+        "name": "Anders Andersson",
         "language_code": "sv_SE",
         "postal_address": "Andra Långgatan 7",
         "zipcode": "41303",
@@ -122,8 +122,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/ge
     "customer": {
         "id": "{customer_id}",
         "order_id": "{order_id}",
-        "delivery_group": "Smallwood DG",
-        "name": "Steve Harris",
+        "delivery_group": "DeliveryGroup",
+        "name": "Anders Andersson",
         "language_code": "sv_SE",
         "postal_address": "Andra Långgatan 7",
         "zipcode": "41303",

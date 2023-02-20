@@ -1,7 +1,7 @@
 # Add carrier
 
 Not connected to any other API-requests. Needed to access the haulage portal if your company plans on using that.
-Can be connected to a [vehicle](/articles/crud_vehicle/add_vehicle.html) when adding a vehicle.
+Can be connected to a [vehicle](/articles/crud_vehicle/add_vehicle.html) when adding a vehicle and a [driver](/articles/crud_driver/add_driver.html) when adding a driver.
 
 ### Endpoint
 ```
@@ -28,7 +28,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/carrier/ad
 --header 'Content-Type: application/json' \
 --data-raw '{
     "carrier": {
-        "name": "TGG",
+        "name": "Carrier",
         "identifier": "Identifier"
     }
 }'
@@ -38,7 +38,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/carrier/ad
 ```JSON
 {
     "carrier": {
-        "name": "TGG",
+        "name": "Carrier",
         "identifier": "Identifier"
     }
 }
@@ -58,7 +58,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/carrier/ad
 ### Example success response
 ```JSON
 {
-    "vehicle": "TGG",
+    "vehicle": "Carrier",
     "result": "ok",
     "code": 200,
     "data": "{carrier_id}",
@@ -76,5 +76,5 @@ Fields marked with <font color='red'>*</font> are required
 
 |Property              |Type     |Description          |Example      |  
 |----------------------|---------|---------------------|-------------|
-|name<font color='red'>*</font>|string|Name of this carrier|TGG|
-|identifier<font color='red'>*</font>|string|Name of this carriers identifier|TGG-Identifier|
+|name<font color='red'>*</font>|string|Name of this carrier|Carrier|
+|identifier<font color='red'>*</font>|string|Name of this carriers identifier|Carrier-Identifier|

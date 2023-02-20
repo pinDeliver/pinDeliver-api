@@ -31,7 +31,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
         "order_id":{order_id},
         "route_id":{route_id},
         "position_in_route":1,
-        "name":"Steve Harris",
+        "name":"Anders Andersson",
         "postal_address":"Andra Långgatan 7",
         "city":"Göteborg",
         "service": {
@@ -47,7 +47,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
         "order_id":"{order_id}",
         "route_id":"{route_id}",
         "position_in_route":1,
-        "name":"Steve Harris",
+        "name":"Anders Andersson",
         "postal_address":"Andra Långgatan 7",
         "city":"Göteborg",
         "service": {
@@ -65,17 +65,17 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
 --data-raw '{
         "customer": {
             "order_id": {order_id},
-            "name": "Steve Harris",
+            "name": "Anders Andersson",
             "postal_address": "Rosenlundsgatan 7",
             "address_2": "Rosenlundsgatan 3",
             "zipcode": "41303",
             "city": "Göteborg",
-            "delivery_group": "Smallwood Group",
+            "delivery_group": "DeliveryGroup",
             "customer_number": "",
             "language_code": "sv_SE",
             "phone_cell": "0712345678",
             "phone_alt": "031234567",
-            "email": "steve@harris.com",
+            "email": "email@email.com",
             "position_lat": "57.700663864",
             "position_lng": "11.954662848",
             "customer_type": "b2c",
@@ -132,17 +132,17 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
 {
         "customer": {
             "order_id": "{order_id}",
-            "name": "Steve Harris",
+            "name": "Anders Andersson",
             "postal_address": "Rosenlundsgatan 7",
             "address_2": "Rosenlundsgatan 3",
             "zipcode": "41303",
             "city": "Göteborg",
-            "delivery_group": "Smallwood Group",
+            "delivery_group": "DeliveryGroup",
             "customer_number": "",
             "language_code": "sv_SE",
             "phone_cell": "0712345678",
             "phone_alt": "031234567",
-            "email": "steve@harris.com",
+            "email": "email@email.com",
             "position_lat": "57.700663864",
             "position_lng": "11.954662848",
             "customer_type": "b2c",
@@ -223,9 +223,9 @@ Fields marked with <font color='red'>*</font> are required
 
 |<div style="width:150px">Property</div>      |<div style="width:50px">Type</div>     |<div style="width:300px">Description</div>       |<div style="width:100px">Example</div>  |   
 |----------------------|---------|---------------------|-------------|
-|name<font color='red'>*</font>|string|Name of this costumer|Steve Harris|
+|name<font color='red'>*</font>|string|Name of this costumer|Anders Andersson|
 |order_id|string or null|Unique id for an order. Used to coennct a costumer to a specific order|123456|
-|delivery_group|string or null|Delivery group identifier. The delivery group must exist in pinDeliver, otherwise an error will be returned|Smallwood Group|
+|delivery_group|string or null|Delivery group identifier. The delivery group must exist in pinDeliver, otherwise an error will be returned|DeliveryGroup|
 |customer_number|string or null|Unique user id/customer number|ABC001|
 |language_code|string or null|Decides which language that is used on the customer page|sv_SE|
 |postal_address<font color='red'>*</font>|string|Customer address. Street address and number only|Rosenlundsgatan 7|
@@ -247,7 +247,7 @@ Fields marked with <font color='red'>*</font> are required
 |<div style="width:150px">Property</div>      |<div style="width:50px">Type</div>     |<div style="width:300px">Description</div>       |<div style="width:100px">Example</div>  |    
 |------------------|---------|---------------------|-------------|
 |type|string|Which type of delivery it is. Pickup or dropoff|dropoff|
-|pickup_identifier|string or null|Identifier used to connect a pikcup to a dropoff|Pickup-3|
+|pickup_identifier|string or null|Identifier used to connect a pickup to a dropoff|Pickup-3|
 |external_sender_id|string or null|Id that match customer id in the commerce system of the transporter|1 OR 101 OR 976|
 |sms_sender|string or null|Name of the sender of a SMS. Minimum 3, and maximum length of 11 characters. Only alphanumeric characters (A-Z and 0-9) are allowed, and first character must be a letter|pinDeliver|
 |sender_name|string or null|Customer friendly name to be used inside SMS messages|pinDeliver AB|

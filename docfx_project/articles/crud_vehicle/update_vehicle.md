@@ -27,8 +27,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/up
 --header 'Content-Type: application/json' \
 --data-raw '{
     "vehicle": {
-        "name": "Ed force two",
-        "delivery_group": "Smallwood DG",
+        "name": "Vehicle2",
+        "delivery_group": "DeliveryGroup",
         "timewindow_start": "08:30",
         "timewindow_end": "18:30",
         "start_location_address": "Valhallavägen 1, Göteborg, Sverige",
@@ -41,8 +41,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/up
 ```JSON
 {
     "vehicle": {
-        "name": "Ed force two",
-        "delivery_group": "Smallwood DG",
+        "name": "Vehicle2",
+        "delivery_group": "DeliveryGroup",
         "timewindow_start": "08:30",
         "timewindow_end": "18:30",
         "start_location_address": "Valhallavägen 1, Göteborg, Sverige",
@@ -65,7 +65,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/up
 ### Example success response
 ```JSON
 {
-    "vehicle": "Ed force two",
+    "vehicle": "Vehicle2",
     "result": "ok",
     "code": 200,
     "data": "{vehicle_id}",

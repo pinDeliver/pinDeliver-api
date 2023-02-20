@@ -4,7 +4,7 @@
       "src": [
         {
           "files": [
-            "articles**.md",
+            "**/*.csproj"
           ]
         }
       ],
@@ -17,9 +17,8 @@
     "content": [
       {
         "files": [
-          "articles/**/toc.yml",
-          "articles/**.md",
-          "articles/carrier.md"
+          "articles/**.yml",
+          "index.md"
         ]
       },
       {

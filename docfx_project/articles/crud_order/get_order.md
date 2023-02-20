@@ -51,7 +51,7 @@ Success Response
         "order_type": "DELIVERY",
         "scheduled_date": "1980-10-10",
         "created_date": "1980-10-10 21:00:00",
-        "delivery_group": "Smallwood DG",
+        "delivery_group": "DeliveryGroup",
         "status": "NOT_ROUTED",
         "num_customers": 0,
         "url": "https://cloud.pindeliver.com/api/v2_1/order/get/{order_id}"

@@ -43,8 +43,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/delivery_gr
 {
     "delivery_group": {
         "id": "{delivery_group_id}",
-        "name": "Smallwood Group",
-        "identifier": "Smallwood Identifier",
+        "name": "DeliveryGroup",
+        "identifier": "DeliveryGroupIdentifier",
         "base_stop_time": 5,
         "apartment_stop_time": 7,
         "depot_reload_time_minutes": 5,
@@ -93,8 +93,8 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/delivery_gr
     "delivery_groups": [
         {
           "id": "{delivery_group_id}",
-          "name": "Smallwood DG",
-          "identifier": "Smallwood DG",
+          "name": "DeliveryGroup",
+          "identifier": "DeliveryGroup",
           "base_stop_time": 5,
           "apartment_stop_time": 7,
           "depot_reload_time_minutes": 5,

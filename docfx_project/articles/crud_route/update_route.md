@@ -58,7 +58,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/Route/upda
 ### Example success response
 ```JSON
 {
-    "route": "Ed force one",
+    "route": "Vehicle1",
     "result": "ok",
     "status": 200,
     "data": "{route_id}",
@@ -76,7 +76,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/Route/upda
 |Property             |Type     |Description          |Example      |Default  |   
 |---------------------|---------|---------------------|-------------|---------|
 |name|string or null|Name of this route|Scandinavium|
-|predefined_route_name|string or null|Name for the predefined routes that is created through the haulage portal|4TGG5|
+|predefined_route_name|string or null|Name for the predefined routes that is created through the haulage portal|4Carrier5|
 |scheduled|string or null|The date a route is scheduled to start|1980-10-10T10:00:00.234+02:00|
 |vehicle|||Details below|
 
@@ -113,5 +113,5 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/Route/upda
 |max_distance|number or null|The max distance the driver can go. In kilometers|100|
 |break_duration|integer or null|The duration of a break|15|
 |speed_factor|integer or null|The speed in which the vehicle can drive. If it's a busy time, the speed is probably lower. Ranging from 0,5 to 2|0,8|
-|carrier|string or null|The name of the carrier|TGG|
+|carrier|string or null|The name of the carrier|Carrier|
 |carrier_id|integer or null|The id of the carrier|12345|

@@ -1,6 +1,6 @@
 # Add route
 
-Connected to an [order](/articles/crud_order/add_order.html) and a [vehicle](/articles/crud_vehicle/add_vehicle.html). Make sure you've created an order and a vehicle before creating a route
+Connected to an [order](/articles/crud_order/add_order.html), a [vehicle](/articles/crud_vehicle/add_vehicle.html) and a [driver](/articles/crud_driver/add_driver.html). Make sure you've created an order and a vehicle before creating a route. The driver can be created later on but you can't start a route without adding a driver.
 
 ### Endpoint
 ```
@@ -28,11 +28,11 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
 --data-raw '{
     "route": {
         "order_id": {route_id},
-        "name": "E1",
+        "name": "V1",
         "scheduled": "1980-10-10T10:00:00.234+02:00",
         "vehicle": {
-            "name": "Ed force one",
-            "delivery_group": "Smallwood DG",
+            "name": "Vehicle1",
+            "delivery_group": "DeliveryGroup",
             "start_location_address": "Järntorget, Göteborg, Sverige",
             "timewindow_start": "00:00",
             "timewindow_end": "23:59"
@@ -46,11 +46,11 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
 {
     "route": {
         "order_id": "{route_id}",
-        "name": "E1",
+        "name": "V1",
         "scheduled": "1980-10-10T10:00:00.234+02:00",
         "vehicle": {
-            "name": "Ed force one",
-            "delivery_group": "Smallwood DG",
+            "name": "Vehicle1",
+            "delivery_group": "DeliveryGroup",
             "start_location_address": "Järntorget, Göteborg, Sverige",
             "timewindow_start": "00:00",
             "timewindow_end": "23:59"
@@ -68,7 +68,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
 --data-raw '{
     "route": {
         "order_id": "{order_id}",
-        "name": "E1",
+        "name": "V1",
         "linehaul": false,
         "scheduled": "1980-10-10T10:00:00.234+02:00",
         "distance": 0,
@@ -86,8 +86,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
         "latest_lat": 0,
         "latest_lng": 0,
         "vehicle": {
-            "name": "Ed force one",
-            "delivery_group": "Smallwood DG",
+            "name": "Vehicle1",
+            "delivery_group": "DeliveryGroup",
             "start_location_address": "Järntorget, Göteborg, Sverige",
             "timewindow_start": "00:00",
             "timewindow_end": "23:59",
@@ -111,7 +111,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
 {
     "route": {
         "order_id": "{order_id}",
-        "name": "E1",
+        "name": "V1",
         "linehaul": false,
         "scheduled": "1980-10-10T10:00:00.234+02:00",
         "distance": 0,
@@ -129,8 +129,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
         "latest_lat": 0,
         "latest_lng": 0,
         "vehicle": {
-            "name": "Ed force one",
-            "delivery_group": "Smallwood DG",
+            "name": "Vehicle1",
+            "delivery_group": "DeliveryGroup",
             "start_location_address": "Järntorget, Göteborg, Sverige",
             "timewindow_start": "00:00",
             "timewindow_end": "23:59",
@@ -161,7 +161,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
 ### Example success response
 ```JSON
 {
-    "route": "E1",
+    "route": "V1",
     "result": "ok",
     "status": 200,
     "data": "{route_id}",
@@ -181,6 +181,6 @@ Fields marked with <font color='red'>*</font> are required
 |---------------------|---------|---------------------|-------------|
 |order_id<font color='red'>*</font>|integer|Id of the order that the route is added on to|12345|
 |name<font color='red'>*</font>|string|Name of this route|Scandinavium|
-|predefined_route_name|string or null|Name for the predefined routes that is created through the haulage portal|4TGG5|
+|predefined_route_name|string or null|Name for the predefined routes that is created through the haulage portal|4Carrier5|
 |scheduled<font color='red'>*</font>|string|The date a route is scheduled to start|1980-10-10T10:00:00.234+02:00|
 |vehicle<font color='red'>*</font>|||Details in [add vehicle](/articles/crud_vehicle/add_vehicle.html) under output format|

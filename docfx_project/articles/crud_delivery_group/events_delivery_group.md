@@ -7,7 +7,7 @@
   "event": "DELIVERY_GROUP_WAS_UPDATED",
   "id": "{delivery_group_id}",
   "url": "https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}",
-  "external_id": "Smallwood DG"
+  "external_id": "DeliveryGroup"
 }
 ```
 
@@ -18,7 +18,7 @@
   "event": "DELIVERY_GROUP_WAS_UPDATED",
   "id": "{delivery_group_id}",
   "url": "<api-2.1-url for delivery group>",
-  "external_id": "Smallwood DG"
+  "external_id": "DeliveryGroup"
 }
 ```
 ```JSON
@@ -26,7 +26,7 @@
   "event": "DELIVERY_GROUP_WAS_DELETED",
   "id": "{delivery_group_id}",
   "url": "<api-2.1-url for delivery group>",
-  "external_id": "Smallwood DG"
+  "external_id": "DeliveryGroup"
 }
 ```
 ```JSON
@@ -34,7 +34,7 @@
   "event": "DELIVERY_GROUP_WAS_CREATED",
   "id": "{delivery_group_id}",
   "url": "<api-2.1-url for delivery group>",
-  "external_id": "Smallwood DG"
+  "external_id": "DeliveryGroup"
 }
 ```
 

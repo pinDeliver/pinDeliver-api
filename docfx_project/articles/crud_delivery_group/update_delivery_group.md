@@ -28,7 +28,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_g
 --data-raw '{
     "delivery_group": {
 
-       "name": "Smallwood DG"
+       "name": "DeliveryGroup"
     }
 }'
 ```
@@ -38,7 +38,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_g
 {
     "delivery_group": {
 
-        "name": "Smallwood DG"
+        "name": "DeliveryGroup"
     }
 }
 ```
@@ -57,7 +57,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_g
 ### Example success response
 ```JSON
 {
-    "delivery_group": "Smallwood DG",
+    "delivery_group": "DeliveryGroup",
     "result": "ok",
     "code": 200,
     "data": "{delivery_group_id}",

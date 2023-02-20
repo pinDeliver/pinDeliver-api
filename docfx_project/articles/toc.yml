@@ -44,6 +44,20 @@
   - name: Events
     href: crud_delivery_group/events_delivery_group.md
 
+- name: Driver
+  href: driver.md
+  items:
+  - name: Add
+    href: crud_driver/add_driver.md
+  - name: Get
+    href: crud_driver/get_driver.md
+  - name: Update
+    href: crud_driver/update_driver.md
+  - name: Delete
+    href: crud_driver/delete_driver.md
+  - name: Events
+    href: crud_driver/events_driver.md
+
 - name: Order
   href: order.md
   items:
@@ -99,3 +113,13 @@
     href: crud_vehicle/delete_vehicle.md
   - name: Events
     href: crud_vehicle/events_vehicle.md
+
+- name: Vehicle type
+  href: vehicle_type.md
+  items:
+  - name: Add
+    href: crud_vehicle_type/add_vehicle_type.md
+  - name: Get
+    href: crud_vehicle_type/get_vehicle_type.md
+  - name: Delete
+    href: crud_vehicle_type/delete_vehicle_type.md

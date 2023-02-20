@@ -1,6 +1,6 @@
 # Add delivery group
 
-You need to create a delivery group before being able to create a [vehicle](/articles/crud_vehicle/add_vehicle.html)
+You need to create a delivery group before being able to create a [vehicle](/articles/crud_vehicle/add_vehicle.html) and a [driver](/articles/crud_driver/add_driver.html).
 
 ### Endpoint
 ```
@@ -28,8 +28,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_g
 --data-raw '{
     "delivery_group": {
 
-            "name": "Smallwood DG",
-            "identifier": "Smallwood DG"
+            "name": "DeliveryGroup",
+            "identifier": "DeliveryGroup"
     }
 }
 '
@@ -40,8 +40,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_g
 {
     "delivery_group": {
 
-            "name": "Smallwood DG",
-            "identifier": "Smallwood DG"
+            "name": "DeliveryGroup",
+            "identifier": "DeliveryGroup"
     }
 }
 ```
@@ -55,8 +55,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_g
 --data-raw '{
     "delivery_group": {
 
-            "name": "Smallwood Group",
-            "identifier": "Smallwood Identifier",
+            "name": "DeliveryGroup",
+            "identifier": "DeliveryGroupIdentifier",
             "base_stop_time": "5",
             "use_depots": true,
             "apartment_stop_time": "7",
@@ -78,8 +78,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_g
 {
     "delivery_group": {
 
-            "name": "Smallwood Group",
-            "identifier": "Smallwood Identifier",
+            "name": "DeliveryGroup",
+            "identifier": "DeliveryGroupIdentifier",
             "base_stop_time": "5",
             "use_depots": true,
             "apartment_stop_time": "7",
@@ -109,7 +109,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_g
 ### Example success response
 ```JSON
 {
-    "delivery_group": "Smallwood Group",
+    "delivery_group": "DeliveryGroup",
     "result": "ok",
     "code": 200,
     "data": "{delivery_group_id}",

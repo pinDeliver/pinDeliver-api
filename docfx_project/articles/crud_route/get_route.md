@@ -43,7 +43,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/get/{
     "route": {
         "id": "{route_id}",
         "order_id": "{order_id}",
-        "name": "E1",
+        "name": "V1",
         "linehaul": false,
         "scheduled_start_time": "1980-10-10 10:00:00",
         "distance": 0,
@@ -61,7 +61,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/get/{
         "latest_lat": 0,
         "latest_lng": 0,
         "vehicle": {
-            "name": "Ed force one",
+            "name": "Vehicle1",
             "timewindow_start": "00:00",
             "timewindow_end": "23:59",
             "start_lat": 57.6995883,
@@ -118,7 +118,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/Route/get' 
         {
             "id": "{route_id}",
             "order_id": "{order_id}",
-            "name": "Ed force one",
+            "name": "Vehicle1",
             "linehaul": false,
             "scheduled_start_time": "1980-10-10 06:50:37",
             "scheduled_end_time": "1980-10-10 07:28:17",
@@ -140,7 +140,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/Route/get' 
             "latest_lng": 0,
             "vehicle": {
                 "id": 1013,
-                "name": "Ed force one",
+                "name": "Vehicle1",
                 "timewindow_start": "06:00",
                 "timewindow_end": "18:00",
                 "start_lat": 57.71066339999999,

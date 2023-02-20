@@ -26,7 +26,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/s
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "name": "Steve Harris",
+    "name": "Anders Andersson",
     "city": "Göteborg"
 
 }'
@@ -35,7 +35,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/s
 ### Example data
 ```JSON
 {
-    "name": "Steve Harris",
+    "name": "Anders Andersson",
     "city": "Göteborg"
 
 }
@@ -53,8 +53,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/s
         {
           "id": "{customer_id}",
           "order_id": "{order_id}",
-          "delivery_group": "Smallwood DG",
-          "name": "Steve Harris",
+          "delivery_group": "DeliveryGroup",
+          "name": "Anders Andersson",
           "language_code": "sv_SE",
           "postal_address": "Andra Långgatan 17",
           "zipcode": "",

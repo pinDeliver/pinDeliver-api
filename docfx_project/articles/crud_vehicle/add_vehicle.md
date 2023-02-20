@@ -1,6 +1,6 @@
 # Add vehicle
 
-Connected to a [delivery group](/articles/crud_delivery_group/add_delivery_group.html). Make sure you've created a delivery group before creating a vehicle. A vehicle is needed before [adding a route](/articles/crud_route/add_route.html).
+Connected to a [delivery group](/articles/crud_delivery_group/add_delivery_group.html). Make sure you've created a delivery group before creating a vehicle. A vehicle is needed before [adding a route](/articles/crud_route/add_route.html). Can be connected to a [driver](/articles/crud_driver/add_driver.html) and a [vehicle type](/articles/crud_vehicle_type/add_vehicle_type.html).
 
 ### Endpoint
 ```
@@ -27,8 +27,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/ad
 --header 'Content-Type: application/json' \
 --data-raw '{
     "vehicle": {
-        "name": "Ed force one",
-        "delivery_group": "Smallwood DG",
+        "name": "Vehicle1",
+        "delivery_group": "DeliveryGroup",
         "timewindow_start": "08:30",
         "start_location_address": "Valhallavägen 1, Göteborg, Sverige"
     }
@@ -39,8 +39,8 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/ad
 ```JSON
 {
     "vehicle": {
-        "name": "Ed force one",
-        "delivery_group": "Smallwood DG",
+        "name": "Vehicle1",
+        "delivery_group": "DeliveryGroup",
         "timewindow_start": "08:30",
         "start_location_address": "Valhallavägen 1, Göteborg, Sverige"
     }
@@ -55,9 +55,9 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/ad
 --header 'Content-Type: application/json' \
 --data-raw '{
     "vehicle": {
-        "name": "Ed force one",
+        "name": "Vehicle1",
         "number_of_resources": 1,
-        "delivery_group": "Smallwood DG",
+        "delivery_group": "DeliveryGroup",
         "timewindow_start": "08:30",
         "timewindow_end": "23:45",
         "break_duration": 5,
@@ -76,9 +76,9 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/ad
 ```JSON
 {
     "vehicle": {
-        "name": "Ed force one",
+        "name": "Vehicle1",
         "number_of_resources": 1,
-        "delivery_group": "Smallwood DG",
+        "delivery_group": "DeliveryGroup",
         "timewindow_start": "08:30",
         "timewindow_end": "23:45",
         "break_duration": 5,
@@ -107,7 +107,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/ad
 ### Example success response
 ```JSON
 {
-    "vehicle": "Ed force one",
+    "vehicle": "Vehicle1",
     "result": "ok",
     "code": 200,
     "data": "{vehicle_id}",

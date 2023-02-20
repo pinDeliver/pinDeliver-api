@@ -19,13 +19,14 @@ pinDeliver's next generation Transportation Management System (TMS) is a cloud-b
 # Workflow
 
 The requests for sender and carrier are completely optional to create. There are already existing senders you can use when adding a customer order. Carrier can be used when creating a vehicle but it is not essential to make a vehicle work.
+The request for vehicle type works in a similar way. It is optional to create and can be connected to a vehicle but it is not necessary to create it to make a vehicle work.
 
-The other two requests on the left side, delivery group and vehicle are non-optional but you still only need to create them one time. Once these two, and eventually sender and carrier, are created you don't need to use those requests anymore if you don't want to.
+The other three requests on the left side, delivery group, driver and vehicle are non-optional but you still only need to create them one time. Once these three, and eventually sender, carrier and vehicle type, are created you don't need to use those requests anymore if you don't want to. If you want to you can connect the driver to one or more vehicles but that is completely optional.
 
-The four requests one the right side of the chart below; order, customer order, package and route are requests that can be iterated for as many times as you need them.
+The four requests one the right side of the chart below; routing order, customer order, package and route are requests that can be iterated for as many times as you need them.
 
 A reasonable way to use our API-requests would be to start with, if you plan on using it, setting up a carrier.
-Then continue with creating x amount of delivery groups and vehicles.
-Once a delivery group is created you can proceed with adding an order followed by a customer order with packages and eventually a sender in the same request.
+Then continue with creating x amount of delivery groups, drivers and vehicles. After a vehicle is created you can proceed with creating a vehicle type and connect it to the vehicle.
+Once a delivery group is created you can proceed with adding a routing order followed by a customer order with packages and eventually a sender in the same request.
 
-![Flowchart](/images/flowchartAll.jpg)
+![Flowchart](/images/flowchart_all.jpg)

@@ -30,7 +30,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/addC
         "customers": [
         {
             "id": {customer_id},
-            "name": "Steve Harris",
+            "name": "Anders Andersson",
             "postal_address": "Andra Långgatan 17",
             "city": "Göteborg",
             "service": {
@@ -46,7 +46,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/addC
         "customers": [
         {
             "id": "{customer_id}",
-            "name": "Steve Harris",
+            "name": "Anders Andersson",
             "postal_address": "Andra Långgatan 17",
             "city": "Göteborg",
             "service": {
@@ -86,9 +86,9 @@ Fields marked with <font color='red'>*</font> are required
 
 |Property              |Type     |Description          |Example      |  
 |----------------------|---------|---------------------|-------------|
-|name<font color='red'>*</font>|string|Name of this costumer|Steve Harris|
+|name<font color='red'>*</font>|string|Name of this costumer|Anders Andersson|
 |order_id|string or null|Unique id for an order. Used to coennct a costumer to a specific order|123456|
-|delivery_group|string or null|Delivery group identifier. The delivery group must exist in pinDeliver, otherwise an error will be returned|Smallwood Group|
+|delivery_group|string or null|Delivery group identifier. The delivery group must exist in pinDeliver, otherwise an error will be returned|DeliveryGroup|
 |customer_number|string or null|Unique user id/customer number|ABC001|
 |language_code|string or null|Decides which language that is used on the customer page|sv_SE|
 |postal_address<font color='red'>*</font>|string|Customer address. Street address and number only|Rosenlundsgatan 7|

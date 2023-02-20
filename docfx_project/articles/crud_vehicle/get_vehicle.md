@@ -43,9 +43,9 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/vehicle/get
 {
     "vehicle": {
         "id": "{vehicle_id}",
-        "name": "Ed force one",
+        "name": "Vehicle1",
         "number_of_resources": 1,
-        "delivery_group": "Smallwood DG",
+        "delivery_group": "DeliveryGroup",
         "timewindow_start": "08:30",
         "timewindow_end": "18:30",
         "break_duration": 0,
@@ -99,9 +99,9 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/vehicle/get
     "vehicles": [
         {
             "id": "{vehicle_id}",
-            "name": "Ed force one",
+            "name": "Vehicle1",
             "number_of_resources": 1,
-            "delivery_group": "Smallwood DG",
+            "delivery_group": "DeliveryGroup",
             "timewindow_start": "08:30",
             "timewindow_end": "18:30",
             "break_duration": 0,

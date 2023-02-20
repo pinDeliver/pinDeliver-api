@@ -43,7 +43,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/carrier/get
     "carrier": {
         "id": "{carrier_id}",
         "identifier": "Identifier",
-        "name": "TGG"
+        "name": "Carrier"
     }
 }
 ```
@@ -95,7 +95,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/carrier/get
     "carrier": {
         "id": "{carrier_id}",
         "identifier": "Identifier",
-        "name": "TGG"
+        "name": "Carrier"
     }
 }
 ```
@@ -137,7 +137,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/carrier/get
         {
             "id": "{carrier_id}",
             "identifier": "Identifier",
-            "name": "TGG"
+            "name": "Carrier"
         }
     ]
 }
