@@ -30,7 +30,7 @@ Before I tell you about all the extra syntaxes and capabilities I have, I'll int
 ### Line Breaks
 To force a line break, put two spaces and a newline (return) at the end of the line.
 
-* This two-line bullet 
+* This two-line bullet
 won't break
 
 * This two-line bullet  
@@ -39,7 +39,7 @@ will break
 Here is the code:
 
 ```
-* This two-line bullet 
+* This two-line bullet
 won't break
 
 * This two-line bullet  
@@ -87,7 +87,7 @@ Sometimes it looks too messy to include big long urls inline, or you want to kee
 
 Make [a link][arbitrary_id] `[a link][arbitrary_id]` then on it's own line anywhere else in the file:  
 `[arbitrary_id]: http://macdown.uranusjr.com "Title"`
-  
+
 If the link text itself would make a good id, you can link [like this][] `[like this][]`, then on it's own line anywhere else in the file:  
 `[like this]: http://macdown.uranusjr.com`  
 
@@ -161,8 +161,8 @@ there are no empty lines between paragraphs.
 > * [Links][arbitrary_id]
 > * Etc.
 ```
-  
-  
+
+
 ### Inline Code
 `Inline code` is indicated by surrounding it with backticks:  
 `` `Inline code` ``
@@ -253,7 +253,7 @@ Superscript         | hoge\^(fuga)     | hoge<sup>fuga</sup>   |
 Autolink            | http://t.co      | <http://t.co>         |
 Footnotes           | [\^4] and [\^4]: | [^4] and footnote 4   |
 
-[^4]: You don't have to use a number. Arbitrary things like `[^footy note4]` and `[^footy note4]:` will also work. But they will *render* as numbered footnotes. Also, no need to keep your footnotes in order, I will sort out the order for you so they appear in the same order they were referenced in the text body. You can even keep some footnotes near where you referenced them, and collect others at the bottom of the file in the traditional place for footnotes. 
+[^4]: You don't have to use a number. Arbitrary things like `[^footy note4]` and `[^footy note4]:` will also work. But they will *render* as numbered footnotes. Also, no need to keep your footnotes in order, I will sort out the order for you so they appear in the same order they were referenced in the text body. You can even keep some footnotes near where you referenced them, and collect others at the bottom of the file in the traditional place for footnotes.
 
 
 
@@ -337,12 +337,10 @@ That’s about it. Thanks for listening. I’ll be quiet from now on (unless the
 Happy writing!
 
 
-[^emphasize]: If **Underlines** is turned on, `_this notation_` will render as underlined instead of emphasized 
+[^emphasize]: If **Underlines** is turned on, `_this notation_` will render as underlined instead of emphasized
 
 [^under]: If **Underline** is disabled `_this_` will be rendered as *emphasized* instead of being underlined.
 
 [^quote]: **Quote** replaces literal `"` characters with html `<q>` tags. **Quote** and **Smartypants** are syntactically incompatible. If both are enabled, **Quote** takes precedence. Note that **Quote** is different from *blockquote*, which is part of standard Markdown.
 
 [^math]: Internet connection required.
-
-
