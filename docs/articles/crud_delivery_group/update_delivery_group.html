@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -57,14 +57,21 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="update-delivery-group">Update delivery group</h1>
 
-<p>Brödtext</p>
+<p>Used to update a delivery group using the delivery group id</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_0/delivery_group/update/{delivery_group_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_1/delivery_group/update/{delivery_group_id}
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -75,7 +82,7 @@
 <pre><code>POST
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/delivery_group/update/{delivery_group_id}' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_group/update/{delivery_group_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -109,9 +116,75 @@
     &quot;result&quot;: &quot;ok&quot;,
     &quot;code&quot;: 200,
     &quot;data&quot;: &quot;{delivery_group_id}&quot;,
-    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}&quot;
+    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}&quot;
 }
 </code></pre>
+<hr>
+<h1 id="input-format">Input format</h1>
+<hr>
+<h1 id="input-format-1">Input format</h1>
+<h3 id="delivery-group-object-properties">Delivery Group object properties</h3>
+<p>Fields marked with <font color='red'>*</font> are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name<font color='red'>*</font></td>
+<td>string</td>
+<td>Name of this delivery group.</td>
+<td>Göteborg</td>
+</tr>
+<tr>
+<td>identifier<font color='red'>*</font></td>
+<td>string or null</td>
+<td>Unique identifier of this delivery group. <br><font color='red'>If identifier is null the identifier will be set to this delivery group name.</font></td>
+<td>Göteborg</td>
+</tr>
+<tr>
+<td>base_stop_time</td>
+<td>integer</td>
+<td>Base stop time of this delivery group to be used in an optimization.</td>
+<td>5</td>
+</tr>
+<tr>
+<td>apartment_stop_time</td>
+<td>integer</td>
+<td>&quot;base_stop_time&quot; + &quot;apartment_stop_time&quot; equals the total stop time for customer who live in apartments, used in an optimization.</td>
+<td>2</td>
+</tr>
+<tr>
+<td>depot_reload_time_minutes</td>
+<td>integer</td>
+<td>Number of minutes it takes to reload a vehicle at a depot stop, used in an optimization.</td>
+<td>65</td>
+</tr>
+<tr>
+<td>depot_address</td>
+<td>string</td>
+<td>The address where the depot is located.</td>
+<td>Nils Ericsonsplatsen 3, 411 03 Göteborg</td>
+</tr>
+<tr>
+<td>depot_location_latitude</td>
+<td>number</td>
+<td>The latitude where the depot is located.</td>
+<td>57.7091409</td>
+</tr>
+<tr>
+<td>depot_location_longitude</td>
+<td>number</td>
+<td>The longitude where the depot is located.</td>
+<td>11.9712367</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

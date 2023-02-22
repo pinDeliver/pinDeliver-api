@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -57,12 +57,20 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="add-order">Add order</h1>
 
-<p>Brödtext</p>
+<p>Make sure a <a href="/articles/crud_delivery_group/add_delivery_group.html">delivery group</a> is created before creating an order.
+You need to create an order before being able to create a <a href="/articles/crud_route/add_route.html">route</a>.</p>
 <h3 id="endpoint">Endpoint</h3>
 <pre><code>https://cloud.pindeliver.com/api/v2_1/order/add
 </code></pre>
@@ -144,6 +152,52 @@
     &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/Order/get/{order_id}&quot;
 }
 </code></pre>
+<hr>
+<h1 id="output-format">Output format</h1>
+<h3 id="order-object-properties">Order Object Properties</h3>
+<p>Fields marked with <font color='red'>*</font> are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name<font color='red'>*</font></td>
+<td>string</td>
+<td>Order name</td>
+<td>Scandinavium 1980-10-10</td>
+</tr>
+<tr>
+<td>delivery_group<font color='red'>*</font></td>
+<td>string</td>
+<td>Delivery group identifier. The delivery group must exist in pinDeliver, otherwise an error will be returned</td>
+<td>DeliveryGroup</td>
+</tr>
+<tr>
+<td>order_type<font color='red'>*</font></td>
+<td>string</td>
+<td>Order type identifier which can be either DELIVERY or PICKUP. If set to PICKUP the stop_time will automatically be set to 0</td>
+<td>DELIVERY</td>
+</tr>
+<tr>
+<td>scheduled_date<font color='red'>*</font></td>
+<td>string</td>
+<td>The scheduled date for the delivery in ISO 8601 format</td>
+<td>1980-10-10</td>
+</tr>
+<tr>
+<td>customer</td>
+<td></td>
+<td></td>
+<td>Details in <a href="/articles/crud_customer/add_customer_order.html">add customer order</a> under output format</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

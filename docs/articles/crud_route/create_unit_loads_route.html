@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -57,12 +57,19 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="create-route-with-unit-loads">Create route with unit loads</h1>
 
-<p>Brödtext</p>
+<p>Used to to create unit loads on a route using a route id</p>
 <h3 id="endpoint">Endpoint</h3>
 <pre><code>https://cloud.pindeliver.com/api/v2_1/route/create_unit_loads/{route_id}
 </code></pre>
@@ -75,16 +82,13 @@
 <pre><code>POST
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">
-</code></pre>
-<h3 id="example-data">Example data</h3>
-<pre><code class="lang-JSON">
-</code></pre>
-<h3 id="example-error-response">Example error response</h3>
-<pre><code class="lang-JSON">
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/create_unit_loads/{route_id}' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--data-raw ''
 </code></pre>
 <h3 id="example-success-response">Example success response</h3>
-<pre><code class="lang-JSON">
+<pre><code class="lang-JSON">[]
 </code></pre>
 </article>
           </div>

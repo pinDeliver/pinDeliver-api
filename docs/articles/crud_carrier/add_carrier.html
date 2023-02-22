@@ -5,17 +5,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Create a carrier </title>
+    <title>Add carrier </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Create a carrier ">
+    <meta name="title" content="Add carrier ">
     <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -57,14 +57,22 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="create-a-carrier">Create a carrier</h1>
+<h1 id="add-carrier">Add carrier</h1>
 
-<p>Brödtext</p>
+<p>Not connected to any other API-requests. Needed to access the haulage portal if your company plans on using that.
+Can be connected to a <a href="/articles/crud_vehicle/add_vehicle.html">vehicle</a> when adding a vehicle and a <a href="/articles/crud_driver/add_driver.html">driver</a> when adding a driver.</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_0/carrier/add
+<pre><code>https://cloud.pindeliver.com/api/v2_1/carrier/add
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -75,7 +83,7 @@
 <pre><code>POST
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/carrier/add' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/carrier/add' \
 --header 'X-PINDELIVER-API-KEY: 1212-1212-1212-1212' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: 10c94858-8978-11ec-a2e8-005056011cb5' \
 --header 'Content-Type: application/json' \
@@ -109,9 +117,37 @@
     &quot;result&quot;: &quot;ok&quot;,
     &quot;code&quot;: 200,
     &quot;data&quot;: &quot;{carrier_id}&quot;,
-    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/carrier/get/{carrier_id}&quot;
+    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/carrier/get/{carrier_id}&quot;
 }
 </code></pre>
+<hr>
+<h1 id="output-format">Output format</h1>
+<h3 id="carrier-object-properties">Carrier Object Properties</h3>
+<p>Fields marked with <font color='red'>*</font> are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name<font color='red'>*</font></td>
+<td>string</td>
+<td>Name of this carrier</td>
+<td>Carrier</td>
+</tr>
+<tr>
+<td>identifier<font color='red'>*</font></td>
+<td>string</td>
+<td>Name of this carriers identifier</td>
+<td>Carrier-Identifier</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -57,12 +57,19 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="update-packages-on-customer">Update packages on customer</h1>
 
-<p>Brödtext</p>
+<p>Used to update packages on an existing customer using the customer id</p>
 <h3 id="endpoint">Endpoint</h3>
 <pre><code>https://cloud.pindeliver.com/api/v2_1/customer/updatePackages/{customer_id}
 </code></pre>
@@ -121,8 +128,9 @@
     &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}&quot;
 }
 </code></pre>
+<hr>
 <h1 id="update-packages-on-customer-using-external-id">Update packages on customer using external id</h1>
-<p>Brödtext</p>
+<p>Used to update packages on an existing customer using the customer external id</p>
 <h3 id="endpoint-1">Endpoint</h3>
 <pre><code>https://cloud.pindeliver.com/api/v2_1/customer/updatePackages/extid/{external_id}
 </code></pre>
@@ -181,6 +189,34 @@
     &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}&quot;
 }
 </code></pre>
+<hr>
+<h1 id="output-format">Output format</h1>
+<h3 id="customer-object-properties">Customer Object Properties</h3>
+<p>Fields marked with <font color='red'>*</font> are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>packages<font color='red'>*</font></td>
+<td></td>
+<td></td>
+<td>Details in <a href="/articles/crud_package/update_package.html">update package</a> under output format</td>
+</tr>
+<tr>
+<td>status</td>
+<td>string or null</td>
+<td></td>
+<td>delivered</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

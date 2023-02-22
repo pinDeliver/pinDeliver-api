@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -57,14 +57,21 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="get-delivery-group">Get delivery group</h1>
 
-<p>Brödtext</p>
+<p>Used to retrieve a delivery group using the delivery group id</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -75,7 +82,7 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}' \
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -101,14 +108,15 @@
         &quot;depot_address&quot;: &quot;Valhallavägen 1, 41251 Göteborg&quot;,
         &quot;depot_location_latitude&quot;: 57.699312,
         &quot;depot_location_longitude&quot;: 11.987573,
-        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}&quot;
+        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}&quot;
     }
 }
 </code></pre>
+<hr>
 <h1 id="get-all-delivery-groups">Get all delivery groups</h1>
-<p>Brödtext</p>
+<p>Used to retrieve all delivery groups</p>
 <h3 id="endpoint-1">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_0/delivery_group/get
+<pre><code>https://cloud.pindeliver.com/api/v2_1/delivery_group/get
 </code></pre>
 <h3 id="authentication-1">Authentication</h3>
 <pre><code>Headers:
@@ -119,7 +127,7 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request-1">Example request</h3>
-<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/delivery_group/get' \
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/delivery_group/get' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -137,7 +145,7 @@
           &quot;depot_address&quot;: &quot;Valhallavägen 1, 41251 Göteborg&quot;,
           &quot;depot_location_latitude&quot;: 57.699312,
           &quot;depot_location_longitude&quot;: 11.987573,
-          &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}&quot;
+          &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}&quot;
         }
     ]
 }

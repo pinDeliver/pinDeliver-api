@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -57,12 +57,19 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="get-route">Get route</h1>
 
-<p>Brödtext</p>
+<p>Used to retrieve a route using the route id</p>
 <h3 id="endpoint">Endpoint</h3>
 <pre><code>https://cloud.pindeliver.com/api/v2_1/route/get/{route_id}
 </code></pre>
@@ -93,7 +100,7 @@
     &quot;route&quot;: {
         &quot;id&quot;: &quot;{route_id}&quot;,
         &quot;order_id&quot;: &quot;{order_id}&quot;,
-        &quot;name&quot;: &quot;E1&quot;,
+        &quot;name&quot;: &quot;V1&quot;,
         &quot;linehaul&quot;: false,
         &quot;scheduled_start_time&quot;: &quot;1980-10-10 10:00:00&quot;,
         &quot;distance&quot;: 0,
@@ -129,8 +136,9 @@
     }
 }
 </code></pre>
+<hr>
 <h1 id="get-all-routes">Get all routes</h1>
-<p>Brödtext</p>
+<p>Used to retrieve all routes</p>
 <h3 id="endpoint-1">Endpoint</h3>
 <pre><code>https:/cloud.pindeliver.com/api/v2_1/Route/get
 </code></pre>
@@ -194,6 +202,44 @@
     &quot;exec_time&quot;: 0.053381919860839844
 }
 </code></pre>
+<hr>
+<h1 id="query-parameters">Query parameters</h1>
+<h3 id="endpoint-example">Endpoint example</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/route/get/{route_id}?all
+</code></pre>
+<p>If you want to use multiple parameters at the same time you can add them after the first parameter using &quot;&amp;&quot;.
+For example: ?all&amp;order&amp;routes.</p>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>?all</td>
+<td>Get all info for the specific route</td>
+</tr>
+<tr>
+<td>?order</td>
+<td>Get orders for the specific route</td>
+</tr>
+<tr>
+<td>?routes</td>
+<td>Get routes for the specific route</td>
+</tr>
+<tr>
+<td>?stops</td>
+<td>Get stops for the specific route</td>
+</tr>
+<tr>
+<td>?customer</td>
+<td>Get customers for the specific route</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -57,12 +57,19 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="search-customer">Search customer</h1>
 
-<p>Brödtext</p>
+<p>Used to search for a customer. Two search parameters are needed</p>
 <h3 id="endpoint">Endpoint</h3>
 <pre><code>https://cloud.pindeliver.com/api/v2_1/customer/search
 </code></pre>
@@ -131,6 +138,149 @@
   ]
 }
 </code></pre>
+<hr>
+<h1 id="input-format">Input format</h1>
+<h3 id="search-object-properties">Search Object Properties</h3>
+<p>At least 2 search fields are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The customers first and last name</td>
+<td>John Doe</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>external_sender_id</td>
+<td>string</td>
+<td>Unique identifier for sender</td>
+<td>pinDeliver</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>requested_delivery_from_date</td>
+<td>string</td>
+<td>The customers requested_delivery_date must be equal to or greater then from_date.</td>
+<td>YYYY-mm-dd</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>requested_delivery_to_date</td>
+<td>string</td>
+<td>The customers requested_delivery_date must be equal to or less then from_date.</td>
+<td>YYYY-mm-dd</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>phone_cell</td>
+<td>string</td>
+<td>Customer cellphone number.</td>
+<td>0701-12 34 56</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Customer email address.</td>
+<td>name@example.com</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>city</td>
+<td>string</td>
+<td>Customer address city.</td>
+<td>Göteborg</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>postal_address</td>
+<td>string</td>
+<td>Customer postal address street</td>
+<td>Nils Ericsonsplatsen 3</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>zipcode</td>
+<td>string</td>
+<td>Customer address zip code.</td>
+<td>41103</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>order_id</td>
+<td>integer</td>
+<td>Search only customers who belong to an order.</td>
+<td>1337</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>hub_id</td>
+<td>string</td>
+<td>Search only customers who belong to hub.</td>
+<td>1 or a101 or ABC-123</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>stop_type</td>
+<td>enum</td>
+<td>Search only customers who have stop_type.</td>
+<td>dropoff or pickup or collect</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>vehicle_tags</td>
+<td>string</td>
+<td>Tags used for pairing delivery with specific vehicle(s).</td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>timewindow_from</td>
+<td>string</td>
+<td>The customers requested timewindow start.</td>
+<td>HH:ii</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>timewindow_to</td>
+<td>string</td>
+<td>The customers requested timewindow end.</td>
+<td>HH:ii</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>pickup_identifier</td>
+<td>string</td>
+<td>Search only customers who share the same pickup point.</td>
+<td>ABC-123</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>customer_number</td>
+<td>string</td>
+<td>The customers customer_number.</td>
+<td>123abc</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>reference</td>
+<td>string</td>
+<td>The customers reference.</td>
+<td>abc123</td>
+<td>NULL</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

@@ -1,33 +1,12 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": [
-            "**/*.csproj"
-          ]
-        }
-      ],
-      "dest": "api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false
-    }
-  ],
   "build": {
     "content": [
-      {
-        "files": [
-          "articles/**.yml",
-          "index.md"
-        ]
-      },
       {
         "files": [
           "articles/**.md",
           "articles/**/toc.yml",
           "toc.yml",
-          "*.md"
-        ]
+          "*.md"        ]
       }
     ],
     "resource": [
@@ -40,12 +19,11 @@
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
-    ],
+      "default"    ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
@@ -55,7 +33,6 @@
     "globalMetadata":
     {
       "_disableContribution": true,
-      "_appFooter": "<span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>"
-    },
+      "_appFooter": "<span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>"    },
   }
 }

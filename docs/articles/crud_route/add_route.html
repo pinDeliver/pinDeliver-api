@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -57,12 +57,19 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="add-route">Add route</h1>
 
-<p>Brödtext</p>
+<p>Connected to an <a href="/articles/crud_order/add_order.html">order</a>, a <a href="/articles/crud_vehicle/add_vehicle.html">vehicle</a> and a <a href="/articles/crud_driver/add_driver.html">driver</a>. Make sure you've created an order and a vehicle before creating a route. The driver can be created later on but you can't start a route without adding a driver.</p>
 <h3 id="endpoint">Endpoint</h3>
 <pre><code>https://cloud.pindeliver.com/api/v2_1/route/add
 </code></pre>
@@ -82,7 +89,7 @@
 --data-raw '{
     &quot;route&quot;: {
         &quot;order_id&quot;: {route_id},
-        &quot;name&quot;: &quot;E1&quot;,
+        &quot;name&quot;: &quot;V1&quot;,
         &quot;scheduled&quot;: &quot;1980-10-10T10:00:00.234+02:00&quot;,
         &quot;vehicle&quot;: {
             &quot;name&quot;: &quot;Vehicle1&quot;,
@@ -98,7 +105,7 @@
 <pre><code class="lang-JSON">{
     &quot;route&quot;: {
         &quot;order_id&quot;: &quot;{route_id}&quot;,
-        &quot;name&quot;: &quot;E1&quot;,
+        &quot;name&quot;: &quot;V1&quot;,
         &quot;scheduled&quot;: &quot;1980-10-10T10:00:00.234+02:00&quot;,
         &quot;vehicle&quot;: {
             &quot;name&quot;: &quot;Vehicle1&quot;,
@@ -118,7 +125,7 @@
 --data-raw '{
     &quot;route&quot;: {
         &quot;order_id&quot;: &quot;{order_id}&quot;,
-        &quot;name&quot;: &quot;E1&quot;,
+        &quot;name&quot;: &quot;V1&quot;,
         &quot;linehaul&quot;: false,
         &quot;scheduled&quot;: &quot;1980-10-10T10:00:00.234+02:00&quot;,
         &quot;distance&quot;: 0,
@@ -159,7 +166,7 @@
 <pre><code class="lang-JSON">{
     &quot;route&quot;: {
         &quot;order_id&quot;: &quot;{order_id}&quot;,
-        &quot;name&quot;: &quot;E1&quot;,
+        &quot;name&quot;: &quot;V1&quot;,
         &quot;linehaul&quot;: false,
         &quot;scheduled&quot;: &quot;1980-10-10T10:00:00.234+02:00&quot;,
         &quot;distance&quot;: 0,
@@ -205,13 +212,59 @@
 </code></pre>
 <h3 id="example-success-response">Example success response</h3>
 <pre><code class="lang-JSON">{
-    &quot;route&quot;: &quot;E1&quot;,
+    &quot;route&quot;: &quot;V1&quot;,
     &quot;result&quot;: &quot;ok&quot;,
     &quot;status&quot;: 200,
     &quot;data&quot;: &quot;{route_id}&quot;,
     &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/Route/get/{route_id}&quot;
 }
 </code></pre>
+<hr>
+<h1 id="output-format">Output format</h1>
+<h3 id="route-object-properties">Route Object Properties</h3>
+<p>Fields marked with <font color='red'>*</font> are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>order_id<font color='red'>*</font></td>
+<td>integer</td>
+<td>Id of the order that the route is added on to</td>
+<td>12345</td>
+</tr>
+<tr>
+<td>name<font color='red'>*</font></td>
+<td>string</td>
+<td>Name of this route</td>
+<td>Scandinavium</td>
+</tr>
+<tr>
+<td>predefined_route_name</td>
+<td>string or null</td>
+<td>Name for the predefined routes that is created through the haulage portal</td>
+<td>4Carrier5</td>
+</tr>
+<tr>
+<td>scheduled<font color='red'>*</font></td>
+<td>string</td>
+<td>The date a route is scheduled to start</td>
+<td>1980-10-10T10:00:00.234+02:00</td>
+</tr>
+<tr>
+<td>vehicle<font color='red'>*</font></td>
+<td></td>
+<td></td>
+<td>Details in <a href="/articles/crud_vehicle/add_vehicle.html">add vehicle</a> under output format</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

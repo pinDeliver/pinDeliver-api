@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -57,14 +57,21 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="update-vehicle">Update vehicle</h1>
 
-<p>Brödtext</p>
+<p>Used to update a vehicle using the vehicle id</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_0/vehicle/update/{vehicle_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_1/vehicle/update/{vehicle_id}
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -75,7 +82,7 @@
 <pre><code>POST
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/vehicle/update/{vehicle_id}' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/update/{vehicle_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -86,7 +93,7 @@
         &quot;timewindow_start&quot;: &quot;08:30&quot;,
         &quot;timewindow_end&quot;: &quot;18:30&quot;,
         &quot;start_location_address&quot;: &quot;Valhallavägen 1, Göteborg, Sverige&quot;,
-        &quot;end_location_address&quot;: &quot;Ullevigatan, Göteborg, Sverige&quot;
+        &quot;end_location_address&quot;: &quot;Ullevigatan 5, Göteborg, Sverige&quot;
     }
 }'
 </code></pre>
@@ -98,7 +105,7 @@
         &quot;timewindow_start&quot;: &quot;08:30&quot;,
         &quot;timewindow_end&quot;: &quot;18:30&quot;,
         &quot;start_location_address&quot;: &quot;Valhallavägen 1, Göteborg, Sverige&quot;,
-        &quot;end_location_address&quot;: &quot;Ullevigatan, Göteborg, Sverige&quot;
+        &quot;end_location_address&quot;: &quot;Ullevigatan 5, Göteborg, Sverige&quot;
     }
 }
 </code></pre>
@@ -117,9 +124,187 @@
     &quot;result&quot;: &quot;ok&quot;,
     &quot;code&quot;: 200,
     &quot;data&quot;: &quot;{vehicle_id}&quot;,
-    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}&quot;
+    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}&quot;
 }
 </code></pre>
+<hr>
+<h1 id="output-format">Output format</h1>
+<h3 id="vehicle-object-properties">Vehicle Object Properties</h3>
+<p>Fields marked with <font color='red'>*</font> are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name<font color='red'>*</font></td>
+<td>string</td>
+<td>Name of this vehicle</td>
+<td>My Van</td>
+<td></td>
+</tr>
+<tr>
+<td>number_of_resources</td>
+<td>integer</td>
+<td>Maximal number of instances of this vehicle to be used in an optimization</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>external_resource_id</td>
+<td>string</td>
+<td>External identifier for the resource</td>
+<td>X-COMPANY-RESOURCE-ID</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>delivery_group<font color='red'>*</font></td>
+<td>string</td>
+<td>The name of the delivery group that the vehicle belongs to</td>
+<td>My Delivery Group</td>
+<td></td>
+</tr>
+<tr>
+<td>timewindow_start<font color='red'>*</font></td>
+<td>string on the format HH:mm</td>
+<td>The earliest time that the vehicle may start its route</td>
+<td>08:00</td>
+<td></td>
+</tr>
+<tr>
+<td>timewindow_end<font color='red'>*</font></td>
+<td>string on the format HH:mm</td>
+<td>The latest time that the vehicle must have finished its route</td>
+<td>21:00</td>
+<td></td>
+</tr>
+<tr>
+<td>fixed_start_time</td>
+<td>boolean</td>
+<td>Indicates whether the vehicle should start at its timewindow_start</td>
+<td>true or false	false</td>
+<td></td>
+</tr>
+<tr>
+<td>start_location_address<font color='red'>*</font></td>
+<td>string</td>
+<td>The address where the vehicle starts its route</td>
+<td>Kungsgatan 3, Stockholm, Sverige</td>
+<td></td>
+</tr>
+<tr>
+<td>start_location_latitude</td>
+<td>number</td>
+<td>The latitude where the vehicle starts its route. If not specified then a geocoding lookup based on start_location_address is made.</td>
+<td>Kungsgatan 3, Stockholm, Sverige</td>
+<td></td>
+</tr>
+<tr>
+<td>start_location_longitude</td>
+<td>number</td>
+<td>The longitude where the vehicle starts its route. If not specified then a geocoding lookup based on start_location_address is made.</td>
+<td>Kungsgatan 3, Stockholm, Sverige</td>
+<td></td>
+</tr>
+<tr>
+<td>end_location_address<font color='red'>*</font></td>
+<td>string</td>
+<td>The address where the vehicle ends its route</td>
+<td>Kungsgatan 3, Stockholm, Sverige</td>
+<td></td>
+</tr>
+<tr>
+<td>end_location_latitude</td>
+<td>number</td>
+<td>The latitude where the vehicle ends its route. If not specified then a geocoding lookup based on start_location_address is made.</td>
+<td>Kungsgatan 3, Stockholm, Sverige</td>
+<td></td>
+</tr>
+<tr>
+<td>end_location_longitude</td>
+<td>number</td>
+<td>The longitude where the vehicle ends its route. If not specified then a geocoding lookup based on start_location_address is made.</td>
+<td>Kungsgatan 3, Stockholm, Sverige</td>
+<td></td>
+</tr>
+<tr>
+<td>max_weight</td>
+<td>integer</td>
+<td>The maximum weight that the vehicle may carry</td>
+<td>400</td>
+<td>0</td>
+</tr>
+<tr>
+<td>max_volume</td>
+<td>integer</td>
+<td>The maximum volume that the vehicle may carry</td>
+<td>150</td>
+<td>0</td>
+</tr>
+<tr>
+<td>co_2</td>
+<td>integer</td>
+<td>The co2 footprint of the vehicle</td>
+<td>44</td>
+<td>null</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>string</td>
+<td>A semicolon separated list of vehicle tags</td>
+<td>tag1;tag2</td>
+<td></td>
+</tr>
+<tr>
+<td>loading_zone</td>
+<td>string</td>
+<td>Which loading zone the goods is located</td>
+<td>Loading zone A</td>
+<td></td>
+</tr>
+<tr>
+<td>default_driver_id</td>
+<td>integer</td>
+<td>ID of an existing driver, if default_driver_id is provided, default_driver_name, default_driver_phone &amp; default_driver_email will be ignored.</td>
+<td>1337</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>default_driver_name</td>
+<td>string</td>
+<td>Name of a default driver who doesn't exist, if default_driver_name is provided system will create a new driver with the given name at least default_driver_phone or default_driver_email is required to create a driver</td>
+<td>Driver Name</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>default_driver_contact_type</td>
+<td>string</td>
+<td>SMS or EMAIL the preferred way of contacting the driver.</td>
+<td>SMS</td>
+<td></td>
+</tr>
+<tr>
+<td>default_driver_phone</td>
+<td>string</td>
+<td>Cellphone number of a default driver who doesn't exist, used for assigning a route to driver via cellphone number.</td>
+<td>0701-12 34 56</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>default_driver_email</td>
+<td>string</td>
+<td>Email address of a default driver who doesn't exist, used for assigning a route to driver via email.</td>
+<td>name@example.com</td>
+<td>NULL</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
