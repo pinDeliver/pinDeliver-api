@@ -9,6 +9,7 @@ jobs:
       with:
         dotnet-version: 7.x
 
+    -name: Build
     - run: dotnet tool update -g docfx
     - run: docfx docfx_project/docfx.json
 
