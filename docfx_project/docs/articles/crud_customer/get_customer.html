@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Get customer </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Get customer ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="get-customer">Get customer</h1>
+
+<p>Used to retrieve a customer using the customer id</p>
+<h3 id="endpoint">Endpoint</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}
+</code></pre>
+<h3 id="authentication">Authentication</h3>
+<pre><code>Headers:
+  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX
+  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
+</code></pre>
+<h3 id="method">Method</h3>
+<pre><code>GET
+</code></pre>
+<h3 id="example-request">Example request</h3>
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--data-raw ''
+</code></pre>
+<h3 id="example-error-response">Example error response</h3>
+<pre><code class="lang-JSON">[
+    {
+        &quot;result&quot;: &quot;error&quot;,
+        &quot;status&quot;: 404,
+        &quot;data&quot;: &quot;No such customer available&quot;
+    }
+]
+</code></pre>
+<h3 id="example-success-response">Example success response</h3>
+<pre><code class="lang-JSON">{
+    &quot;customer&quot;: {
+        &quot;id&quot;: &quot;{customer_id}&quot;,
+        &quot;order_id&quot;: &quot;{order_id}&quot;,
+        &quot;delivery_group&quot;: &quot;DeliveryGroup&quot;,
+        &quot;name&quot;: &quot;Anders Andersson&quot;,
+        &quot;language_code&quot;: &quot;sv_SE&quot;,
+        &quot;postal_address&quot;: &quot;Andra Långgatan 7&quot;,
+        &quot;zipcode&quot;: &quot;41303&quot;,
+        &quot;city&quot;: &quot;Göteborg&quot;,
+        &quot;country_code&quot;: &quot;&quot;,
+        &quot;phone_cell&quot;: &quot;0700000000&quot;,
+        &quot;position_lat&quot;: 57.699432,
+        &quot;position_lng&quot;: 11.950743,
+        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}&quot;,
+        &quot;service&quot;: {
+            &quot;type&quot;: &quot;dropoff&quot;,
+            &quot;sms_sender&quot;: &quot;Ovning&quot;,
+            &quot;sender_name&quot;: &quot;pinDeliver&quot;,
+            &quot;recycling&quot;: [],
+            &quot;packages&quot;: [],
+            &quot;tracking_number&quot;: &quot;123456789&quot;,
+            &quot;vehicle_tags&quot;: &quot;Tag1&quot;,
+            &quot;timewindow_start&quot;: &quot;01:01&quot;,
+            &quot;timewindow_end&quot;: &quot;23:15&quot;,
+            &quot;requested_delivery_date&quot;: &quot;2023-01-23&quot;,
+            &quot;priority&quot;: &quot;normal&quot;,
+            &quot;tracking_url&quot;: &quot;https://my.pindeliver.com/8ottvq5s0v5&quot;
+        },
+        &quot;customer_type&quot;: &quot;b2c&quot;
+    }
+}
+</code></pre>
+<hr>
+<h1 id="get-customer-using-external-id">Get customer using external id</h1>
+<p>Used to retrieve a customer using the customer external id</p>
+<h3 id="endpoint-1">Endpoint</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/get/extid/{external_id}
+</code></pre>
+<h3 id="authentication-1">Authentication</h3>
+<pre><code>Headers:
+  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX
+  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
+</code></pre>
+<h3 id="method-1">Method</h3>
+<pre><code>GET
+</code></pre>
+<h3 id="example-request-1">Example request</h3>
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/get/extid/{external_id}' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--data-raw ''
+</code></pre>
+<h3 id="example-error-response-1">Example error response</h3>
+<pre><code class="lang-JSON">[
+    {
+        &quot;result&quot;: &quot;error&quot;,
+        &quot;status&quot;: 404,
+        &quot;data&quot;: &quot;No such customer available&quot;
+    }
+]
+</code></pre>
+<h3 id="example-success-response-1">Example success response</h3>
+<pre><code class="lang-JSON">{
+    &quot;customer&quot;: {
+        &quot;id&quot;: &quot;{customer_id}&quot;,
+        &quot;order_id&quot;: &quot;{order_id}&quot;,
+        &quot;delivery_group&quot;: &quot;DeliveryGroup&quot;,
+        &quot;name&quot;: &quot;Anders Andersson&quot;,
+        &quot;language_code&quot;: &quot;sv_SE&quot;,
+        &quot;postal_address&quot;: &quot;Andra Långgatan 7&quot;,
+        &quot;zipcode&quot;: &quot;41303&quot;,
+        &quot;city&quot;: &quot;Göteborg&quot;,
+        &quot;country_code&quot;: &quot;&quot;,
+        &quot;phone_cell&quot;: &quot;0700000000&quot;,
+        &quot;position_lat&quot;: 57.699432,
+        &quot;position_lng&quot;: 11.950743,
+        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}&quot;,
+        &quot;service&quot;: {
+            &quot;type&quot;: &quot;dropoff&quot;,
+            &quot;sms_sender&quot;: &quot;Ovning&quot;,
+            &quot;sender_name&quot;: &quot;pinDeliver&quot;,
+            &quot;recycling&quot;: [],
+            &quot;packages&quot;: [],
+            &quot;tracking_number&quot;: &quot;123456789&quot;,
+            &quot;vehicle_tags&quot;: &quot;Tag1&quot;,
+            &quot;timewindow_start&quot;: &quot;01:01&quot;,
+            &quot;timewindow_end&quot;: &quot;23:15&quot;,
+            &quot;requested_delivery_date&quot;: &quot;2023-01-23&quot;,
+            &quot;priority&quot;: &quot;normal&quot;,
+            &quot;tracking_url&quot;: &quot;https://my.pindeliver.com/8ottvq5s0v5&quot;
+        },
+        &quot;customer_type&quot;: &quot;b2c&quot;
+    }
+}
+</code></pre>
+<hr>
+<h1 id="query-parameters">Query parameters</h1>
+<h3 id="endpoint-example">Endpoint example</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}?all
+</code></pre>
+<p>If you want to use multiple parameters at the same time you can add them after the first parameter using &quot;&amp;&quot;.
+For example: ?all&amp;order&amp;routes.</p>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>?all</td>
+<td>Get all info for the specific customer</td>
+</tr>
+<tr>
+<td>?order</td>
+<td>Get orders for the specific customer</td>
+</tr>
+<tr>
+<td>?routes</td>
+<td>Get routes for the specific customer</td>
+</tr>
+<tr>
+<td>?stops</td>
+<td>Get stops for the specific customer</td>
+</tr>
+<tr>
+<td>?shipping_labels</td>
+<td>Get shipping labels for the specific customer</td>
+</tr>
+<tr>
+<td>?messages</td>
+<td>Get messages for the specific customer</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
