@@ -25,7 +25,8 @@
           "articles/**.md",
           "articles/**/toc.yml",
           "toc.yml",
-          "*.md"        ]
+          "*.md",
+          "docs/articles/**.html"      ]
       }
     ],
     "resource": [
