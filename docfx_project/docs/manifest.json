@@ -679,7 +679,7 @@
       "source_relative_path": "articles/vehicle_type.md",
       "output": {
         ".html": {
-          "relative_path": "articles/vehicle_type.html",
+          "relative_path": "docs/articles/vehicle_type.html",
           "hash": "CaWWyEXccio5OBzaXr+I4qt5B89isUjcXUVGmfY9yxw="
         }
       },
@@ -820,10 +820,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "index.md",
+      "source_relative_path": "articles/index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
+          "relative_path": "docs/index.html",
           "hash": "pATW4dxLejJSQSyWkTLLy0Tle0YgFBQaQfC1rIF2bBo="
         }
       },
