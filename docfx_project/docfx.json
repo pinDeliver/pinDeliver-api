@@ -1,26 +1,6 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": [
-            "src/**.csproj"
-          ]
-        }
-      ],
-      "dest": "api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false
-    }
-  ],
   "build": {
     "content": [
-      {
-        "files": [
-          "api/**.yml",
-          "api/index.md"
-        ]
-      },
       {
         "files": [
           "articles/**.md",
@@ -33,22 +13,14 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "images/**",
+          "logo.svg",
+          "favicon.ico",
+          "CNAME"
         ]
       }
     ],
-    "overwrite": [
-      {
-        "files": [
-          "apidoc/**.md"
-        ],
-        "exclude": [
-          "obj/**",
-          "_site/**"
-        ]
-      }
-    ],
-    "dest": "_site",
+    "dest": "docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
@@ -60,6 +32,10 @@
     "keepFileLink": false,
     "cleanupCacheHistory": false,
     "disableGitFeatures": false,
-    "_appFooter": "<span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>"    }
+    "globalMetadata":
+    {
+      "_disableContribution": true,
+      "_appFooter": "<span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>"
+    },
   }
 }
