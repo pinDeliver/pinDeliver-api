@@ -8,14 +8,12 @@ on:
     - src/**
     - docs/**
     - .github/workflows/docs.yml
-    - articles/**
   pull_request:
     branches:
     - main
     paths:
     - docs/**
     - .github/workflows/docs.yml
-    - articles/**
   workflow_dispatch:
 
 jobs:

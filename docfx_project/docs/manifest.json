@@ -559,7 +559,7 @@
       "source_relative_path": "articles/customer_order.md",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/customer_order.html",
+          "relative_path": "articles/customer_order.html",
           "hash": "dlJHv4XLv+V7dCbTJMkq9Os+8rzacv5lAE7+aTdcWxA="
         }
       },
@@ -571,7 +571,7 @@
       "source_relative_path": "articles/delivery_group.md",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/delivery_group.html",
+          "relative_path": "articles/delivery_group.html",
           "hash": "dq+QdTG+JcvtP0UQ6UTEjjLdCd170OlFobaE6l+mkUo="
         }
       },
@@ -583,7 +583,7 @@
       "source_relative_path": "articles/driver.md",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/driver.html",
+          "relative_path": "articles/driver.html",
           "hash": "ReGaHQX5vNynTw3IdQ3FJ1v7JPmNQyX3W+bc0ngZ0hM="
         }
       },
@@ -595,7 +595,7 @@
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/intro.html",
+          "relative_path": "articles/intro.html",
           "hash": "wwrxnf1KCu4C9wjkj7Mp+bXQmvSI62LwH6I3cS8MhyA="
         }
       },
@@ -607,7 +607,7 @@
       "source_relative_path": "articles/order.md",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/order.html",
+          "relative_path": "articles/order.html",
           "hash": "xpLTBkD/KGnfFy+XIhHoFR7f7rbcYwGWaEdhjTivvR0="
         }
       },
@@ -619,7 +619,7 @@
       "source_relative_path": "articles/package.md",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/package.html",
+          "relative_path": "articles/package.html",
           "hash": "PYhtJ8cWYiBuJhLTzuhyOu8C4rwOnjt/Ws8+hflfMjg="
         }
       },
@@ -631,7 +631,7 @@
       "source_relative_path": "articles/route.md",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/route.html",
+          "relative_path": "articles/route.html",
           "hash": "eCA0e97EKBggaYK8i0kGXlao5utKyQaehonjqZBWPiI="
         }
       },
@@ -643,7 +643,7 @@
       "source_relative_path": "articles/sender.md",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/sender.html",
+          "relative_path": "articles/sender.html",
           "hash": "VPjFkvxDLnhOf90iyM9G6ZY2nr4eep1gebWbp9wZheg="
         }
       },
@@ -655,7 +655,7 @@
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/toc.html",
+          "relative_path": "articles/toc.html",
           "hash": "cm777/T2Stbyk9njWioaP2wW77Fsbb4uo10fsCUNjwI="
         }
       },
@@ -667,7 +667,7 @@
       "source_relative_path": "articles/vehicle.md",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/vehicle.html",
+          "relative_path": "articles/vehicle.html",
           "hash": "kZfimIFkRYRNSNzcXY75uJuHmSovHqEIrlxb+KxSIKY="
         }
       },
@@ -679,7 +679,7 @@
       "source_relative_path": "articles/vehicle_type.md",
       "output": {
         ".html": {
-          "relative_path": "docs/articles/vehicle_type.html",
+          "relative_path": "articles/vehicle_type.html",
           "hash": "CaWWyEXccio5OBzaXr+I4qt5B89isUjcXUVGmfY9yxw="
         }
       },
@@ -823,7 +823,7 @@
       "source_relative_path": "articles/index.md",
       "output": {
         ".html": {
-          "relative_path": "docs/index.html",
+          "relative_path": "index.html",
           "hash": "pATW4dxLejJSQSyWkTLLy0Tle0YgFBQaQfC1rIF2bBo="
         }
       },
