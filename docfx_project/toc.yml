@@ -1,6 +1,5 @@
 - name: Carrier
-  href: articles/
-  homepage: articles/carrier.md
+  href: articles/carrier.md
 - name: Customer order
   href: articles/customer_order.md
 - name: Delivery group
