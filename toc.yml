@@ -1,0 +1,33 @@
+- name: Api-documentation
+  href: index.md
+  homepage: docs/index.html
+- name: Carrier
+  href: articles/carrier.md
+  homepage: docs/articles/carrier.html
+- name: Customer order
+  href: articles/customer_order.md
+  homepage: docs/articles/customer_order.html
+- name: Delivery group
+  href: articles/delivery_group.md
+  homepage: docs/articles/delivery_group.html
+- name: Driver
+  href: articles/driver.md
+  homepage: docs/articles/driver.html
+- name: Order
+  href: articles/order.md
+  homepage: docs/articles/order.html
+- name: Package
+  href: articles/package.md
+  homepage: docs/articles/package.html
+- name: Route
+  href: articles/route.md
+  homepage: docs/articles/route.html
+- name: Sender
+  href: articles/sender.md
+  homepage: docs/articles/sender.html
+- name: Vehicle
+  href: articles/vehicle.md
+  homepage: docs/articles/vehicle.html
+- name: Vehicle type
+  href: articles/vehicle_type.md
+  homepage: docs/articles/vehicle_type.html
