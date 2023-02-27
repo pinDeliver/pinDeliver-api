@@ -25,7 +25,6 @@
           "articles/**.md",
           "articles/**/toc.yml",
           "toc.yml",
-          "../docs/**",
           "*.md"      ]
       }
     ],
