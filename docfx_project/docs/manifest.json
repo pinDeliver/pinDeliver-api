@@ -4,6 +4,17 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "Resource",
+      "source_relative_path": "CNAME",
+      "output": {
+        "resource": {
+          "relative_path": "CNAME"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "articles/carrier.md",
       "output": {
@@ -816,7 +827,7 @@
           "hash": "pATW4dxLejJSQSyWkTLLy0Tle0YgFBQaQfC1rIF2bBo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
