@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Search customer </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Search customer ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="search-customer">Search customer</h1>
+
+<p>Used to search for a customer. Two search parameters are needed</p>
+<h3 id="endpoint">Endpoint</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/search
+</code></pre>
+<h3 id="authentication">Authentication</h3>
+<pre><code>Headers:
+  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX
+  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
+</code></pre>
+<h3 id="method">Method</h3>
+<pre><code>POST
+</code></pre>
+<h3 id="example-request">Example request</h3>
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/search' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    &quot;name&quot;: &quot;Anders Andersson&quot;,
+    &quot;city&quot;: &quot;Göteborg&quot;
+
+}'
+</code></pre>
+<h3 id="example-data">Example data</h3>
+<pre><code class="lang-JSON">{
+    &quot;name&quot;: &quot;Anders Andersson&quot;,
+    &quot;city&quot;: &quot;Göteborg&quot;
+
+}
+</code></pre>
+<h3 id="example-error-response">Example error response</h3>
+<pre><code class="lang-JSON">
+</code></pre>
+<h3 id="example-success-response">Example success response</h3>
+<pre><code class="lang-JSON">{
+    &quot;customer&quot;: [
+        {
+          &quot;id&quot;: &quot;{customer_id}&quot;,
+          &quot;order_id&quot;: &quot;{order_id}&quot;,
+          &quot;delivery_group&quot;: &quot;DeliveryGroup&quot;,
+          &quot;name&quot;: &quot;Anders Andersson&quot;,
+          &quot;language_code&quot;: &quot;sv_SE&quot;,
+          &quot;postal_address&quot;: &quot;Andra Långgatan 17&quot;,
+          &quot;zipcode&quot;: &quot;&quot;,
+          &quot;city&quot;: &quot;Göteborg&quot;,
+          &quot;country_code&quot;: &quot;&quot;,
+          &quot;phone_cell&quot;: &quot;&quot;,
+          &quot;position_lat&quot;: 57.69925,
+          &quot;position_lng&quot;: 11.9489155,
+          &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}&quot;,
+          &quot;service&quot;: {
+              &quot;type&quot;: &quot;dropoff&quot;,
+              &quot;sms_sender&quot;: &quot;Ovning&quot;,
+              &quot;sender_name&quot;: &quot;pinDeliver&quot;,
+              &quot;recycling&quot;: [],
+              &quot;packages&quot;: [],
+              &quot;tracking_number&quot;: &quot;&quot;,
+              &quot;vehicle_tags&quot;: &quot;&quot;,
+              &quot;timewindow_start&quot;: &quot;01:01&quot;,
+              &quot;timewindow_end&quot;: &quot;23:15&quot;,
+              &quot;requested_delivery_date&quot;: &quot;2023-01-23&quot;,
+              &quot;priority&quot;: &quot;normal&quot;,
+              &quot;tracking_url&quot;: &quot;https://my.pindeliver.com/8ou0gosih8h&quot;
+          },
+          &quot;customer_type&quot;: &quot;b2c&quot;
+      }
+  ]
+}
+</code></pre>
+<hr>
+<h1 id="input-format">Input format</h1>
+<h3 id="search-object-properties">Search Object Properties</h3>
+<p>At least 2 search fields are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The customers first and last name</td>
+<td>John Doe</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>external_sender_id</td>
+<td>string</td>
+<td>Unique identifier for sender</td>
+<td>pinDeliver</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>requested_delivery_from_date</td>
+<td>string</td>
+<td>The customers requested_delivery_date must be equal to or greater then from_date.</td>
+<td>YYYY-mm-dd</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>requested_delivery_to_date</td>
+<td>string</td>
+<td>The customers requested_delivery_date must be equal to or less then from_date.</td>
+<td>YYYY-mm-dd</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>phone_cell</td>
+<td>string</td>
+<td>Customer cellphone number.</td>
+<td>0701-12 34 56</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Customer email address.</td>
+<td>name@example.com</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>city</td>
+<td>string</td>
+<td>Customer address city.</td>
+<td>Göteborg</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>postal_address</td>
+<td>string</td>
+<td>Customer postal address street</td>
+<td>Nils Ericsonsplatsen 3</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>zipcode</td>
+<td>string</td>
+<td>Customer address zip code.</td>
+<td>41103</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>order_id</td>
+<td>integer</td>
+<td>Search only customers who belong to an order.</td>
+<td>1337</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>hub_id</td>
+<td>string</td>
+<td>Search only customers who belong to hub.</td>
+<td>1 or a101 or ABC-123</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>stop_type</td>
+<td>enum</td>
+<td>Search only customers who have stop_type.</td>
+<td>dropoff or pickup or collect</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>vehicle_tags</td>
+<td>string</td>
+<td>Tags used for pairing delivery with specific vehicle(s).</td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>timewindow_from</td>
+<td>string</td>
+<td>The customers requested timewindow start.</td>
+<td>HH:ii</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>timewindow_to</td>
+<td>string</td>
+<td>The customers requested timewindow end.</td>
+<td>HH:ii</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>pickup_identifier</td>
+<td>string</td>
+<td>Search only customers who share the same pickup point.</td>
+<td>ABC-123</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>customer_number</td>
+<td>string</td>
+<td>The customers customer_number.</td>
+<td>123abc</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>reference</td>
+<td>string</td>
+<td>The customers reference.</td>
+<td>abc123</td>
+<td>NULL</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
