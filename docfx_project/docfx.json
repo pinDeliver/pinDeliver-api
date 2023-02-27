@@ -47,7 +47,7 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "home"    ],
+      "default"    ],
     "postProcessors": [],
     "cleanupCacheHistory": true,
     "noLangKeyword": false,
