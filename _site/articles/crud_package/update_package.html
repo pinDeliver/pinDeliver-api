@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Update package using external id </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Update package using external id ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="update-package-using-external-id">Update package using external id</h1>
+
+<p>Used to update a package using the package external id</p>
+<h3 id="endpoint">Endpoint</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/package/update/extid/B6
+</code></pre>
+<h3 id="authentication">Authentication</h3>
+<pre><code>Headers:
+  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX
+  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
+</code></pre>
+<h3 id="method">Method</h3>
+<pre><code>GET
+</code></pre>
+<h3 id="example-request">Example request</h3>
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/package/update/extid/B6' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    &quot;quantity&quot;: 10,
+    &quot;status_code&quot;: &quot;PICKED_AT_TERMINAL&quot;    
+}'
+</code></pre>
+<h3 id="example-data">Example data</h3>
+<pre><code class="lang-JSON">{
+    &quot;quantity&quot;: 10,
+    &quot;status_code&quot;: &quot;PICKED_AT_TERMINAL&quot;    
+}
+</code></pre>
+<h3 id="example-error-response">Example error response</h3>
+<pre><code class="lang-JSON">{
+    &quot;result&quot;: &quot;error&quot;,
+    &quot;status&quot;: 405,
+    &quot;data&quot;: &quot;Method Not Allowed&quot;
+}
+</code></pre>
+<h3 id="example-success-response">Example success response</h3>
+<pre><code class="lang-JSON">{
+    &quot;result&quot;: &quot;ok&quot;,
+    &quot;status&quot;: 200,
+    &quot;data&quot;: &quot;B6&quot;,
+    &quot;package&quot;: {
+        &quot;id&quot;: &quot;{package_id}&quot;,
+        &quot;packaging_type&quot;: &quot;Kolli&quot;,
+        &quot;temperature_zone&quot;: &quot;NONE&quot;,
+        &quot;is_article&quot;: false,
+        &quot;name&quot;: &quot;Fender precision&quot;,
+        &quot;package_id&quot;: &quot;B6&quot;,
+        &quot;quantity&quot;: 10,
+        &quot;is_shared&quot;: false,
+        &quot;packaging_type_locked&quot;: false,
+        &quot;quantity_loaded&quot;: 0,
+        &quot;status_code&quot;: &quot;PICKED_AT_TERMINAL&quot;,
+        &quot;status_time&quot;: &quot;2023-01-25 14:33:52&quot;
+    }
+}
+</code></pre>
+<hr>
+<h1 id="update-package-using-scan-code">Update package using scan code</h1>
+<p>Used to update a package using a scan code</p>
+<h3 id="endpoint-1">Endpoint</h3>
+<pre><code>/api/v2_1/:package/update/scan_code/:scan_code
+</code></pre>
+<h3 id="authentication-1">Authentication</h3>
+<pre><code>Headers:
+  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX
+  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
+</code></pre>
+<h3 id="method-1">Method</h3>
+<pre><code>GET
+</code></pre>
+<h3 id="example-request-1">Example request</h3>
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/package/update/scan_code/B6' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    &quot;quantity&quot;: 5,
+    &quot;status_code&quot;: &quot;LOADED&quot;    
+}'
+</code></pre>
+<h3 id="example-data-1">Example data</h3>
+<pre><code class="lang-JSON">{
+    &quot;quantity&quot;: 5,
+    &quot;status_code&quot;: &quot;LOADED&quot;    
+}
+</code></pre>
+<h3 id="example-error-response-1">Example error response</h3>
+<pre><code class="lang-JSON">{
+    &quot;result&quot;: &quot;error&quot;,
+    &quot;status&quot;: 405,
+    &quot;data&quot;: &quot;Method Not Allowed&quot;
+}
+</code></pre>
+<h3 id="example-success-response-1">Example success response</h3>
+<pre><code class="lang-JSON">{
+    &quot;result&quot;: &quot;ok&quot;,
+    &quot;status&quot;: 200,
+    &quot;data&quot;: &quot;B6&quot;,
+    &quot;package&quot;: {
+        &quot;id&quot;: &quot;{package_id}&quot;,
+        &quot;packaging_type&quot;: &quot;Kolli&quot;,
+        &quot;temperature_zone&quot;: &quot;NONE&quot;,
+        &quot;is_article&quot;: false,
+        &quot;name&quot;: &quot;Fender precision&quot;,
+        &quot;package_id&quot;: &quot;B6&quot;,
+        &quot;quantity&quot;: 5,
+        &quot;is_shared&quot;: false,
+        &quot;packaging_type_locked&quot;: false,
+        &quot;quantity_loaded&quot;: 0,
+        &quot;status_code&quot;: &quot;LOADED_FOR_DISTRIBUTION&quot;,
+        &quot;status_time&quot;: &quot;2023-01-25 14:35:20&quot;
+    }
+}
+</code></pre>
+<hr>
+<h1 id="output-format">Output format</h1>
+<h3 id="package-object-properties">Package Object Properties</h3>
+<p>Fields marked with <font color='red'>*</font> are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>packages<font color='red'>*</font></td>
+<td></td>
+<td>Specific information about the current customer package</td>
+<td>Details below</td>
+</tr>
+</tbody>
+</table>
+<p>Fields marked with <font color='red'>*</font> are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Name of the package type. Shown in driver app and exported excel driver sheet.</td>
+<td>Package</td>
+</tr>
+<tr>
+<td>package_id</td>
+<td>string or null</td>
+<td>An external id for this package.</td>
+<td>98765</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>integer or null</td>
+<td>Number of packages of this type. Shown in driver app and exported excel driver sheet.</td>
+<td>5</td>
+</tr>
+<tr>
+<td>quantity_loaded</td>
+<td>integer or null</td>
+<td>The quantity of loaded packages</td>
+<td>3</td>
+</tr>
+<tr>
+<td>quantity_delivered</td>
+<td>integer or null</td>
+<td>The quantity of packages delivered</td>
+<td>2</td>
+</tr>
+<tr>
+<td>weight</td>
+<td>number or null</td>
+<td>The weight of a specific package</td>
+<td>17</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>number or null</td>
+<td>The volume of a specific package</td>
+<td>4,5</td>
+</tr>
+<tr>
+<td>volume_2</td>
+<td>number or null</td>
+<td>The volume of a specific package</td>
+<td>6,5</td>
+</tr>
+<tr>
+<td>shipment_number</td>
+<td>string or null</td>
+<td>An external number for the shipment</td>
+<td>999</td>
+</tr>
+<tr>
+<td>url</td>
+<td>string or null</td>
+<td>A url linking to a page with information about the package, e.g. a product image.</td>
+<td>https://pindeliver.com</td>
+</tr>
+<tr>
+<td>status_code</td>
+<td>string or null</td>
+<td>The status of a specific package</td>
+<td>ARRIVED_AT_TERMINAL</td>
+</tr>
+<tr>
+<td>status_time</td>
+<td>string or null</td>
+<td>The time the package got it's latest status</td>
+<td>1980-10-10 13:54:19</td>
+</tr>
+<tr>
+<td>packaging_type_identifier</td>
+<td>string or null</td>
+<td>The kind of packaging type the package is</td>
+<td>Srs-back</td>
+</tr>
+<tr>
+<td>packaging_type_id</td>
+<td>integer or null</td>
+<td>The id of the packaging type</td>
+<td>12345</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

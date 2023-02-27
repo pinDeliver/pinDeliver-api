@@ -1,0 +1,125 @@
+- name: Carrier
+  href: carrier.md
+  items:
+  - name: Add
+    href: crud_carrier/add_carrier.md
+  - name: Get
+    href: crud_carrier/get_carrier.md
+  - name: Delete
+    href: crud_carrier/delete_carrier.md
+
+- name: Customer order
+  href: customer_order.md
+  items:
+  - name: Add
+    href: crud_customer/add_customer_order.md
+  - name: Add to order
+    href: crud_customer/add_to_order.md
+  - name: Get
+    href: crud_customer/get_customer.md
+  - name: Delete
+    href: crud_customer/delete_customer.md
+  - name: Update
+    href: crud_customer/update_customer.md
+  - name: Update packages
+    href: crud_customer/updatepackages_customer.md
+  - name: Replace packages
+    href: crud_customer/replacepackages_customer.md
+  - name: Search
+    href: crud_customer/search_customer.md
+  - name: Events
+    href: crud_customer/events_customer.md
+
+- name: Delivery group
+  href: delivery_group.md
+  items:
+  - name: Add
+    href: crud_delivery_group/add_delivery_group.md
+  - name: Get
+    href: crud_delivery_group/get_delivery_group.md
+  - name: Update
+    href: crud_delivery_group/update_delivery_group.md
+  - name: Delete
+    href: crud_delivery_group/delete_delivery_group.md
+  - name: Events
+    href: crud_delivery_group/events_delivery_group.md
+
+- name: Driver
+  href: driver.md
+  items:
+  - name: Add
+    href: crud_driver/add_driver.md
+  - name: Get
+    href: crud_driver/get_driver.md
+  - name: Update
+    href: crud_driver/update_driver.md
+  - name: Delete
+    href: crud_driver/delete_driver.md
+  - name: Events
+    href: crud_driver/events_driver.md
+
+- name: Order
+  href: order.md
+  items:
+  - name: Add
+    href: crud_order/add_order.md
+  - name: Get
+    href: crud_order/get_order.md
+  - name: Import
+    href: crud_order/import_order.md
+  - name: Events
+    href: crud_order/events_order.md
+
+- name: Package
+  href: package.md
+  items:
+  - name: Get
+    href: crud_package/get_package.md
+  - name: Update
+    href: crud_package/update_package.md
+
+- name: Route
+  href: route.md
+  items:
+  - name: Add
+    href: crud_route/add_route.md
+  - name: Get
+    href: crud_route/get_route.md
+  - name: Update
+    href: crud_route/update_route.md
+  - name: Packaging
+    href: crud_route/packaging_route.md
+  - name: Create unit loads
+    href: crud_route/create_unit_loads_route.md
+  - name: Events
+    href: crud_route/events_route.md
+
+- name: Sender
+  href: sender.md
+  items:
+  - name: Get
+    href: crud_sender/get_sender.md
+
+- name: Vehicle
+  href: vehicle.md
+  items:
+  - name: Add
+    href: crud_vehicle/add_vehicle.md
+  - name: Get
+    href: crud_vehicle/get_vehicle.md
+  - name: Update
+    href: crud_vehicle/update_vehicle.md
+  - name: Delete
+    href: crud_vehicle/delete_vehicle.md
+  - name: Events
+    href: crud_vehicle/events_vehicle.md
+
+- name: Vehicle type
+  href: vehicle_type.md
+  items:
+  - name: Add
+    href: crud_vehicle_type/add_vehicle_type.md
+  - name: Get
+    href: crud_vehicle_type/get_vehicle_type.md
+  - name: Delete
+    href: crud_vehicle_type/delete_vehicle_type.md
