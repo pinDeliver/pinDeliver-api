@@ -4,6 +4,29 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "Resource",
+      "source_relative_path": "CNAME",
+      "output": {
+        "resource": {
+          "relative_path": "CNAME"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "oaYIiEICYbi63PyHt9ZFhlRVpbhZ5kTXjLz1Hrb7RUI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "articles/carrier.md",
       "output": {
@@ -225,7 +248,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/crud_driver/add_driver.html",
-          "hash": "pddplbOjFJbP3pm6QS90/xjxaJX3o/slQGNN5a01DYA="
+          "hash": "QzO8lehhFP5pgmDHA8Bc/4nFdvpOSNigShFnOJqM7sk="
         }
       },
       "is_incremental": true,
@@ -237,7 +260,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/crud_driver/delete_driver.html",
-          "hash": "UQFA6Oc2Tt/HHCIFeIv+DzSqJbMF98/52i+EOpBPKbg="
+          "hash": "7TTIBPK4hUbshOJt9cCfscknojkJch5FztVJ8kCEb3I="
         }
       },
       "is_incremental": true,
@@ -261,7 +284,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/crud_driver/get_driver.html",
-          "hash": "SlI4+wyJvnL3FbM6dhxw43dQZusF4RAkSnu/48MeKj8="
+          "hash": "DpEbb715aAJoge6fzRbIbflIBocUczobiGn3gQFirWA="
         }
       },
       "is_incremental": true,
@@ -273,7 +296,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/crud_driver/update_driver.html",
-          "hash": "72Y0R80DdnopxZfoOMMh9DZ8lTd6k1GMUAueVXBS45Y="
+          "hash": "0J/559VQBBD27aSYntvJ/Zx0QiV7m5M5EfMC5uK0Veg="
         }
       },
       "is_incremental": true,
@@ -569,18 +592,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/index.html",
-          "hash": "rbt9PRzFp0oMJARDLJJL4GD8U1PD1UdSMt66M7xh+lE="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
@@ -809,7 +820,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "index.md",
+      "source_relative_path": "articles/index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",

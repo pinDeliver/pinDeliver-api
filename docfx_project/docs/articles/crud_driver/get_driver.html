@@ -82,48 +82,16 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location 'https://martinservera-test.pindeliver.com/api/v2_1/driver/get/{driver_id}' \
---header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
---header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
---data ''
+<pre><code class="lang-C">
+</code></pre>
+<h3 id="example-data">Example data</h3>
+<pre><code class="lang-JSON">
 </code></pre>
 <h3 id="example-error-response">Example error response</h3>
-<pre><code class="lang-JSON">{
-    &quot;result&quot;: &quot;error&quot;,
-    &quot;status&quot;: 404,
-    &quot;response&quot;: {
-        &quot;error_description&quot;: &quot;Not Found&quot;
-    }
-}
+<pre><code class="lang-JSON">
 </code></pre>
 <h3 id="example-success-response">Example success response</h3>
-<pre><code class="lang-JSON">{
-    &quot;driver&quot;: {
-        &quot;id&quot;: &quot;{driver_id}&quot;,
-        &quot;name&quot;: &quot;Anders Andersson&quot;,
-        &quot;phone&quot;: &quot;0700000000&quot;,
-        &quot;email&quot;: &quot;email@email.com&quot;,
-        &quot;language_code&quot;: &quot;sv_SE&quot;,
-        &quot;premium_scanning&quot;: false,
-        &quot;delivery_groups&quot;: [
-            {
-                &quot;id&quot;: &quot;{delivery_group_id}&quot;,
-                &quot;name&quot;: &quot;Delivery group&quot;,
-                &quot;identifier&quot;: &quot;DeliveryGroup&quot;
-            },
-            {
-                &quot;id&quot;: &quot;{delivery_group_id}&quot;,
-                &quot;name&quot;: &quot;Delivery group 2&quot;,
-                &quot;identifier&quot;: &quot;DeliveryGroup2&quot;
-            }
-        ],
-        &quot;carrier&quot;: {
-            &quot;id&quot;: &quot;{carrier_id}&quot;,
-            &quot;name&quot;: &quot;Carrier&quot;,
-            &quot;external_id&quot;: &quot;Carrier&quot;
-        }
-    }
-}
+<pre><code class="lang-JSON">
 </code></pre>
 <hr>
 <h1 id="get-driver-using-external-id">Get driver using external id</h1>
@@ -142,7 +110,7 @@
 <h3 id="example-request-1">Example request</h3>
 <pre><code class="lang-C">
 </code></pre>
-<h3 id="example-data">Example data</h3>
+<h3 id="example-data-1">Example data</h3>
 <pre><code class="lang-JSON">
 </code></pre>
 <h3 id="example-error-response-1">Example error response</h3>
@@ -165,49 +133,39 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request-2">Example request</h3>
-<pre><code class="lang-C">curl --location 'https://martinservera-test.pindeliver.com/api/v2_1/driver/get' \
---header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
---header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
---data ''
+<pre><code class="lang-C">
+</code></pre>
+<h3 id="example-data-2">Example data</h3>
+<pre><code class="lang-JSON">
 </code></pre>
 <h3 id="example-error-response-2">Example error response</h3>
-<pre><code class="lang-JSON">{
-    &quot;result&quot;: &quot;error&quot;,
-    &quot;status&quot;: 404,
-    &quot;response&quot;: {
-        &quot;error_description&quot;: &quot;Not Found&quot;
-    }
-}
+<pre><code class="lang-JSON">
 </code></pre>
 <h3 id="example-success-response-2">Example success response</h3>
-<pre><code class="lang-JSON">{
-    &quot;driver&quot;: {
-        &quot;id&quot;: &quot;{driver_id}&quot;,
-        &quot;name&quot;: &quot;Anders Andersson&quot;,
-        &quot;phone&quot;: &quot;0700000000&quot;,
-        &quot;email&quot;: &quot;email@email.com&quot;,
-        &quot;language_code&quot;: &quot;sv_SE&quot;,
-        &quot;premium_scanning&quot;: false,
-        &quot;delivery_groups&quot;: [
-            {
-                &quot;id&quot;: &quot;{delivery_group_id}&quot;,
-                &quot;name&quot;: &quot;Delivery group&quot;,
-                &quot;identifier&quot;: &quot;DeliveryGroup&quot;
-            },
-            {
-                &quot;id&quot;: &quot;{delivery_group_id}&quot;,
-                &quot;name&quot;: &quot;Delivery group 2&quot;,
-                &quot;identifier&quot;: &quot;DeliveryGroup2&quot;
-            }
-        ],
-        &quot;carrier&quot;: {
-            &quot;id&quot;: &quot;{carrier_id}&quot;,
-            &quot;name&quot;: &quot;Carrier&quot;,
-            &quot;external_id&quot;: &quot;Carrier&quot;
-        }
-    }
-}
+<pre><code class="lang-JSON">
 </code></pre>
+<hr>
+<h1 id="input-format">Input format</h1>
+<h3 id="driver-object-properties">Driver object properties</h3>
+<p>Fields marked with <font color='red'>*</font> are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
