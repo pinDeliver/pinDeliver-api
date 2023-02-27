@@ -1,4 +1,4 @@
-jobs:
+jobs: 
   generate-docs:
 
     runs-on: windows-latest
