@@ -5,6 +5,7 @@
         "files": [
           "articles/**.md",
           "articles/**/toc.yml",
+          "docs/**.html",
           "toc.yml",
           "*.md"
         ]
@@ -16,7 +17,6 @@
           "images/**",
           "logo.svg",
           "favicon.ico",
-          "CNAME"
         ]
       }
     ],
