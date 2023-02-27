@@ -7,12 +7,14 @@ on:
     paths:
     - src/**
     - docs/**
+    - articles/**
     - .github/workflows/docs.yml
   pull_request:
     branches:
     - main
     paths:
     - docs/**
+    - articles/**
     - .github/workflows/docs.yml
   workflow_dispatch:
 
@@ -43,5 +45,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _site
+        publish_dir: docs/_site
         force_orphan: true
