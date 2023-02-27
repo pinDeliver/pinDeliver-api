@@ -27,8 +27,9 @@ jobs:
       working-directory: docfx_project
       run: docfx .\docfx.json
       continue-on-error: false
-    - run: dotnet tool update -g docfx
-    - run: docfx docfx_project/docfx.json
+    - name: Docfx uUdate
+      run: dotnet tool update -g docfx
+      run: docfx docfx_project/docfx.json
 
     - name: Publish
       if: github.event_name == 'push'
