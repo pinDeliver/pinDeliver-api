@@ -18,6 +18,10 @@
       {
         "files": [
           "toc.yml",
+          "docfx_project/articles/**.md",
+          "docfx_project/articles/**/toc.yml",
+          "toc.yml",
+          "*.md",
           "index.md"        ]
       },
       {
@@ -33,6 +37,12 @@
         "files": [
           "images/**",
           "index.html",
+          "toc.yml",
+          "docfx_project/articles/**.md",
+          "docfx_project/articles/**/toc.yml",
+          "toc.yml",
+          "*.md",
+          "index.md",
           "docs/**.html"        ]
       }
     ],
