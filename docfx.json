@@ -7,7 +7,7 @@
             "/**.csproj"          ]
         }
       ],
-      "dest": "api",
+      "dest": "_site",
       "includePrivateMembers": false,
       "disableGitFeatures": false,
       "disableDefaultFilter": false,
@@ -20,16 +20,16 @@
           "toc.yml",
           "docfx_project/articles/**.md",
           "docfx_project/articles/**/toc.yml",
-          "toc.yml",
           "*.md",
           "index.md"        ]
       },
       {
         "files": [
+          "toc.yml",
           "docfx_project/articles/**.md",
           "docfx_project/articles/**/toc.yml",
-          "toc.yml",
-          "*.md"      ]
+          "*.md",
+          "index.md"        ]
       }
     ],
     "resource": [
@@ -37,7 +37,6 @@
         "files": [
           "images/**",
           "index.html",
-          "toc.yml",
           "docfx_project/articles/**.md",
           "docfx_project/articles/**/toc.yml",
           "toc.yml",
