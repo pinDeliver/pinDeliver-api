@@ -31,7 +31,9 @@
     "resource": [
       {
         "files": [
-          "images/**"        ]
+          "images/**",
+          "index.html",
+          "docs/**.html"        ]
       }
     ],
     "overwrite": [
