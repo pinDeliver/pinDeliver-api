@@ -7,7 +7,7 @@
             "/**.csproj"          ]
         }
       ],
-      "dest": "_site",
+      "dest": "dest",
       "includePrivateMembers": false,
       "disableGitFeatures": false,
       "disableDefaultFilter": false,
