@@ -41,4 +41,4 @@ A reasonable way to use our API-requests would be to start with, if you plan on 
 Then continue with creating x amount of delivery groups, drivers and vehicles. After a vehicle is created you can proceed with creating a vehicle type and connect it to the vehicle.
 Once a delivery group is created you can proceed with adding a routing order followed by a customer order with packages and eventually a sender in the same request.
 
-![Flowchart](flowchart_all.jpg)
+![Flowchart](https://pindeliver.github.io/pinDeliver-api/images/flowchart_all.jpg)
