@@ -31,7 +31,7 @@
       "source_relative_path": "articles/carrier.md",
       "output": {
         ".html": {
-          "relative_path": "carrier.html",
+          "relative_path": "articles/carrier.html",
           "hash": "QK4N413hALj16DXWMO8VelEw96dKJI+EXORE5UD5S34="
         }
       },
@@ -699,10 +699,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/flowchart_all.jpg",
+      "source_relative_path": "flowchart_all.jpg",
       "output": {
         "resource": {
-          "relative_path": "images/flowchart_all.jpg"
+          "relative_path": "flowchart_all.jpg"
         }
       },
       "is_incremental": false,
