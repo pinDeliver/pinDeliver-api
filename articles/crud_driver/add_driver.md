@@ -1,6 +1,7 @@
 # Add driver
 
-Connected to a [delivery group](/articles/crud_delivery_group/add_delivery_group.html). Make sure you've created a delivery group before creating a driver. A driver is not needed before [adding a route](/articles/crud_route/add_route.html) but it is necessary to create one to be able to start the route later on. The driver can also be connected to a [vehicle](/articles/crud_vehicle/add_vehicle.html).
+Connected to a [delivery group](/articles/crud_delivery_group/add_delivery_group.html). Make sure you've created a delivery group before creating a driver. A driver is not needed before [adding a route](/
+articles/crud_route/add_route.html) but it is necessary to create one to be able to start the route later on. The driver can also be connected to a [vehicle](/articles/crud_vehicle/add_vehicle.html).
 
 ### Endpoint
 ```

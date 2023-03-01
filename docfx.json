@@ -19,7 +19,7 @@
         "files": [
           "toc.yml",
           "/articles/**.md",
-          "/articles/**/toc.yml",
+          "/articles/toc.yml",
           "*.md",
           "index.md"        ]
       },
@@ -27,7 +27,7 @@
         "files": [
           "toc.yml",
           "/articles/**.md",
-          "/articles/**/toc.yml",
+          "/articles/toc.yml",
           "*.md",
           "index.md"        ]
       }
@@ -35,10 +35,11 @@
     "resource": [
       {
         "files": [
-          "images/**",
+          "images/**.jpg",
           "logo.svg",
           "favicon.ico",
           "styles/*.css",
+          "flowchart_all.jpg",
           "styles/*.js"     ]
       }
     ],
