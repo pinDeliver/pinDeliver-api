@@ -679,7 +679,7 @@
       "source_relative_path": "articles/vehicle_type.md",
       "output": {
         ".html": {
-          "relative_path": "articles/vehicle_type.html",
+          "relative_path": "vehicle_type.html",
           "hash": "CaWWyEXccio5OBzaXr+I4qt5B89isUjcXUVGmfY9yxw="
         }
       },
