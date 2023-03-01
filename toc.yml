@@ -1,12 +1,5 @@
 - name: Carrier
   href: /carrier.md
-  items:
-  - name: Add
-    href: crud_carrier/add_carrier.md
-  - name: Get
-    href: crud_carrier/get_carrier.md
-  - name: Delete
-    href: crud_carrier/delete_carrier.md
 - name: Customer order
   href: /customer_order.md
 - name: Delivery group
