@@ -8,12 +8,18 @@ on:
     - src/**
     - docs/**
     - .github/workflows/docs.yml
+    - toc.yml
+    - articles/**
+    - images/**
   pull_request:
     branches:
     - main
     paths:
     - docs/**
     - .github/workflows/docs.yml
+    - toc.yml
+    - articles/**
+    - images/**
   workflow_dispatch:
 
 jobs:
