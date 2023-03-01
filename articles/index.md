@@ -42,3 +42,5 @@ Then continue with creating x amount of delivery groups, drivers and vehicles. A
 Once a delivery group is created you can proceed with adding a routing order followed by a customer order with packages and eventually a sender in the same request.
 
 ![Flowchart](images/flowchart_all.png)
+
+![Flowchart](images/flowchart_all.png)
