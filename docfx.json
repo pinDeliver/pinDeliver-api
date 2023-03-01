@@ -18,16 +18,16 @@
       {
         "files": [
           "toc.yml",
-          "docfx_project/articles/**.md",
-          "docfx_project/articles/**/toc.yml",
+          "/articles/**.md",
+          "/articles/**/toc.yml",
           "*.md",
           "index.md"        ]
       },
       {
         "files": [
           "toc.yml",
-          "docfx_project/articles/**.md",
-          "docfx_project/articles/**/toc.yml",
+          "/articles/**.md",
+          "/articles/**/toc.yml",
           "*.md",
           "index.md"        ]
       }
@@ -36,13 +36,10 @@
       {
         "files": [
           "images/**",
-          "index.html",
-          "docfx_project/articles/**.md",
-          "docfx_project/articles/**/toc.yml",
-          "toc.yml",
-          "*.md",
-          "index.md",
-          "docs/**.html"        ]
+          "logo.svg",
+          "favicon.ico",
+          "styles/*.css",
+          "styles/*.js"     ]
       }
     ],
     "overwrite": [
