@@ -699,10 +699,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "flowchart_all.jpg",
+      "source_relative_path": "flowchart_all.png",
       "output": {
         "resource": {
-          "relative_path": "flowchart_all.jpg"
+          "relative_path": "./images/flowchart_all.png"
         }
       },
       "is_incremental": false,
