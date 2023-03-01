@@ -1,5 +1,5 @@
 - name: Carrier
-  href: /carrier.md
+  href: ./carrier.md
   items:
   - name: Add
     href: crud_carrier/add_carrier.md
@@ -9,7 +9,7 @@
     href: crud_carrier/delete_carrier.md
 
 - name: Customer order
-  href: /customer_order.md
+  href: ./customer_order.md
   items:
   - name: Add
     href: crud_customer/add_customer_order.md
