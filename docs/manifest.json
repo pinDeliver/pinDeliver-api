@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/temp/pinDeliver-api/docfx_project",
+  "source_base_path": "C:/temp/pinDeliver-api",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -31,7 +31,7 @@
       "source_relative_path": "articles/carrier.md",
       "output": {
         ".html": {
-          "relative_path": "articles/carrier.html",
+          "relative_path": "index.html",
           "hash": "QK4N413hALj16DXWMO8VelEw96dKJI+EXORE5UD5S34="
         }
       },
