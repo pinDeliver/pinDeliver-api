@@ -702,7 +702,7 @@
       "source_relative_path": "flowchart_all.png",
       "output": {
         "resource": {
-          "relative_path": "./images/flowchart_all.png"
+          "relative_path": "images/flowchart_all.png"
         }
       },
       "is_incremental": false,
