@@ -3,8 +3,8 @@
     "content": [
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
+          "../articles/**.md",
+          "../articles/**/toc.yml",
           "toc.yml",
           "*.md"
         ]
