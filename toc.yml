@@ -1,10 +1,20 @@
-- name: Education
-  href: documentation/
-- name: Introduction
-  href: documentation/introduction.md
-- name: Process
-  href: documentation/process.md
-- name: Admin
-  href: documentation/admin.md
-- name: Movie clips
-  href: documentation/movie_clips.md
+- name: Carrier
+  href: documentation/carrier.md
+- name: Customer order
+  href: documentation/customer_order.md
+- name: Delivery group
+  href: documentation/delivery_group.md
+- name: Driver
+  href: documentation/driver.md
+- name: Order
+  href: documentation/order.md
+- name: Package
+  href: documentation/package.md
+- name: Route
+  href: documentation/route.md
+- name: Sender
+  href: documentation/sender.md
+- name: Vehicle
+  href: documentation/vehicle.md
+- name: Vehicle type
+  href: documentation/vehicle_type.md

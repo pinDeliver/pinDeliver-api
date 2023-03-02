@@ -1,83 +1,125 @@
-- name: Introduction
-  href: introduction.md
+- name: Carrier
+  href: carrier.md
   items:
-  - name: "Get started"
-    href: get_started.md
-  - name: Interfaces
-    href: interfaces.md
-  - name: Definitions
-    href: definitions.md
-  - name: Terminology
-    href: terminology.md
-  - name: "Example scenarios"
-    href: example_scenarios.md
-  - name: "Main menu"
-    href: main_menu.md
-- name: Process
-  href: process.md
+  - name: Add
+    href: carrier_add.md
+  - name: Get
+    href: carrier_get.md
+  - name: Delete
+    href: carrier_delete.md
+
+- name: Customer order
+  href: customer_order.md
   items:
-  - name: Order Excel upload
-    href: order_excel_upload.md
-  - name: "Route optimization/Transport planning"
-    href: route_optimization_transport_planning.md
-  - name: "Go-app for drivers"
-    href: go_app_for_drivers.md
-  - name: "Click & Collect"
-    href: click_and_collect.md
-  - name: "Customer communication"
-    href: customer_communication.md
-  - name: "Send custom messages"
-    href: send_custom_messages.md
-- name: Admin
-  href: admin.md
+  - name: Add
+    href: customer_add.md
+  - name: Add to order
+    href: add_to_order.md
+  - name: Get
+    href: customer_get.md
+  - name: Delete
+    href: customer_delete.md
+  - name: Update
+    href: customer_update.md
+  - name: Update packages
+    href: customer_updatepackages.md
+  - name: Replace packages
+    href: customer_replacepackages.md
+  - name: Search
+    href: customer_search.md
+  - name: Events
+    href: customer_events.md
+
+- name: Delivery group
+  href: delivery_group.md
   items:
-  - name: Drivers
-    href: drivers.md
-  - name: Vehicles
-    href: vehicles.md
-  - name: "Delivery groups"
-    href: delivery_groups.md
-  - name: Settings
-    href: settings.md
-    items:
-    - name: "Basic settings"
-      href: settings_basic.md
-    - name: Language settings
-      href: settings_language.md
-    - name: "Optimization settings"
-      href: settings_optimization.md
-    - name: "Click & Collect"
-      href: settings_click_and_collect.md
-    - name: SMS
-      href: settings_sms.md
-    - name: Email
-      href: settings_email.md
-    - name: "Message schedule"
-      href: settings_message_schedule.md
-    - name: "The Go app"
-      href: settings_go_app.md
-    - name: "The Hub app"
-      href: settings_hub_app.md
-    - name: Security
-      href: settings_security.md
-    - name: "Company features"
-      href: settings_company_features.md
-    - name: "Customer page"
-      href: settings_customer_page.md
-  - name: Users
-    href: users.md
-  - name: "Traffic restrictions"
-    href: traffic_restrictions.md
-  - name: Senders
-    href: senders.md
-- name: Movie clips
-  href: movie_clips.md
+  - name: Add
+    href: delivery_group_add.md
+  - name: Get
+    href: delivery_group_get.md
+  - name: Update
+    href: delivery_group_update.md
+  - name: Delete
+    href: delivery_group_delete.md
+  - name: Events
+    href: delivery_group_events.md
+
+- name: Driver
+  href: driver.md
   items:
-  - name: Order upload with Excel
-    href: movie_clip_excel_upload.md
-  - name: Route optimization
-    href: movie_clip_route_optimization.md
-  - name: Go web app
-    href: movie_clip_go_web_app.md
-  - name: Go native app
-    href: movie_clip_go_native_app.md
+  - name: Add
+    href: driver_add.md
+  - name: Get
+    href: driver_get.md
+  - name: Update
+    href: driver_update.md
+  - name: Delete
+    href: driver_delete.md
+  - name: Events
+    href: driver_events.md
+
+- name: Order
+  href: order.md
+  items:
+  - name: Add
+    href: order_add.md
+  - name: Get
+    href: order_get.md
+  - name: Import
+    href: order_import.md
+  - name: Events
+    href: order_events.md
+
+- name: Package
+  href: package.md
+  items:
+  - name: Get
+    href: package_get.md
+  - name: Update
+    href: package_update.md
+
+- name: Route
+  href: route.md
+  items:
+  - name: Add
+    href: route_add.md
+  - name: Get
+    href: route_get.md
+  - name: Update
+    href: route_update.md
+  - name: Packaging
+    href: route_packaging.md
+  - name: Create unit loads
+    href: route_create_unit_loads.md
+  - name: Events
+    href: route_events.md
+
+- name: Sender
+  href: sender.md
+  items:
+  - name: Get
+    href: sender_get.md
+
+- name: Vehicle
+  href: vehicle.md
+  items:
+  - name: Add
+    href: vehicle_add.md
+  - name: Get
+    href: vehicle_get.md
+  - name: Update
+    href: vehicle_update.md
+  - name: Delete
+    href: vehicle_delete.md
+  - name: Events
+    href: vehicle_events.md
+
+- name: Vehicle type
+  href: vehicle_type.md
+  items:
+  - name: Add
+    href: vehicle_type_add.md
+  - name: Get
+    href: vehicle_type_get.md
+  - name: Delete
+    href: vehicle_type_delete.md
