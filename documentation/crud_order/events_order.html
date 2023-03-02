@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Order events </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Order events ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="order-events">Order events</h1>
+
+<h3 id="example">Example</h3>
+<pre><code class="lang-JSON">{
+  &quot;event&quot;: &quot;ORDER_WAS_CREATED&quot;,
+  &quot;id&quot;: &quot;{order_id}&quot;,
+  &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v1_2/Order/get/{order_id}&quot;
+}
+</code></pre>
+<h3 id="post-data">Post data</h3>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;ORDER_WAS_CREATED&quot;,
+  &quot;id&quot;: &quot;&lt;order-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for order&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;ORDER_WAS_DELETED&quot;,
+  &quot;id&quot;: &quot;&lt;order-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for order&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;ORDER_WAS_MERGED&quot;,
+  &quot;id&quot;: &quot;&lt;source-order-id&gt;&quot;,
+  &quot;target_id&quot;: &quot;&lt;target-order-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for target-order&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;ALL_ROUTES_LOCKED&quot;,
+  &quot;id&quot;: &quot;&lt;order-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for order&gt;&quot;
+}
+</code></pre>
+<hr>
+<h1 id="terminology">Terminology</h1>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORDER_WAS_CREATED</td>
+<td>An order was created</td>
+</tr>
+<tr>
+<td>ORDER_WAS_DELETED</td>
+<td>An order was deleted</td>
+</tr>
+<tr>
+<td>ORDER_WAS_MERGED</td>
+<td>An order was merged with another order</td>
+</tr>
+<tr>
+<td>ALL_ROUTES_LOCKED</td>
+<td>All routes on an order was locked</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

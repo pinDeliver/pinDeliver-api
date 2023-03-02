@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>API-documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="API-documentation ">
+    <meta name="generator" content="docfx 2.59.1.0">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="api-documentation">API-documentation</h1>
+
+<p>API (Application Programming Interface) documentation is a set of information and instructions that explain how to effectively use and integrate an API into a software application. It is an important tool for developers as it helps them understand the capabilities and limitations of the API, as well as how to properly make requests and handle responses.</p>
+<p>API documentation typically includes information such as the endpoint URL, the types of requests that can be made (e.g. GET, POST, PUT, DELETE), the format of the data that is expected in requests and responses, and any authentication or authorization requirements. It may also include code examples, tutorials, and best practices for using the API.</p>
+<hr>
+<h1 id="pindeliver">pinDeliver</h1>
+<p>pinDeliver is a technology-driven logistics company that provides on-demand delivery and transportation services to businesses and consumers. It operates as a platform that connects businesses with a network of delivery drivers. pinDeliver provides businesses with tools to manage their delivery operations, track shipments, and communicate with customers. Some of its services include same-day delivery, scheduled delivery, and long-distance delivery. The company also provides real-time tracking and delivery updates, allowing businesses and customers to monitor the progress of their shipments. pinDeliver operates in multiple countries and provides delivery services across various industries, including retail, e-commerce, food and beverage, and more. The company's mission is to make delivery operations more efficient, cost-effective, and customer-friendly.</p>
+<p>pinDeliver's last mile delivery service is designed to streamline the whole leg of the delivery journey, from the transportation hub to the recipient's doorstep. It leverages technology to optimize delivery routes and ensure timely and efficient delivery. pinDeliver's last mile delivery service is customizable, allowing businesses to choose the delivery options that best meet their needs, such as same-day delivery, scheduled delivery, or real-time delivery updates.</p>
+<p>pinDeliver's next generation Transportation Management System (TMS) is a cloud-based platform that provides businesses with real-time visibility into their delivery operations. It includes features such as route optimization, delivery tracking, and delivery management, among others. The TMS integrates with other systems, such as warehouse management and order management, to provide businesses with a comprehensive view of their delivery operations. The goal of pinDeliver's TMS is to make delivery operations more efficient, reduce costs, and improve customer satisfaction.</p>
+<hr>
+<h1 id="workflow">Workflow</h1>
+<p>The requests for sender and carrier are completely optional to create. There are already existing senders you can use when adding a customer order. Carrier can be used when creating a vehicle but it is not essential to make a vehicle work.
+The request for vehicle type works in a similar way. It is optional to create and can be connected to a vehicle but it is not necessary to create it to make a vehicle work.</p>
+<p>The other three requests on the left side, delivery group, driver and vehicle are non-optional but you still only need to create them one time. Once these three, and eventually sender, carrier and vehicle type, are created you don't need to use those requests anymore if you don't want to. If you want to you can connect the driver to one or more vehicles but that is completely optional.</p>
+<p>The four requests one the right side of the chart below; routing order, customer order, package and route are requests that can be iterated for as many times as you need them.</p>
+<p>A reasonable way to use our API-requests would be to start with, if you plan on using it, setting up a carrier.
+Then continue with creating x amount of delivery groups, drivers and vehicles. After a vehicle is created you can proceed with creating a vehicle type and connect it to the vehicle.
+Once a delivery group is created you can proceed with adding a routing order followed by a customer order with packages and eventually a sender in the same request.</p>
+<p><img src="/images/flowchart_all.jpg" alt="Flowchart"></p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
+
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
