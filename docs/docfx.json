@@ -17,30 +17,26 @@
     "content": [
       {
         "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
           "toc.yml",
-          "/articles/**.md",
-          "/articles/toc.yml",
-          "*.md",
-          "index.md"        ]
+          "*.md"        ]
       },
       {
         "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
           "toc.yml",
-          "/articles/**.md",
-          "/articles/toc.yml",
-          "*.md",
-          "index.md"        ]
+          "*.md"        ]
       }
     ],
     "resource": [
       {
         "files": [
-          "images/**.jpg",
+          "images/**",
           "logo.svg",
           "favicon.ico",
-          "styles/*.css",
-          "flowchart_all.jpg",
-          "styles/*.js"     ]
+          "CNAME"     ]
       }
     ],
     "overwrite": [
