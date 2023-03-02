@@ -41,7 +41,7 @@ jobs:
         args: install docfx
 
     - name: DocFX Build
-      run: docfx docfx.json -t statictoc
+      run: docfx docs/docfx.json -t statictoc
       continue-on-error: false
 
     - name: Publish
