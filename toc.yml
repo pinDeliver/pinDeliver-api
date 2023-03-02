@@ -1,20 +1,20 @@
 - name: Carrier
-  href: /carrier.md
+  href: articles/carrier.md
 - name: Customer order
-  href: /customer_order.md
+  href: articles/customer_order.md
 - name: Delivery group
-  href: /delivery_group.md
+  href: articles/delivery_group.md
 - name: Driver
-  href: /driver.md
+  href: articles/driver.md
 - name: Order
-  href: /order.md
+  href: articles/order.md
 - name: Package
-  href: /package.md
+  href: articles/package.md
 - name: Route
-  href: /route.md
+  href: articles/route.md
 - name: Sender
-  href: /sender.md
+  href: articles/sender.md
 - name: Vehicle
-  href: /vehicle.md
+  href: articles/vehicle.md
 - name: Vehicle type
-  href: /vehicle_type.md
+  href: articles/vehicle_type.md
