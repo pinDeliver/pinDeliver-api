@@ -1,2 +1,2 @@
 # pinDeliverEducation
-Education material for pinDeliver
+API-documentation for pinDeliver
