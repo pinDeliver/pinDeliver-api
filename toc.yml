@@ -6,7 +6,7 @@
   href: documentation/delivery_group.md
 - name: Driver
   href: documentation/driver.md
-- name: Order
+- name: Routing order
   href: documentation/order.md
 - name: Package
   href: documentation/package.md
