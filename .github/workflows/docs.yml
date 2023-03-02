@@ -8,18 +8,12 @@ on:
     - src/**
     - docs/**
     - .github/workflows/docs.yml
-    - toc.yml
-    - articles/**
-    - images/**
   pull_request:
     branches:
     - main
     paths:
     - docs/**
     - .github/workflows/docs.yml
-    - toc.yml
-    - articles/**
-    - images/**
   workflow_dispatch:
 
 jobs:
@@ -41,7 +35,8 @@ jobs:
         args: install docfx
 
     - name: DocFX Build
-      run: docfx docs/docfx.json -t statictoc
+      working-directory: docs
+      run: docfx .\docfx.json
       continue-on-error: false
 
     - name: Publish
@@ -49,5 +44,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: site
+        publish_dir: docs
         force_orphan: true
