@@ -5,16 +5,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Add carrier </title>
+    <title>Delete carrier </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Add carrier ">
+    <meta name="title" content="Delete carrier ">
     <meta name="generator" content="docfx 2.59.1.0">
 
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc.html">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
 
 
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
 
-              <a class="navbar-brand" href="index.html">
-                <img id="logo" class="svg" src="logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -67,12 +67,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="add-carrier">Add carrier</h1>
+<h1 id="delete-carrier">Delete carrier</h1>
 
-<p>Not connected to any other API-requests. Needed to access the haulage portal if your company plans on using that.
-Can be connected to a <a href="/articles/crud_vehicle/add_vehicle.html">vehicle</a> when adding a vehicle and a <a href="/articles/crud_driver/add_driver.html">driver</a> when adding a driver.</p>
+<p>Used to delete a carrier using the carrier id</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/carrier/add
+<pre><code>https://cloud.pindeliver.com/api/v2_1/carrier/delete/{carrier_id}
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -83,71 +82,26 @@ Can be connected to a <a href="/articles/crud_vehicle/add_vehicle.html">vehicle<
 <pre><code>POST
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/carrier/add' \
---header 'X-PINDELIVER-API-KEY: 1212-1212-1212-1212' \
---header 'X-PINDELIVER-API-CLIENT-KEY: 10c94858-8978-11ec-a2e8-005056011cb5' \
---header 'Content-Type: application/json' \
---data-raw '{
-    &quot;carrier&quot;: {
-        &quot;name&quot;: &quot;Carrier&quot;,
-        &quot;identifier&quot;: &quot;Identifier&quot;
-    }
-}'
-</code></pre>
-<h3 id="example-data">Example data</h3>
-<pre><code class="lang-JSON">{
-    &quot;carrier&quot;: {
-        &quot;name&quot;: &quot;Carrier&quot;,
-        &quot;identifier&quot;: &quot;Identifier&quot;
-    }
-}
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/carrier/delete/{carrier_id}' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--data-raw ''
 </code></pre>
 <h3 id="example-error-response">Example error response</h3>
 <pre><code class="lang-JSON">{
     &quot;result&quot;: &quot;error&quot;,
-    &quot;status&quot;: 400,
+    &quot;status&quot;: 404,
     &quot;response&quot;: {
-        &quot;error_description&quot;: &quot;add_carrier2 could not be validated: [carrier.identifier] The property identifier is required&quot;
+        &quot;error_description&quot;: &quot;can't find carrier on server {carrier_id}&quot;
     }
 }
 </code></pre>
 <h3 id="example-success-response">Example success response</h3>
 <pre><code class="lang-JSON">{
-    &quot;vehicle&quot;: &quot;Carrier&quot;,
     &quot;result&quot;: &quot;ok&quot;,
-    &quot;code&quot;: 200,
-    &quot;data&quot;: &quot;{carrier_id}&quot;,
-    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/carrier/get/{carrier_id}&quot;
+    &quot;code&quot;: 200
 }
 </code></pre>
-<hr>
-<h1 id="output-format">Output format</h1>
-<h3 id="carrier-object-properties">Carrier Object Properties</h3>
-<p>Fields marked with <font color='red'>*</font> are required</p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>name<font color='red'>*</font></td>
-<td>string</td>
-<td>Name of this carrier</td>
-<td>Carrier</td>
-</tr>
-<tr>
-<td>identifier<font color='red'>*</font></td>
-<td>string</td>
-<td>Name of this carriers identifier</td>
-<td>Carrier-Identifier</td>
-</tr>
-</tbody>
-</table>
 </article>
           </div>
 
@@ -176,8 +130,8 @@ Can be connected to a <a href="/articles/crud_vehicle/add_vehicle.html">vehicle<
       </footer>
     </div>
 
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

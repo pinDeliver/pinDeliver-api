@@ -1,29 +1,29 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-
+  
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delete carrier </title>
+    <title>Get carrier </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delete carrier ">
+    <meta name="title" content="Get carrier ">
     <meta name="generator" content="docfx 2.59.1.0">
-
+    
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc.html">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-
-
-
+    
+    
+    
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-
+        
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,9 +33,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-
-              <a class="navbar-brand" href="index.html">
-                <img id="logo" class="svg" src="logo.svg" alt="">
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -47,7 +47,7 @@
             </div>
           </div>
         </nav>
-
+        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -57,7 +57,7 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-
+        
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -67,11 +67,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="delete-carrier">Delete carrier</h1>
+<h1 id="get-carrier">Get carrier</h1>
 
-<p>Used to delete a carrier using the carrier id</p>
+<p>Used to retrieve a carrier using the carrier id</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/carrier/delete/{carrier_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_1/carrier/get/{carrier_id}
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -79,13 +79,12 @@
   X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
 </code></pre>
 <h3 id="method">Method</h3>
-<pre><code>POST
+<pre><code>GET
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/carrier/delete/{carrier_id}' \
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/carrier/get/{carrier_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
---header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
---data-raw ''
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 </code></pre>
 <h3 id="example-error-response">Example error response</h3>
 <pre><code class="lang-JSON">{
@@ -98,13 +97,83 @@
 </code></pre>
 <h3 id="example-success-response">Example success response</h3>
 <pre><code class="lang-JSON">{
-    &quot;result&quot;: &quot;ok&quot;,
-    &quot;code&quot;: 200
+    &quot;carrier&quot;: {
+        &quot;id&quot;: &quot;{carrier_id}&quot;,
+        &quot;identifier&quot;: &quot;Identifier&quot;,
+        &quot;name&quot;: &quot;Carrier&quot;
+    }
+}
+</code></pre>
+<hr>
+<h1 id="get-carrier-using-external-id">Get carrier using external id</h1>
+<p>Used to retrieve a carrier using the carrier external id</p>
+<h3 id="endpoint-1">Endpoint</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/carrier/get/extid/Identifier
+</code></pre>
+<h3 id="authentication-1">Authentication</h3>
+<pre><code>Headers:
+  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX
+  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
+</code></pre>
+<h3 id="method-1">Method</h3>
+<pre><code>GET
+</code></pre>
+<h3 id="example-request-1">Example request</h3>
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/carrier/get/extid/Identifier' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
+</code></pre>
+<h3 id="example-error-response-1">Example error response</h3>
+<pre><code class="lang-JSON">{
+    &quot;result&quot;: &quot;error&quot;,
+    &quot;status&quot;: 404,
+    &quot;response&quot;: {
+        &quot;error_description&quot;: &quot;No such carrier&quot;
+    }
+}
+</code></pre>
+<h3 id="example-success-response-1">Example success response</h3>
+<pre><code class="lang-JSON">{
+    &quot;carrier&quot;: {
+        &quot;id&quot;: &quot;{carrier_id}&quot;,
+        &quot;identifier&quot;: &quot;Identifier&quot;,
+        &quot;name&quot;: &quot;Carrier&quot;
+    }
+}
+</code></pre>
+<hr>
+<h1 id="get-all-carriers">Get all carriers</h1>
+<p>Used to retrieve all carriers</p>
+<h3 id="endpoint-2">Endpoint</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/carrier/get
+</code></pre>
+<h3 id="authentication-2">Authentication</h3>
+<pre><code>Headers:
+  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX
+  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
+</code></pre>
+<h3 id="method-2">Method</h3>
+<pre><code>GET
+</code></pre>
+<h3 id="example-request-2">Example request</h3>
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/carrier/get' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
+</code></pre>
+<h3 id="example-success-response-2">Example success response</h3>
+<pre><code class="lang-JSON">{
+    &quot;carriers&quot;: [
+        {
+            &quot;id&quot;: &quot;{carrier_id}&quot;,
+            &quot;identifier&quot;: &quot;Identifier&quot;,
+            &quot;name&quot;: &quot;Carrier&quot;
+        }
+    ]
 }
 </code></pre>
 </article>
           </div>
-
+          
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -115,7 +184,7 @@
           </div>
         </div>
       </div>
-
+      
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -124,14 +193,14 @@
               <a href="#top">Back to top</a>
             </span>
             <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
-
+            
           </div>
         </div>
       </footer>
     </div>
-
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>
