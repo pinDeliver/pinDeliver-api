@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Package </title>
+    <title>Get order </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Package ">
+    <meta name="title" content="Get order ">
     <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,10 +67,88 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="package">Package</h1>
+<h1 id="get-order">Get order</h1>
 
-<p>Packages can be created either after a customer order has been established or simultaneously during the customer order creation process. The package request function is limited to retrieving or updating existing packages.</p>
-<p><img src="/images/flowchart_package.jpg" alt="Package"></p>
+<p>Used to retrieve an order using the order id</p>
+<h3 id="endpoint">Endpoint</h3>
+<pre><code>https://martinservera-test.pindeliver.com/api/v2_1/Order/get/{order_id}
+</code></pre>
+<h3 id="authentication">Authentication</h3>
+<pre><code>Headers:
+  X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX
+  X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX
+</code></pre>
+<h3 id="method">Method</h3>
+<pre><code>GET
+</code></pre>
+<h3 id="example-request">Example request</h3>
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/order/get/{order_id}' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--data-raw ''
+</code></pre>
+<h3 id="example-error-response">Example error response</h3>
+<pre><code class="lang-JSON">Error Response
+[
+  {
+    &quot;result&quot;: &quot;error&quot;,
+    &quot;status&quot;: 404,
+    &quot;response&quot;: {
+      &quot;error_description&quot;: &quot;No such order available&quot;
+    }
+  }
+]
+</code></pre>
+<h3 id="example-success-response">Example success response</h3>
+<pre><code class="lang-JSON">Success Response
+{
+    &quot;order&quot;: {
+        &quot;id&quot;: &quot;{order_id}&quot;,
+        &quot;name&quot;: &quot;Scandinavium 1980-10-10&quot;,
+        &quot;order_type&quot;: &quot;DELIVERY&quot;,
+        &quot;scheduled_date&quot;: &quot;1980-10-10&quot;,
+        &quot;created_date&quot;: &quot;1980-10-10 21:00:00&quot;,
+        &quot;delivery_group&quot;: &quot;DeliveryGroup&quot;,
+        &quot;status&quot;: &quot;NOT_ROUTED&quot;,
+        &quot;num_customers&quot;: 0,
+        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/order/get/{order_id}&quot;
+    }
+}
+</code></pre>
+<hr>
+<h1 id="query-parameters">Query parameters</h1>
+<h3 id="endpoint-example">Endpoint example</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/order/get/{order_id}?all
+</code></pre>
+<p>If you want to use multiple parameters at the same time you can add them after the first parameter using &quot;&amp;&quot;.
+For example: ?all&amp;order&amp;routes.</p>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>?all</td>
+<td>Get all info for the specific order</td>
+</tr>
+<tr>
+<td>?routes</td>
+<td>Get routes for the specific order</td>
+</tr>
+<tr>
+<td>?stops</td>
+<td>Get stops for the specific order</td>
+</tr>
+<tr>
+<td>?customer</td>
+<td>Get customers for the specific order</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

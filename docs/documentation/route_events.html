@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Package </title>
+    <title>Route events </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Package ">
+    <meta name="title" content="Route events ">
     <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,10 +67,105 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="package">Package</h1>
+<h1 id="route-events">Route events</h1>
 
-<p>Packages can be created either after a customer order has been established or simultaneously during the customer order creation process. The package request function is limited to retrieving or updating existing packages.</p>
-<p><img src="/images/flowchart_package.jpg" alt="Package"></p>
+<h3 id="example">Example</h3>
+<pre><code class="lang-JSON">{
+  &quot;event&quot;: &quot;ROUTE_WAS_LOCKED&quot;,
+  &quot;id&quot;: &quot;{route_id}&quot;,
+  &quot;url&quot;: &quot;https://localhost/api/v1_2/Route/get/{route_id}&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{
+  &quot;event&quot;: &quot;LOADING_WAS_COMPLETED&quot;,
+  &quot;id&quot;: &quot;{route_id}&quot;,
+  &quot;subroute_number&quot;: 1,
+  &quot;url&quot;: &quot;https://localhost/api/v1_2/Route/get/{route_id}&quot;
+}
+</code></pre>
+<h3 id="post-data">Post data</h3>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;ROUTE_WAS_LOCKED&quot;,
+  &quot;id&quot;: &quot;&lt;route-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for route&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;ROUTE_WAS_UNLOCKED&quot;,
+  &quot;id&quot;: &quot;&lt;route-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for route&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;ROUTE_WAS_ASSIGNED&quot;,
+  &quot;id&quot;: &quot;&lt;route-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for route&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;ROUTE_WAS_UNASSIGNED&quot;,
+  &quot;id&quot;: &quot;&lt;route-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for route&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;ROUTE_WAS_STARTED&quot;,
+  &quot;id&quot;: &quot;&lt;route-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for route&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;ROUTE_WAS_COMPLETED&quot;,
+  &quot;id&quot;: &quot;&lt;route-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for route&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;LOADING_WAS_COMPLETED&quot;,
+  &quot;id&quot;: &quot;&lt;route-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-1.2-url for route&gt;&quot;
+}
+</code></pre>
+<hr>
+<h1 id="terminology">Terminology</h1>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROUTE_WAS_LOCKED</td>
+<td>A route was locked</td>
+</tr>
+<tr>
+<td>ROUTE_WAS_UNLOCKED</td>
+<td>A route was unlocked</td>
+</tr>
+<tr>
+<td>ROUTE_WAS_ASSIGNED</td>
+<td>A route was assigned to a driver</td>
+</tr>
+<tr>
+<td>ROUTE_WAS_UNASSIGNED</td>
+<td>A route was unassigned from a driver</td>
+</tr>
+<tr>
+<td>ROUTE_WAS_STARTED</td>
+<td>A route was started</td>
+</tr>
+<tr>
+<td>ROUTE_WAS_COMPLETED</td>
+<td>A route was completed</td>
+</tr>
+<tr>
+<td>LOADING_WAS_COMPLETED</td>
+<td>The loading of a route was completed</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

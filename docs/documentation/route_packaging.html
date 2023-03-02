@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Package </title>
+    <title>Packaging route </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Package ">
+    <meta name="title" content="Packaging route ">
     <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,10 +67,51 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="package">Package</h1>
+<h1 id="packaging-route">Packaging route</h1>
 
-<p>Packages can be created either after a customer order has been established or simultaneously during the customer order creation process. The package request function is limited to retrieving or updating existing packages.</p>
-<p><img src="/images/flowchart_package.jpg" alt="Package"></p>
+<p>Used to add packaging to a route using the route id</p>
+<h3 id="endpoint">Endpoint</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/route/packaging/{route_id}
+</code></pre>
+<h3 id="authentication">Authentication</h3>
+<pre><code>Headers:
+  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX
+  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
+</code></pre>
+<h3 id="method">Method</h3>
+<pre><code>POST
+</code></pre>
+<h3 id="example-request">Example request</h3>
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/packaging/{route_id}' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
+</code></pre>
+<h3 id="example-error-response">Example error response</h3>
+<pre><code class="lang-JSON">[
+    {
+        &quot;result&quot;: &quot;error&quot;,
+        &quot;status&quot;: 404,
+        &quot;data&quot;: &quot;No such route available&quot;
+    }
+]
+</code></pre>
+<h3 id="example-success-response">Example success response</h3>
+<pre><code class="lang-JSON">[
+    {
+        &quot;packaging_type&quot;: null,
+        &quot;quantity&quot;: 1,
+        &quot;quantity_assigned&quot;: 1,
+        &quot;unit_load_type&quot;: null,
+        &quot;quantity_per_unit_load&quot;: null,
+        &quot;unit_loads&quot;: [
+            {
+                &quot;sscc&quot;: &quot;10&quot;,
+                &quot;customer_order_ids&quot;: []
+            }
+        ]
+    }
+]
+</code></pre>
 </article>
           </div>
           

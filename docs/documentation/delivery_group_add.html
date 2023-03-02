@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Add delivery group </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Add delivery group ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="add-delivery-group">Add delivery group</h1>
+
+<p>You need to create a delivery group before being able to create a <a href="/articles/crud_vehicle/add_vehicle.html">vehicle</a> and a <a href="/articles/crud_driver/add_driver.html">driver</a>.</p>
+<h3 id="endpoint">Endpoint</h3>
+<pre><code>https://cloud.pindeliver.com/api/v2_1/delivery_group/add
+</code></pre>
+<h3 id="authentication">Authentication</h3>
+<pre><code>Headers:
+  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX
+  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
+</code></pre>
+<h3 id="method">Method</h3>
+<pre><code>POST
+</code></pre>
+<h3 id="simple-example-request">Simple example request</h3>
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_group/add' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    &quot;delivery_group&quot;: {
+
+            &quot;name&quot;: &quot;DeliveryGroup&quot;,
+            &quot;identifier&quot;: &quot;DeliveryGroup&quot;
+    }
+}
+'
+</code></pre>
+<h3 id="simple-example-data">Simple example data</h3>
+<pre><code class="lang-JSON">{
+    &quot;delivery_group&quot;: {
+
+            &quot;name&quot;: &quot;DeliveryGroup&quot;,
+            &quot;identifier&quot;: &quot;DeliveryGroup&quot;
+    }
+}
+</code></pre>
+<h3 id="advanced-example-request">Advanced example request</h3>
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_group/add' \
+--header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    &quot;delivery_group&quot;: {
+
+            &quot;name&quot;: &quot;DeliveryGroup&quot;,
+            &quot;identifier&quot;: &quot;DeliveryGroupIdentifier&quot;,
+            &quot;base_stop_time&quot;: &quot;5&quot;,
+            &quot;use_depots&quot;: true,
+            &quot;apartment_stop_time&quot;: &quot;7&quot;,
+            &quot;depot_reload_time_minutes&quot;: &quot;5&quot;,
+            &quot;depot_address&quot;: &quot;Valhallavägen 1, 41251 Göteborg&quot;,
+            &quot;depot_location_latitude&quot;: &quot;57.699312&quot;,
+            &quot;depot_location_longitude&quot;: &quot;11.987573&quot;,
+            &quot;allow_reload_option&quot;: &quot;always&quot;,
+            &quot;use_recycling&quot;: false,
+            &quot;offloading_scan&quot;: &quot;linehaul&quot;,
+            &quot;package_loading_scan&quot;: &quot;distribution_and_linehaul&quot;
+    }
+}
+'
+</code></pre>
+<h3 id="advanced-example-data">Advanced example data</h3>
+<pre><code class="lang-JSON">{
+    &quot;delivery_group&quot;: {
+
+            &quot;name&quot;: &quot;DeliveryGroup&quot;,
+            &quot;identifier&quot;: &quot;DeliveryGroupIdentifier&quot;,
+            &quot;base_stop_time&quot;: &quot;5&quot;,
+            &quot;use_depots&quot;: true,
+            &quot;apartment_stop_time&quot;: &quot;7&quot;,
+            &quot;depot_reload_time_minutes&quot;: &quot;5&quot;,
+            &quot;depot_address&quot;: &quot;Valhallavägen 1, 41251 Göteborg&quot;,
+            &quot;depot_location_latitude&quot;: &quot;57.699312&quot;,
+            &quot;depot_location_longitude&quot;: &quot;11.987573&quot;,
+            &quot;allow_reload_option&quot;: &quot;always&quot;,
+            &quot;use_recycling&quot;: false,
+            &quot;offloading_scan&quot;: &quot;linehaul&quot;,
+            &quot;package_loading_scan&quot;: &quot;distribution_and_linehaul&quot;
+    }
+}
+</code></pre>
+<h3 id="example-error-response">Example error response</h3>
+<pre><code class="lang-JSON">{
+    &quot;result&quot;: &quot;error&quot;,
+    &quot;status&quot;: 400,
+    &quot;response&quot;: {
+        &quot;error_description&quot;: &quot;'name' is required&quot;
+    }
+}
+</code></pre>
+<h3 id="example-success-response">Example success response</h3>
+<pre><code class="lang-JSON">{
+    &quot;delivery_group&quot;: &quot;DeliveryGroup&quot;,
+    &quot;result&quot;: &quot;ok&quot;,
+    &quot;code&quot;: 200,
+    &quot;data&quot;: &quot;{delivery_group_id}&quot;,
+    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/delivery_group/get/745&quot;
+}
+</code></pre>
+<hr>
+<h1 id="input-format">Input format</h1>
+<h3 id="delivery-group-object-properties">Delivery Group object properties</h3>
+<p>Fields marked with <font color='red'>*</font> are required</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name<font color='red'>*</font></td>
+<td>string</td>
+<td>Name of this delivery group.</td>
+<td>Göteborg</td>
+</tr>
+<tr>
+<td>identifier<font color='red'>*</font></td>
+<td>string or null</td>
+<td>Unique identifier of this delivery group. <br><font color='red'>If identifier is null the identifier will be set to this delivery group name</font></td>
+<td>Göteborg</td>
+</tr>
+<tr>
+<td>base_stop_time</td>
+<td>integer</td>
+<td>Base stop time of this delivery group to be used in an optimization</td>
+<td>5</td>
+</tr>
+<tr>
+<td>apartment_stop_time</td>
+<td>integer</td>
+<td>&quot;base_stop_time&quot; + &quot;apartment_stop_time&quot; equals the total stop time for customer who live in apartments, used in an optimization</td>
+<td>2</td>
+</tr>
+<tr>
+<td>depot_reload_time_minutes</td>
+<td>integer</td>
+<td>Number of minutes it takes to reload a vehicle at a depot stop, used in an optimization</td>
+<td>65</td>
+</tr>
+<tr>
+<td>depot_address</td>
+<td>string</td>
+<td>The address where the depot is located</td>
+<td>Nils Ericsonsplatsen 3, 411 03 Göteborg</td>
+</tr>
+<tr>
+<td>depot_location_latitude</td>
+<td>number</td>
+<td>The latitude where the depot is located</td>
+<td>57.7091409</td>
+</tr>
+<tr>
+<td>depot_location_longitude</td>
+<td>number</td>
+<td>The longitude where the depot is located</td>
+<td>11.9712367</td>
+</tr>
+<tr>
+<td>use_depots</td>
+<td>boolean or null</td>
+<td>Used to indicate if depots are used or not</td>
+<td>true</td>
+</tr>
+<tr>
+<td>allow_reload_option</td>
+<td>string or null</td>
+<td>Options to show if reloading is allowed. Never, always, optional</td>
+<td>always</td>
+</tr>
+<tr>
+<td>use_recycling</td>
+<td>boolean or null</td>
+<td>Used to indicate if recycling is allowed or not</td>
+<td>false</td>
+</tr>
+<tr>
+<td>offloading_scan</td>
+<td>string or null</td>
+<td>Used to show when an offloading scan is needed. Not_set, none, distribution, linehaul, distribution_and_linehaul</td>
+<td>distribution</td>
+</tr>
+<tr>
+<td>package_loading_scan</td>
+<td>string or null</td>
+<td>Used to show when an package loading scan is needed. Not_set, none, distribution, linehaul, distribution_and_linehaul</td>
+<td>linehaul</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

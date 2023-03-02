@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Package </title>
+    <title>Vehicle events </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Package ">
+    <meta name="title" content="Vehicle events ">
     <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,10 +67,59 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="package">Package</h1>
+<h1 id="vehicle-events">Vehicle events</h1>
 
-<p>Packages can be created either after a customer order has been established or simultaneously during the customer order creation process. The package request function is limited to retrieving or updating existing packages.</p>
-<p><img src="/images/flowchart_package.jpg" alt="Package"></p>
+<h3 id="example">Example</h3>
+<pre><code class="lang-JSON">{
+  &quot;event&quot;: &quot;VEHICLE_WAS_UPDATED&quot;,
+  &quot;id&quot;: &quot;{vehicle_id}&quot;,
+  &quot;url&quot;: &quot;https://localhost/api/v2_1/vehicle/get/{vehicle_id}&quot;,
+    &quot;external_id&quot;: &quot;B1&quot;
+}
+</code></pre>
+<h3 id="post-data">Post data</h3>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;VEHICLE_WAS_CREATED&quot;,
+  &quot;id&quot;: &quot;&lt;vehicle-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-2.1-url for vehicle&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;VEHICLE_WAS_DELETED&quot;,
+  &quot;id&quot;: &quot;&lt;vehicle-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-2.1-url for vehicle&gt;&quot;
+}
+</code></pre>
+<pre><code class="lang-JSON">{  
+  &quot;event&quot;: &quot;VEHICLE_WAS_UPDATED&quot;,
+  &quot;id&quot;: &quot;&lt;vehicle-id&gt;&quot;,
+  &quot;url&quot;: &quot;&lt;api-2.1-url for vehicle&gt;&quot;
+}
+</code></pre>
+<hr>
+<h1 id="terminology">Terminology</h1>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VEHICLE_WAS_CREATED</td>
+<td>A vehicle was created</td>
+</tr>
+<tr>
+<td>VEHICLE_WAS_DELETED</td>
+<td>A vehicle was deleted</td>
+</tr>
+<tr>
+<td>VEHICLE_WAS_UPDATED</td>
+<td>A vehicle was updated</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
