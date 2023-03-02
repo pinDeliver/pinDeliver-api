@@ -1,6 +1,6 @@
 # Add vehicle type
 
-Connected to a [vehicle](/articles/crud_vehicle/add_vehicle.html). Make sure you've created a vehicle before creating a vehicle type.
+Connected to a [vehicle](vehicle_add.md). Make sure you've created a vehicle before creating a vehicle type.
 
 ### Endpoint
 ```

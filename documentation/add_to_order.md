@@ -1,6 +1,6 @@
 # Add to order
 
-A customer can be added independently or as part of an existing [order](/articles/crud_order/get_order.html). If not specified, it will be added to the inbox. Use order_id if you want to specify which order
+A customer can be added independently or as part of an existing [order](order_get.md). If not specified, it will be added to the inbox. Use order_id if you want to specify which order
 it should be added to.
 A customer is needed to be able to add packages. It is possible to add packages in the same request when adding a customer. See below for more details.
 

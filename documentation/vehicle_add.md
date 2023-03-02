@@ -1,7 +1,6 @@
 # Add vehicle
 
-Connected to a [delivery group](/articles/crud_delivery_group/add_delivery_group.html). Make sure you've created a delivery group before creating a vehicle. A vehicle is needed before [adding a route](/
-articles/crud_route/add_route.html). Can be connected to a [driver](/articles/crud_driver/add_driver.html) and a [vehicle type](/articles/crud_vehicle_type/add_vehicle_type.html).
+Connected to a [delivery group](delivery_group_add.md). Make sure you've created a delivery group before creating a vehicle. A vehicle is needed before [adding a route](route_add.md). Can be connected to a [driver](driver_add.md) and a [vehicle type](vehicle_type_add.md).
 
 ### Endpoint
 ```

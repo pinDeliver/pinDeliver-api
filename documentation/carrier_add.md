@@ -1,7 +1,7 @@
 # Add carrier
 
 Not connected to any other API-requests. Needed to access the haulage portal if your company plans on using that.
-Can be connected to a [vehicle](/articles/crud_vehicle/add_vehicle.html) when adding a vehicle and a [driver](/articles/crud_driver/add_driver.html) when adding a driver.
+Can be connected to a [vehicle](vehicle_add.md) when adding a vehicle and a [driver](driver_add.md) when adding a driver.
 
 ### Endpoint
 ```

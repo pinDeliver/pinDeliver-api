@@ -1,6 +1,6 @@
 # Create route with unit loads
 
-Used to to create unit loads on a route using a route id
+Used to create unit loads on a route using a route id
 
 ### Endpoint
 ```

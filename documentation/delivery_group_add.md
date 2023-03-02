@@ -1,6 +1,6 @@
 # Add delivery group
 
-You need to create a delivery group before being able to create a [vehicle](/articles/crud_vehicle/add_vehicle.html) and a [driver](/articles/crud_driver/add_driver.html).
+You need to create a delivery group before being able to create a [vehicle](vehicle_add.md) and a [driver](driver_add.md).
 
 ### Endpoint
 ```
