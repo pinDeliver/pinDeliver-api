@@ -351,6 +351,21 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "documentation/events.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/events.html",
+          "hash": "inok+XzKyxHyiwFJd4JeFCrjqmJGtiYBeCxnWzZVn5o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "documentation/intro.md",
       "output": {
