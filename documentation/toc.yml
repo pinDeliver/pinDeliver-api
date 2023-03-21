@@ -58,6 +58,22 @@
   - name: Events
     href: driver_events.md
 
+- name: Events
+  href: events.md
+  items:
+  - name: Customer order
+    href: customer_events.md
+  - name: Delivery group
+    href: delivery_groups_events.md
+  - name: Driver
+    href: driver_events.md
+  - name: Routing order
+    href: order_events.md
+  - name: Route
+    href: route_events.md
+  - name: Vehicle
+    href: vehicle_events.md
+
 - name: Routing order
   href: order.md
   items:
