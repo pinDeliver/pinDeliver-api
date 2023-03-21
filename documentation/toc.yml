@@ -64,7 +64,7 @@
   - name: Customer order
     href: customer_events.md
   - name: Delivery group
-    href: delivery_groups_events.md
+    href: delivery_group_events.md
   - name: Driver
     href: driver_events.md
   - name: Routing order
