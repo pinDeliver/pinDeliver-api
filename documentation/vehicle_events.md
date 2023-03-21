@@ -18,21 +18,24 @@
 {  
   "event": "VEHICLE_WAS_CREATED",
   "id": "<vehicle-id>",
-  "url": "<api-2.1-url for vehicle>"
+  "url": "<api-2.1-url for vehicle>",
+  "external_id": "<external_id>"
 }
 ```
 ```JSON
 {  
   "event": "VEHICLE_WAS_DELETED",
   "id": "<vehicle-id>",
-  "url": "<api-2.1-url for vehicle>"
+  "url": "<api-2.1-url for vehicle>",
+  "external_id": "<external_id>"
 }
 ```
 ```JSON
 {  
   "event": "VEHICLE_WAS_UPDATED",
   "id": "<vehicle-id>",
-  "url": "<api-2.1-url for vehicle>"
+  "url": "<api-2.1-url for vehicle>",
+  "external_id": "<external_id>"
 }
 ```
 

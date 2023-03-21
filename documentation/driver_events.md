@@ -6,7 +6,7 @@
 {
   "event": "DRIVER_WAS_CREATED",
   "id": "{driver_id}",
-  "url": "https://cloud.pindeliver.com/api/v1_2/driver/get/{driver_id}"
+  "url": "https://cloud.pindeliver.com/api/v2_1/driver/get/{driver_id}"
 }
 ```
 
