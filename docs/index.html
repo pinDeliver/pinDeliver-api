@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,21 +9,21 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="API-documentation ">
     <meta name="generator" content="docfx 2.59.1.0">
-    
+
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
     <link rel="stylesheet" href="styles/docfx.css">
     <link rel="stylesheet" href="styles/main.css">
     <meta property="docfx:navrel" content="toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+
+
+
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="index.html">
                 <img id="logo" class="svg" src="logo.svg" alt="">
               </a>
@@ -47,7 +47,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -86,14 +86,14 @@ essential to make a vehicle work.
 The request for vehicle type works in a similar way. It is optional to create and can be connected to a vehicle but it is not necessary to create it to make a vehicle work.</p>
 <p>The other three requests on the left side, delivery group, driver and vehicle are non-optional but you still only need to create them one time. Once these three, and eventually sender, carrier and vehicle
 type, are created you don't need to use those requests anymore if you don't want to. If you want to you can connect the driver to one or more vehicles but that is completely optional.</p>
-<p>The four requests one the right side of the chart below; routing order, customer order, package and route are requests that can be iterated for as many times as you need them. The inbox is not a request in itself but if you don't add a customer order to an order the customer order will end up in the inbox.</p>
+<p>The four requests one the right side of the chart below; routing order, customer order, package and route are requests that can be iterated for as many times as you need them. The inbox is not a request in itself but if you don't add a customer order to a routing order the customer order will end up in the inbox.</p>
 <p>A reasonable way to use our API-requests would be to start with, if you plan on using it, setting up a carrier.
 Then continue with creating x amount of delivery groups, drivers and vehicles. After a vehicle is created you can proceed with creating a vehicle type and connect it to the vehicle.
 Once a delivery group is created you can proceed with eventually adding a routing order followed by a customer order with packages and eventually a sender in the same request.</p>
 <p><img src="images/flowchart_all.jpg" alt="Flowchart"></p>
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -104,7 +104,7 @@ Once a delivery group is created you can proceed with eventually adding a routin
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -113,12 +113,12 @@ Once a delivery group is created you can proceed with eventually adding a routin
               <a href="#top">Back to top</a>
             </span>
             <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
-            
+
           </div>
         </div>
       </footer>
     </div>
-    
+
     <script type="text/javascript" src="styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="styles/docfx.js"></script>
     <script type="text/javascript" src="styles/main.js"></script>

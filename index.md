@@ -35,7 +35,7 @@ The request for vehicle type works in a similar way. It is optional to create an
 The other three requests on the left side, delivery group, driver and vehicle are non-optional but you still only need to create them one time. Once these three, and eventually sender, carrier and vehicle
 type, are created you don't need to use those requests anymore if you don't want to. If you want to you can connect the driver to one or more vehicles but that is completely optional.
 
-The four requests one the right side of the chart below; routing order, customer order, package and route are requests that can be iterated for as many times as you need them. The inbox is not a request in itself but if you don't add a customer order to an order the customer order will end up in the inbox.
+The four requests one the right side of the chart below; routing order, customer order, package and route are requests that can be iterated for as many times as you need them. The inbox is not a request in itself but if you don't add a customer order to a routing order the customer order will end up in the inbox.
 
 A reasonable way to use our API-requests would be to start with, if you plan on using it, setting up a carrier.
 Then continue with creating x amount of delivery groups, drivers and vehicles. After a vehicle is created you can proceed with creating a vehicle type and connect it to the vehicle.
