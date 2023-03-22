@@ -86,10 +86,10 @@ essential to make a vehicle work.
 The request for vehicle type works in a similar way. It is optional to create and can be connected to a vehicle but it is not necessary to create it to make a vehicle work.</p>
 <p>The other three requests on the left side, delivery group, driver and vehicle are non-optional but you still only need to create them one time. Once these three, and eventually sender, carrier and vehicle
 type, are created you don't need to use those requests anymore if you don't want to. If you want to you can connect the driver to one or more vehicles but that is completely optional.</p>
-<p>The four requests one the right side of the chart below; routing order, customer order, package and route are requests that can be iterated for as many times as you need them.</p>
+<p>The four requests one the right side of the chart below; routing order, customer order, package and route are requests that can be iterated for as many times as you need them. The inbox is not a request in itself but if you don't add a customer order to an order the customer order will end up in the inbox.</p>
 <p>A reasonable way to use our API-requests would be to start with, if you plan on using it, setting up a carrier.
 Then continue with creating x amount of delivery groups, drivers and vehicles. After a vehicle is created you can proceed with creating a vehicle type and connect it to the vehicle.
-Once a delivery group is created you can proceed with adding a routing order followed by a customer order with packages and eventually a sender in the same request.</p>
+Once a delivery group is created you can proceed with eventually adding a routing order followed by a customer order with packages and eventually a sender in the same request.</p>
 <p><img src="images/flowchart_all.jpg" alt="Flowchart"></p>
 </article>
           </div>

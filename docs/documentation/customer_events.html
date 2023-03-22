@@ -72,73 +72,85 @@
 <h3 id="example">Example</h3>
 <pre><code class="lang-JSON">{
   &quot;event&quot;: &quot;CUSTOMER_WAS_DELETED&quot;,
-  &quot;id&quot;: &quot;{customer_id}&quot;
+  &quot;id&quot;: &quot;{customer_id}&quot;,
+  &quot;external_id&quot;: &quot;{external_id}&quot;
 }
 </code></pre>
 <pre><code class="lang-JSON">{
   &quot;event&quot;: &quot;DELIVERY_WAS_COMPLETED&quot;,
   &quot;id&quot;: &quot;{customer_id}&quot;,
-  &quot;url&quot;: &quot;https://localhost/api/v1_2/Order/getCustomer/{customer_id}&quot;
+  &quot;url&quot;: &quot;https://localhost/api/v2_1/Order/getCustomer/{customer_id}&quot;,
+  &quot;external_id&quot;: &quot;{external_id}&quot;
 }
 </code></pre>
 <h3 id="post-data">Post data</h3>
 <pre><code class="lang-JSON">{  
   &quot;event&quot;: &quot;DELIVERY_WAS_COMPLETED&quot;,
   &quot;id&quot;: &quot;&lt;order-delivery-id&gt;&quot;,
-  &quot;url&quot;: &quot;&lt;api-1.2-url for order-delivery&gt;&quot;
+  &quot;url&quot;: &quot;&lt;api-2.1-url for order-delivery&gt;&quot;,
+  &quot;external_id&quot;: &quot;&lt;external_id&gt;&quot;
 }
 </code></pre>
 <pre><code class="lang-JSON">{  
   &quot;event&quot;: &quot;CUSTOMER_WAS_CANCELLED&quot;,
   &quot;id&quot;: &quot;&lt;order-delivery-id&gt;&quot;,
-  &quot;url&quot;: &quot;&lt;api-1.2-url for order-delivery&gt;&quot;
+  &quot;url&quot;: &quot;&lt;api-2.1-url for order-delivery&gt;&quot;,
+  &quot;external_id&quot;: &quot;&lt;external_id&gt;&quot;
 }
 </code></pre>
 <pre><code class="lang-JSON">{  
   &quot;event&quot;: &quot;CUSTOMER_WAS_UNCANCELLED&quot;,
   &quot;id&quot;: &quot;&lt;order-delivery-id&gt;&quot;,
-  &quot;url&quot;: &quot;&lt;api-1.2-url for order-delivery&gt;&quot;
+  &quot;url&quot;: &quot;&lt;api-2.1-url for order-delivery&gt;&quot;,
+  &quot;external_id&quot;: &quot;&lt;external_id&gt;&quot;
 }
 </code></pre>
 <pre><code class="lang-JSON">{
   &quot;event&quot;:&quot;CUSTOMER_WAS_MERGED&quot;,
   &quot;id&quot;:&quot;&lt;source-order-delivery-id&gt;&quot;,
-  &quot;target_id&quot;:&quot;&lt;target-order-delivery-id&gt;&quot;
+  &quot;target_id&quot;:&quot;&lt;target-order-delivery-id&gt;&quot;,
+  &quot;external_id&quot;: &quot;&lt;external_id&gt;&quot;
 }
 </code></pre>
 <pre><code class="lang-JSON">{
   &quot;event&quot;:&quot;CUSTOMER_WAS_REBOOKED&quot;,
   &quot;id&quot;: &quot;&lt;order-delivery-id&gt;&quot;,
-  &quot;url&quot;: &quot;&lt;api-1.2-url for order-delivery&gt;&quot;
+  &quot;url&quot;: &quot;&lt;api-2.1-url for order-delivery&gt;&quot;,
+  &quot;external_id&quot;: &quot;&lt;external_id&gt;&quot;
 }
 </code></pre>
 <pre><code class="lang-JSON">{
   &quot;event&quot;:&quot;CUSTOMER_WAS_DELETED&quot;,
-  &quot;id&quot;: &quot;&lt;order-delivery-id&gt;&quot;
+  &quot;id&quot;: &quot;&lt;order-delivery-id&gt;&quot;,
+  &quot;external_id&quot;: &quot;&lt;external_id&gt;&quot;
 }
 </code></pre>
 <pre><code class="lang-JSON">{
   &quot;event&quot;: &quot;DRIVER_IS_APPROACHING_CUSTOMER&quot;,
   &quot;id&quot;: &quot;&lt;order-delivery-id&gt;&quot;,
-  &quot;url&quot;: &quot;&lt;api-1.2-url for order-delivery&gt;&quot;
+  &quot;url&quot;: &quot;&lt;api-2.1-url for order-delivery&gt;&quot;,
+  &quot;external_id&quot;: &quot;&lt;external_id&gt;&quot;
 }
 </code></pre>
 <pre><code class="lang-JSON">{
   &quot;event&quot;: &quot;DRIVER_HAS_ARRIVED&quot;,
   &quot;id&quot;: &quot;&lt;order-delivery-id&gt;&quot;,
-  &quot;url&quot;: &quot;&lt;api-1.2-url for order-delivery&gt;&quot;
+  &quot;url&quot;: &quot;&lt;api-2.1-url for order-delivery&gt;&quot;,
+  &quot;external_id&quot;: &quot;&lt;external_id&gt;&quot;
 }
 </code></pre>
 <pre><code class="lang-JSON">{
   &quot;event&quot;: &quot;CUSTOMER_RELOCATION_TASK_WAS_CREATED&quot;,
   &quot;id&quot;: &quot;&lt;order-delivery-id&gt;&quot;,
-  &quot;url&quot;: &quot;&lt;api-1.2-url for order-delivery&gt;&quot;
+  &quot;url&quot;: &quot;&lt;api-2.1-url for order-delivery&gt;&quot;,
+  &quot;external_id&quot;: &quot;&lt;external_id&gt;&quot;
 }
 </code></pre>
 <pre><code class="lang-JSON">{
   &quot;event&quot;: &quot;CUSTOMER_RELOCATION_TASK_WAS_COMPLETED&quot;,
   &quot;id&quot;: &quot;&lt;order-delivery-id&gt;&quot;,
-  &quot;url&quot;: &quot;&lt;api-1.2-url for order-delivery&gt;&quot;
+  &quot;url&quot;: &quot;&lt;api-2.1-url for order-delivery&gt;&quot;,
+  &quot;external_id&quot;: &quot;&lt;external_id&gt;&quot;
 }
 </code></pre>
 <hr>
