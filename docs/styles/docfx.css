@@ -218,7 +218,7 @@ header .navbar {
 }
 
 article h1, article h2, article h3, article h4{
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 article h4{
@@ -822,7 +822,7 @@ footer {
   .toc .level1 > li {
     display: block;
   }
-  
+
   .toc .level1 > li:after {
     display: none;
   }
