@@ -81,8 +81,6 @@
     href: order_add.md
   - name: Get
     href: order_get.md
-  - name: Import
-    href: order_import.md
   - name: Events
     href: order_events.md
 
@@ -103,10 +101,6 @@
     href: route_get.md
   - name: Update
     href: route_update.md
-  - name: Packaging
-    href: route_packaging.md
-  - name: Create unit loads
-    href: route_create_unit_loads.md
   - name: Events
     href: route_events.md
 
