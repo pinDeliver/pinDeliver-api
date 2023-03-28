@@ -21,7 +21,7 @@ GET
 
 ### Example request
 ```C
-curl --location 'https://martinservera-test.pindeliver.com/api/v2_1/driver/get/{driver_id}' \
+curl --location 'https://cloud.pindeliver.com/api/v2_1/driver/get/{driver_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data ''
@@ -135,7 +135,7 @@ GET
 
 ### Example request
 ```C
-curl --location 'https://martinservera-test.pindeliver.com/api/v2_1/driver/get' \
+curl --location 'https://cloud.pindeliver.com/api/v2_1/driver/get' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data ''

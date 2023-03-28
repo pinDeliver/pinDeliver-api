@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://martinservera-test.pindeliver.com/api/v2_1/vehicle/type/delete/{vehicle_type_id}' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/type/delete/{vehicle_type_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data ''

@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location 'https://martinservera-test.pindeliver.com/api/v2_1/vehicle/type/add' \
+curl --location 'https://cloud.pindeliver.com/api/v2_1/vehicle/type/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -61,7 +61,7 @@ curl --location 'https://martinservera-test.pindeliver.com/api/v2_1/vehicle/type
     "result": "ok",
     "code": 200,
     "data": "{vehicle_type_id}",
-    "url": "http://martinservera-test.pindeliver.com/api/v2_0/vehicle/type/get/{vehicle_type_id}"
+    "url": "http://cloud.pindeliver.com/api/v2_0/vehicle/type/get/{vehicle_type_id}"
 }
 ```
 

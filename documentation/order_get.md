@@ -4,7 +4,7 @@ Used to retrieve an order using the order id
 
 ### Endpoint
 ```
-https://martinservera-test.pindeliver.com/api/v2_1/Order/get/{order_id}
+https://cloud.pindeliver.com/api/v2_1/Order/get/{order_id}
 ```
 
 ### Authentication
