@@ -274,8 +274,8 @@ Fields marked with <font color='red'>*</font> are required
 |stop_time|integer or null|Amount of time allocated for each PICKUP/DELIVERY - specified in minutes|5|
 |requested_delivery_date|string or null|Informational field for requested delivery date in ISO 8601 format. This date is NOT used when routing|1980-10-10|
 |age_verification|integer or null|If the delivery includes age restricted items, this field indicates the recipients minimum allowed age. If set, this value will be shown in the driver app. The driver will be prompted to perform an identity check before delivering the items to the customer|18|
-|verification_code|string or null|An automatically generated code that is used to verify a customer or a customers age. Can be set by the user|306116|
-|person_identification_id|string or null|The personal number of a customer|200001019999| 
+|verification_code|string or null|An automatically generated code that is used to verify a customer or a customers age. Can be set manually by the user|306116|
+|person_identification_id|string or null|The personal number of a customer|200001019999|
 |priority|string or null|Priority in optimization. LOW, NORMAL, HIGH. Normal is default|HIGH|
 |unattended_ok|boolean or null|Used to indicate if a delivery can be made if the costumer is not home|true|
 |packages||Specific information about the current customer package|Details below|
