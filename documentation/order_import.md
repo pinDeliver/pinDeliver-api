@@ -4,7 +4,7 @@ Used to import an order
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/order/import
+https://cloud.pindeliver.com/api/v2_0/order/import
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Simple example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/import' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/order/import' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -49,7 +49,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/impo
 
 ### Advanced example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/import' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/order/import' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -97,7 +97,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/impo
     "result": "ok",
     "status": 200,
     "data": "{order_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_1/Order/get/{order_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_0/Order/get/{order_id}"
 }
 ```
 

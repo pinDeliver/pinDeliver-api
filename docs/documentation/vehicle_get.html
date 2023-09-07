@@ -71,7 +71,7 @@
 
 <p>Used to retrieve a vehicle using the vehicle id</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -82,7 +82,7 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}' \
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -114,7 +114,7 @@
         &quot;end_location_latitude&quot;: 57.707119,
         &quot;end_location_longitude&quot;: 11.9869172,
         &quot;loading_zone&quot;: &quot;1975&quot;,
-        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}&quot;
+        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}&quot;
     }
 }
 </code></pre>
@@ -122,7 +122,7 @@
 <h1 id="get-all-vehicles">Get all vehicles</h1>
 <p>Used to retrieve all vehicles</p>
 <h3 id="endpoint-1">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/vehicle/get
+<pre><code>https://cloud.pindeliver.com/api/v2_0/vehicle/get
 </code></pre>
 <h3 id="authentication-1">Authentication</h3>
 <pre><code>Headers:
@@ -133,7 +133,7 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request-1">Example request</h3>
-<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/vehicle/get' \
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/vehicle/get' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -157,7 +157,7 @@
             &quot;end_location_latitude&quot;: 57.707119,
             &quot;end_location_longitude&quot;: 11.9869172,
             &quot;loading_zone&quot;: &quot;1975&quot;,
-            &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}&quot;
+            &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}&quot;
         }
     ]
 }

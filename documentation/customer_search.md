@@ -4,7 +4,7 @@ Used to search for a customer. Two search parameters are needed
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/customer/search
+https://cloud.pindeliver.com/api/v2_0/customer/search
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/search' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/search' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -63,7 +63,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/s
           "phone_cell": "",
           "position_lat": 57.69925,
           "position_lng": 11.9489155,
-          "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}",
+          "url": "https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}",
           "service": {
               "type": "dropoff",
               "sms_sender": "Ovning",

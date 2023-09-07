@@ -4,7 +4,7 @@ Used to retrieve a package using the package id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/package/get/{package_id}
+https://cloud.pindeliver.com/api/v2_0/package/get/{package_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/package/get/{package_id}' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/package/get/{package_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 ```
@@ -63,7 +63,7 @@ Used to retrieve a package using the package external id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/package/get/extid/b1
+https://cloud.pindeliver.com/api/v2_0/package/get/extid/b1
 ```
 
 ### Authentication
@@ -80,7 +80,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/package/get/extid/b1' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/package/get/extid/b1' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 ```
@@ -122,7 +122,7 @@ Used to retrieve a package using a scan code
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/package/get/scan_code/B6
+https://cloud.pindeliver.com/api/v2_0/package/get/scan_code/B6
 ```
 
 ### Authentication
@@ -139,7 +139,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/package/get/scan_code/B6' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/package/get/scan_code/B6' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 ```
@@ -179,7 +179,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/package/get
 
 ### Endpoint example
 ```
-https://cloud.pindeliver.com/api/v2_1/package/get/{package_id}?all
+https://cloud.pindeliver.com/api/v2_0/package/get/{package_id}?all
 ```
 
 If you want to use multiple parameters at the same time you can add them after the first parameter using "&".

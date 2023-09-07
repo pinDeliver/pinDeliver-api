@@ -4,7 +4,7 @@ Connected to a [delivery group](delivery_group_add.md). Make sure you've created
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/vehicle/add
+https://cloud.pindeliver.com/api/v2_0/vehicle/add
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Simple example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/add' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/vehicle/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -49,7 +49,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/ad
 
 ### Advanced example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/add' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/vehicle/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -111,7 +111,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/ad
     "result": "ok",
     "code": 200,
     "data": "{vehicle_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}"
 }
 ```
 

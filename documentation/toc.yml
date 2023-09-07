@@ -99,8 +99,6 @@
     href: route_add.md
   - name: Get
     href: route_get.md
-  - name: Update
-    href: route_update.md
   - name: Events
     href: route_events.md
 

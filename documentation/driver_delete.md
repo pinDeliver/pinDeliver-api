@@ -1,5 +1,7 @@
 # Delete driver
 
+Driver v2_1 is experimental and may be subject to change.
+
 Used to delete a driver using the driver id
 
 ### Endpoint

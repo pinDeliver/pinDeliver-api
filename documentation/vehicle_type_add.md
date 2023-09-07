@@ -4,7 +4,7 @@ Connected to a [vehicle](vehicle_add.md). Make sure you've created a vehicle bef
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/vehicle/type/add
+https://cloud.pindeliver.com/api/v2_0/vehicle/type/add
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location 'https://cloud.pindeliver.com/api/v2_1/vehicle/type/add' \
+curl --location 'https://cloud.pindeliver.com/api/v2_0/vehicle/type/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \

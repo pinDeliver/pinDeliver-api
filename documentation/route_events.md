@@ -6,7 +6,7 @@
 {
   "event": "ROUTE_WAS_LOCKED",
   "id": "{route_id}",
-  "url": "https://localhost/api/v2_1/Route/get/{route_id}"
+  "url": "https://localhost/api/v2_0/Route/get/{route_id}"
 }
 ```
 ```JSON
@@ -14,7 +14,7 @@
   "event": "LOADING_WAS_COMPLETED",
   "id": "{route_id}",
   "subroute_number": 1,
-  "url": "https://localhost/api/v2_1/Route/get/{route_id}"
+  "url": "https://localhost/api/v2_0/Route/get/{route_id}"
 }
 ```
 
@@ -23,49 +23,49 @@
 {  
   "event": "ROUTE_WAS_LOCKED",
   "id": "<route-id>",
-  "url": "<api-2.1-url for route>"
+  "url": "<api-2.0-url for route>"
 }
 ```
 ```JSON
 {  
   "event": "ROUTE_WAS_UNLOCKED",
   "id": "<route-id>",
-  "url": "<api-2.1-url for route>"
+  "url": "<api-2.0-url for route>"
 }
 ```
 ```JSON
 {  
   "event": "ROUTE_WAS_ASSIGNED",
   "id": "<route-id>",
-  "url": "<api-2.1-url for route>"
+  "url": "<api-2.0-url for route>"
 }
 ```
 ```JSON
 {  
   "event": "ROUTE_WAS_UNASSIGNED",
   "id": "<route-id>",
-  "url": "<api-2.1-url for route>"
+  "url": "<api-2.0-url for route>"
 }
 ```
 ```JSON
 {  
   "event": "ROUTE_WAS_STARTED",
   "id": "<route-id>",
-  "url": "<api-2.1-url for route>"
+  "url": "<api-2.0-url for route>"
 }
 ```
 ```JSON
 {  
   "event": "ROUTE_WAS_COMPLETED",
   "id": "<route-id>",
-  "url": "<api-2.1-url for route>"
+  "url": "<api-2.0-url for route>"
 }
 ```
 ```JSON
 {  
   "event": "LOADING_WAS_COMPLETED",
   "id": "<route-id>",
-  "url": "<api-2.1-url for route>"
+  "url": "<api-2.0-url for route>"
 }
 ```
 

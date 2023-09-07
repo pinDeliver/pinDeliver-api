@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,21 +9,21 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Get route ">
     <meta name="generator" content="docfx 2.59.1.0">
-    
+
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+
+
+
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -47,7 +47,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -57,7 +57,7 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -71,7 +71,7 @@
 
 <p>Used to retrieve a route using the route id</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/route/get/{route_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_0/route/get/{route_id}
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -82,7 +82,7 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/get/{route_id}' \
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/route/get/{route_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 </code></pre>
@@ -96,116 +96,46 @@
 ]
 </code></pre>
 <h3 id="example-success-response">Example success response</h3>
-<pre><code class="lang-JSON">{
-    &quot;route&quot;: {
-        &quot;id&quot;: &quot;{route_id}&quot;,
-        &quot;order_id&quot;: &quot;{order_id}&quot;,
-        &quot;name&quot;: &quot;V1&quot;,
-        &quot;linehaul&quot;: false,
-        &quot;scheduled_start_time&quot;: &quot;1980-10-10 10:00:00&quot;,
-        &quot;distance&quot;: 0,
-        &quot;total_drive_time&quot;: 0,
-        &quot;total_idle_time&quot;: 0,
-        &quot;speed_factor&quot;: 1,
-        &quot;num_customers&quot;: 0,
-        &quot;locked&quot;: false,
-        &quot;optimized&quot;: false,
-        &quot;changed&quot;: false,
-        &quot;assigned&quot;: false,
-        &quot;loading_started&quot;: false,
-        &quot;loading_completed&quot;: false,
-        &quot;quality_check_completed&quot;: false,
-        &quot;latest_lat&quot;: 0,
-        &quot;latest_lng&quot;: 0,
-        &quot;vehicle&quot;: {
-            &quot;name&quot;: &quot;Vehicle1&quot;,
-            &quot;timewindow_start&quot;: &quot;00:00&quot;,
-            &quot;timewindow_end&quot;: &quot;23:59&quot;,
-            &quot;start_lat&quot;: 57.6995883,
-            &quot;start_lng&quot;: 11.9529051,
-            &quot;end_lat&quot;: 57.6973714,
-            &quot;end_lng&quot;: 11.979319,
-            &quot;start_position_name&quot;: &quot;Järntorget, Göteborg, Sverige&quot;,
-            &quot;end_position_name&quot;: &quot;Götaplatsen, Göteborg, Sverige&quot;,
-            &quot;max_weight&quot;: 0,
-            &quot;max_volume&quot;: 0,
-            &quot;max_volume_2&quot;: 0,
-            &quot;fixed_start_time&quot;: false
-        },
-        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/route/get/{route_id}&quot;
-    }
-}
-</code></pre>
-<hr>
-<h1 id="get-all-routes">Get all routes</h1>
-<p>Used to retrieve all routes</p>
-<h3 id="endpoint-1">Endpoint</h3>
-<pre><code>https:/cloud.pindeliver.com/api/v2_1/Route/get
-</code></pre>
-<h3 id="authentication-1">Authentication</h3>
-<pre><code>Headers:
-  X-PINDELIVER-API-KEY:XXXX-XXXX-XXXX-XXXX
-  X-PINDELIVER-API-CLIENT-KEY:XXXX-XXXX-XXXX-XXXX
-</code></pre>
-<h3 id="method-1">Method</h3>
-<pre><code>GET
-</code></pre>
-<h3 id="example-request-1">Example request</h3>
-<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/Route/get' \
---header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
---header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
---data-raw ''
-</code></pre>
-<h3 id="example-success-response-1">Example success response</h3>
-<pre><code class="lang-JSON">{
-    &quot;routes&quot;: [
-        {
-            &quot;id&quot;: &quot;{route_id}&quot;,
-            &quot;order_id&quot;: &quot;{order_id}&quot;,
-            &quot;name&quot;: &quot;Vehicle1&quot;,
-            &quot;linehaul&quot;: false,
-            &quot;scheduled_start_time&quot;: &quot;1980-10-10 06:50:37&quot;,
-            &quot;scheduled_end_time&quot;: &quot;1980-10-10 07:28:17&quot;,
-            &quot;duration&quot;: 2260,
-            &quot;distance&quot;: 17418,
-            &quot;total_drive_time&quot;: 1180,
-            &quot;total_idle_time&quot;: 0,
-            &quot;speed_factor&quot;: 1,
-            &quot;stop_time&quot;: 5,
-            &quot;num_customers&quot;: 2,
-            &quot;locked&quot;: false,
-            &quot;optimized&quot;: true,
-            &quot;changed&quot;: false,
-            &quot;assigned&quot;: false,
-            &quot;loading_started&quot;: false,
-            &quot;loading_completed&quot;: false,
-            &quot;quality_check_completed&quot;: false,
-            &quot;latest_lat&quot;: 0,
-            &quot;latest_lng&quot;: 0,
-            &quot;vehicle&quot;: {
-                &quot;id&quot;: 1013,
-                &quot;name&quot;: &quot;Vehicle1&quot;,
-                &quot;timewindow_start&quot;: &quot;06:00&quot;,
-                &quot;timewindow_end&quot;: &quot;18:00&quot;,
-                &quot;start_lat&quot;: 57.71066339999999,
-                &quot;start_lng&quot;: 11.969655800000055,
-                &quot;end_lat&quot;: 57.71066339999999,
-                &quot;end_lng&quot;: 11.969655800000055,
-                &quot;start_position_name&quot;: &quot;Nils Ericsonsplatsen, Göteborg, Sverige&quot;,
-                &quot;end_position_name&quot;: &quot;Nils Ericsonsplatsen, Göteborg, Sverige&quot;,
-                &quot;max_weight&quot;: 1500,
-                &quot;fixed_start_time&quot;: false
-            },
-            &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/route/get/{route_id}&quot;
-        }
-    ],
-    &quot;exec_time&quot;: 0.053381919860839844
-}
+<pre><code class="lang-JSON">  {
+      &quot;route&quot;: {
+          &quot;id&quot;: &quot;{route_id}&quot;,
+          &quot;order_id&quot;: &quot;{order_id}&quot;,
+          &quot;name&quot;: &quot;Scandinavium 1980-10-10&quot;,
+          &quot;linehaul&quot;: false,
+          &quot;vehicle_name&quot;: &quot;Vehicle1&quot;,
+          &quot;vehicle_timewindow_start&quot;: &quot;06:00&quot;,
+          &quot;vehicle_timewindow_end&quot;: &quot;18:00&quot;,
+          &quot;locked&quot;: false,
+          &quot;assigned&quot;: false,
+          &quot;changed&quot;: true,
+          &quot;driver_name&quot;: &quot;&quot;,
+          &quot;driver_phone&quot;: &quot;&quot;,
+          &quot;scheduled_start_time&quot;: &quot;2023-09-07 06:20:17&quot;,
+          &quot;scheduled_end_time&quot;: &quot;2023-09-07 09:33:25&quot;,
+          &quot;duration&quot;: 11588,
+          &quot;total_drive_time&quot;: 6908,
+          &quot;total_idle_time&quot;: 0,
+          &quot;distance&quot;: 128863,
+          &quot;start_lat&quot;: 57.71066339999999,
+          &quot;start_lng&quot;: 11.969655800000055,
+          &quot;end_lat&quot;: 57.71066339999999,
+          &quot;end_lng&quot;: 11.969655800000055,
+          &quot;start_position_name&quot;: &quot;Nils Ericsonsplatsen, Göteborg, Sverige&quot;,
+          &quot;end_position_name&quot;: &quot;Nils Ericsonsplatsen, Göteborg, Sverige&quot;,
+          &quot;speed_factor&quot;: 1,
+          &quot;stop_time&quot;: 5,
+          &quot;num_customers&quot;: 6,
+          &quot;loading_started&quot;: false,
+          &quot;loading_completed&quot;: false,
+          &quot;quality_check_completed&quot;: false,
+          &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/route/get/route_id&quot;
+      }
+  }
 </code></pre>
 <hr>
 <h1 id="query-parameters">Query parameters</h1>
 <h3 id="endpoint-example">Endpoint example</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/route/get/{route_id}?all
+<pre><code>https://cloud.pindeliver.com/api/v2_0/route/get/{route_id}?all
 </code></pre>
 <p>If you want to use multiple parameters at the same time you can add them after the first parameter using &quot;&amp;&quot;.
 For example: ?all&amp;order&amp;routes.</p>
@@ -242,7 +172,7 @@ For example: ?all&amp;order&amp;routes.</p>
 </table>
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -253,7 +183,7 @@ For example: ?all&amp;order&amp;routes.</p>
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -262,12 +192,12 @@ For example: ?all&amp;order&amp;routes.</p>
               <a href="#top">Back to top</a>
             </span>
             <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> pinDeliver AB</span>
-            
+
           </div>
         </div>
       </footer>
     </div>
-    
+
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>

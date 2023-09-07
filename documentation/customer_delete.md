@@ -4,7 +4,7 @@ Used to delete a customer from a route or directly from the inbox using the cust
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/customer/delete/{customer_id}
+https://cloud.pindeliver.com/api/v2_0/customer/delete/{customer_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/delete/{customer_id}' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/delete/{customer_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 ```

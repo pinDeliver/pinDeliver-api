@@ -4,7 +4,7 @@ Used to update a vehicle using the vehicle id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/vehicle/update/{vehicle_id}
+https://cloud.pindeliver.com/api/v2_0/vehicle/update/{vehicle_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/update/{vehicle_id}' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/vehicle/update/{vehicle_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -69,7 +69,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/up
     "result": "ok",
     "code": 200,
     "data": "{vehicle_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}"
 }
 ```
 

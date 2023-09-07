@@ -4,7 +4,7 @@ Used to add packaging to a route using the route id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/route/packaging/{route_id}
+https://cloud.pindeliver.com/api/v2_0/route/packaging/{route_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/route/packaging/{route_id}' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/route/packaging/{route_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX'
 ```

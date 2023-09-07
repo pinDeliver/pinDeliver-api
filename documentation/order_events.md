@@ -6,7 +6,7 @@
 {
   "event": "ORDER_WAS_CREATED",
   "id": "{order_id}",
-  "url": "https://cloud.pindeliver.com/api/v2_1/Order/get/{order_id}"
+  "url": "https://cloud.pindeliver.com/api/v2_0/Order/get/{order_id}"
 }
 ```
 
@@ -16,14 +16,14 @@
 {  
   "event": "ORDER_WAS_CREATED",
   "id": "<order-id>",
-  "url": "<api-2.1-url for order>"
+  "url": "<api-2.0-url for order>"
 }
 ```
 ```JSON
 {  
   "event": "ORDER_WAS_DELETED",
   "id": "<order-id>",
-  "url": "<api-2.1-url for order>"
+  "url": "<api-2.0-url for order>"
 }
 ```
 ```JSON
@@ -31,14 +31,14 @@
   "event": "ORDER_WAS_MERGED",
   "id": "<source-order-id>",
   "target_id": "<target-order-id>",
-  "url": "<api-2.1-url for target-order>"
+  "url": "<api-2.0-url for target-order>"
 }
 ```
 ```JSON
 {  
   "event": "ALL_ROUTES_LOCKED",
   "id": "<order-id>",
-  "url": "<api-2.1-url for order>"
+  "url": "<api-2.0-url for order>"
 }
 ```
 

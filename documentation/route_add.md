@@ -5,7 +5,7 @@ a vehicle before creating a route. The driver can be created later on but you ca
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/route/add
+https://cloud.pindeliver.com/api/v2_0/route/add
 ```
 
 ### Authentication
@@ -22,7 +22,7 @@ POST
 
 ### Simple example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/route/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -35,8 +35,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
             "name": "Vehicle1",
             "delivery_group": "DeliveryGroup",
             "start_location_address": "Järntorget, Göteborg, Sverige",
-            "timewindow_start": "00:00",
-            "timewindow_end": "23:59"
+            "timewindow_start": "00:00"
         }
     }
 }'
@@ -53,8 +52,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
             "name": "Vehicle1",
             "delivery_group": "DeliveryGroup",
             "start_location_address": "Järntorget, Göteborg, Sverige",
-            "timewindow_start": "00:00",
-            "timewindow_end": "23:59"
+            "timewindow_start": "00:00"
         }
     }
 }
@@ -62,7 +60,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
 
 ### Advanced example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/route/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -166,7 +164,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/route/add'
     "result": "ok",
     "status": 200,
     "data": "{route_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_1/Route/get/{route_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_0/Route/get/{route_id}"
 }
 ```
 

@@ -4,7 +4,7 @@ Used to retrieve a vehicle using the vehicle id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}
+https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -57,7 +57,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/vehicle/get
         "end_location_latitude": 57.707119,
         "end_location_longitude": 11.9869172,
         "loading_zone": "1975",
-        "url": "https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}"
+        "url": "https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}"
     }
 }
 ```
@@ -70,7 +70,7 @@ Used to retrieve all vehicles
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/vehicle/get
+https://cloud.pindeliver.com/api/v2_0/vehicle/get
 ```
 
 ### Authentication
@@ -87,7 +87,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/vehicle/get' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/vehicle/get' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -113,7 +113,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/vehicle/get
             "end_location_latitude": 57.707119,
             "end_location_longitude": 11.9869172,
             "loading_zone": "1975",
-            "url": "https://cloud.pindeliver.com/api/v2_1/vehicle/get/{vehicle_id}"
+            "url": "https://cloud.pindeliver.com/api/v2_0/vehicle/get/{vehicle_id}"
         }
     ]
 }

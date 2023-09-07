@@ -4,7 +4,7 @@ Used to update a delivery group using the delivery group id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/delivery_group/update/{delivery_group_id}
+https://cloud.pindeliver.com/api/v2_0/delivery_group/update/{delivery_group_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_group/update/{delivery_group_id}' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/delivery_group/update/{delivery_group_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -61,7 +61,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_g
     "result": "ok",
     "code": 200,
     "data": "{delivery_group_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}"
 }
 ```
 

@@ -5,7 +5,7 @@ Can be connected to a [vehicle](vehicle_add.md) when adding a vehicle and a [dri
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/carrier/add
+https://cloud.pindeliver.com/api/v2_0/carrier/add
 ```
 
 ### Authentication
@@ -22,7 +22,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/carrier/add' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/carrier/add' \
 --header 'X-PINDELIVER-API-KEY: 1212-1212-1212-1212' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: 10c94858-8978-11ec-a2e8-005056011cb5' \
 --header 'Content-Type: application/json' \
@@ -62,7 +62,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/carrier/ad
     "result": "ok",
     "code": 200,
     "data": "{carrier_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_1/carrier/get/{carrier_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_0/carrier/get/{carrier_id}"
 }
 ```
 

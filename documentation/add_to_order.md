@@ -6,7 +6,7 @@ A customer is needed to be able to add packages. It is possible to add packages 
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/order/addCustomer/{order_id}
+https://cloud.pindeliver.com/api/v2_0/order/addCustomer/{order_id}
 ```
 
 ### Authentication
@@ -23,7 +23,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/addCustomer/{order_id}' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/order/addCustomer/{order_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -72,7 +72,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/addC
     {
         "result": "ok",
         "data": "{customer_id}",
-        "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}"
+        "url": "https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}"
     }
 ]
 ```

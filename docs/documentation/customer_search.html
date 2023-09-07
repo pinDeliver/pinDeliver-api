@@ -71,7 +71,7 @@
 
 <p>Used to search for a customer. Two search parameters are needed</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/search
+<pre><code>https://cloud.pindeliver.com/api/v2_0/customer/search
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -82,7 +82,7 @@
 <pre><code>POST
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/search' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/search' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -118,7 +118,7 @@
           &quot;phone_cell&quot;: &quot;&quot;,
           &quot;position_lat&quot;: 57.69925,
           &quot;position_lng&quot;: 11.9489155,
-          &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}&quot;,
+          &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}&quot;,
           &quot;service&quot;: {
               &quot;type&quot;: &quot;dropoff&quot;,
               &quot;sms_sender&quot;: &quot;Ovning&quot;,

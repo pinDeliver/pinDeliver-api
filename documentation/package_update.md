@@ -4,7 +4,7 @@ Used to update a package using the package external id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/package/update/extid/B6
+https://cloud.pindeliver.com/api/v2_0/package/update/extid/B6
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/package/update/extid/B6' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/package/update/extid/B6' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -79,7 +79,7 @@ Used to update a package using a scan code
 
 ### Endpoint
 ```
-/api/v2_1/:package/update/scan_code/:scan_code
+/api/v2_0/:package/update/scan_code/:scan_code
 ```
 
 ### Authentication
@@ -96,7 +96,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/package/update/scan_code/B6' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/package/update/scan_code/B6' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \

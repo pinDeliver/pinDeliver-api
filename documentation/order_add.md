@@ -5,7 +5,7 @@ You need to create an order before being able to create a [route](route_add.md).
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/order/add
+https://cloud.pindeliver.com/api/v2_0/order/add
 ```
 
 ### Authentication
@@ -22,7 +22,7 @@ POST
 
 ### Simple example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/add' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/order/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -50,7 +50,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/add'
 
 ### Advanced example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/add' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/order/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -98,7 +98,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/add'
     "result": "ok",
     "status": 200,
     "data": "{order_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_1/Order/get/{order_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_0/Order/get/{order_id}"
 }
 ```
 

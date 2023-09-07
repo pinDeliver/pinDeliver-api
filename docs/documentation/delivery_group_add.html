@@ -71,7 +71,7 @@
 
 <p>You need to create a delivery group before being able to create a <a href="vehicle_add.html">vehicle</a> and a <a href="driver_add.html">driver</a>.</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/delivery_group/add
+<pre><code>https://cloud.pindeliver.com/api/v2_0/delivery_group/add
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -82,7 +82,7 @@
 <pre><code>POST
 </code></pre>
 <h3 id="simple-example-request">Simple example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_group/add' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/delivery_group/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -105,7 +105,7 @@
 }
 </code></pre>
 <h3 id="advanced-example-request">Advanced example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/delivery_group/add' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/delivery_group/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -164,7 +164,7 @@
     &quot;result&quot;: &quot;ok&quot;,
     &quot;code&quot;: 200,
     &quot;data&quot;: &quot;{delivery_group_id}&quot;,
-    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/delivery_group/get/745&quot;
+    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/delivery_group/get/745&quot;
 }
 </code></pre>
 <hr>

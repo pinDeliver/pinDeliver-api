@@ -71,7 +71,7 @@
 
 <p>Used to retrieve a delivery group using the delivery group id</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -82,7 +82,7 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}' \
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -108,7 +108,7 @@
         &quot;depot_address&quot;: &quot;Valhallavägen 1, 41251 Göteborg&quot;,
         &quot;depot_location_latitude&quot;: 57.699312,
         &quot;depot_location_longitude&quot;: 11.987573,
-        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}&quot;
+        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}&quot;
     }
 }
 </code></pre>
@@ -116,7 +116,7 @@
 <h1 id="get-all-delivery-groups">Get all delivery groups</h1>
 <p>Used to retrieve all delivery groups</p>
 <h3 id="endpoint-1">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/delivery_group/get
+<pre><code>https://cloud.pindeliver.com/api/v2_0/delivery_group/get
 </code></pre>
 <h3 id="authentication-1">Authentication</h3>
 <pre><code>Headers:
@@ -127,7 +127,7 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request-1">Example request</h3>
-<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/delivery_group/get' \
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/delivery_group/get' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -145,7 +145,7 @@
           &quot;depot_address&quot;: &quot;Valhallavägen 1, 41251 Göteborg&quot;,
           &quot;depot_location_latitude&quot;: 57.699312,
           &quot;depot_location_longitude&quot;: 11.987573,
-          &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}&quot;
+          &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}&quot;
         }
     ]
 }

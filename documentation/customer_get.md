@@ -4,7 +4,7 @@ Used to retrieve a customer using the customer id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}
+https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -54,7 +54,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/ge
         "phone_cell": "0700000000",
         "position_lat": 57.699432,
         "position_lng": 11.950743,
-        "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}",
+        "url": "https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}",
         "service": {
             "type": "dropoff",
             "sms_sender": "Ovning",
@@ -82,7 +82,7 @@ Used to retrieve a customer using the customer external id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/customer/get/extid/{external_id}
+https://cloud.pindeliver.com/api/v2_0/customer/get/extid/{external_id}
 ```
 
 ### Authentication
@@ -99,7 +99,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/get/extid/{external_id}' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/customer/get/extid/{external_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -132,7 +132,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/ge
         "phone_cell": "0700000000",
         "position_lat": 57.699432,
         "position_lng": 11.950743,
-        "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}",
+        "url": "https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}",
         "service": {
             "type": "dropoff",
             "sms_sender": "Ovning",
@@ -158,7 +158,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/ge
 
 ### Endpoint example
 ```
-https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}?all
+https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}?all
 ```
 
 If you want to use multiple parameters at the same time you can add them after the first parameter using "&".

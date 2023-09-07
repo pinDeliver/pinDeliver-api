@@ -4,7 +4,7 @@ Used to retrieve a delivery group using the delivery group id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}
+https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -51,7 +51,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/delivery_gr
         "depot_address": "Valhallavägen 1, 41251 Göteborg",
         "depot_location_latitude": 57.699312,
         "depot_location_longitude": 11.987573,
-        "url": "https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}"
+        "url": "https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}"
     }
 }
 ```
@@ -64,7 +64,7 @@ Used to retrieve all delivery groups
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/delivery_group/get
+https://cloud.pindeliver.com/api/v2_0/delivery_group/get
 ```
 
 ### Authentication
@@ -81,7 +81,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/delivery_group/get' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/delivery_group/get' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -101,7 +101,7 @@ curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/delivery_gr
           "depot_address": "Valhallavägen 1, 41251 Göteborg",
           "depot_location_latitude": 57.699312,
           "depot_location_longitude": 11.987573,
-          "url": "https://cloud.pindeliver.com/api/v2_1/delivery_group/get/{delivery_group_id}"
+          "url": "https://cloud.pindeliver.com/api/v2_0/delivery_group/get/{delivery_group_id}"
         }
     ]
 }

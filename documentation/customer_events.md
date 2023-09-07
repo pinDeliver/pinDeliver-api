@@ -13,7 +13,7 @@
 {
   "event": "DELIVERY_WAS_COMPLETED",
   "id": "{customer_id}",
-  "url": "https://localhost/api/v2_1/Order/getCustomer/{customer_id}",
+  "url": "https://localhost/api/v2_0/Order/getCustomer/{customer_id}",
   "external_id": "{external_id}"
 }
 ```
@@ -24,7 +24,7 @@
 {  
   "event": "DELIVERY_WAS_COMPLETED",
   "id": "<order-delivery-id>",
-  "url": "<api-2.1-url for order-delivery>",
+  "url": "<api-2.0-url for order-delivery>",
   "external_id": "<external_id>"
 }
 ```
@@ -32,7 +32,7 @@
 {  
   "event": "CUSTOMER_WAS_CANCELLED",
   "id": "<order-delivery-id>",
-  "url": "<api-2.1-url for order-delivery>",
+  "url": "<api-2.0-url for order-delivery>",
   "external_id": "<external_id>"
 }
 ```
@@ -40,7 +40,7 @@
 {  
   "event": "CUSTOMER_WAS_UNCANCELLED",
   "id": "<order-delivery-id>",
-  "url": "<api-2.1-url for order-delivery>",
+  "url": "<api-2.0-url for order-delivery>",
   "external_id": "<external_id>"
 }
 ```
@@ -56,7 +56,7 @@
 {
   "event":"CUSTOMER_WAS_REBOOKED",
   "id": "<order-delivery-id>",
-  "url": "<api-2.1-url for order-delivery>",
+  "url": "<api-2.0-url for order-delivery>",
   "external_id": "<external_id>"
 }
 ```
@@ -71,7 +71,7 @@
 {
   "event": "DRIVER_IS_APPROACHING_CUSTOMER",
   "id": "<order-delivery-id>",
-  "url": "<api-2.1-url for order-delivery>",
+  "url": "<api-2.0-url for order-delivery>",
   "external_id": "<external_id>"
 }
 ```
@@ -79,7 +79,7 @@
 {
   "event": "DRIVER_HAS_ARRIVED",
   "id": "<order-delivery-id>",
-  "url": "<api-2.1-url for order-delivery>",
+  "url": "<api-2.0-url for order-delivery>",
   "external_id": "<external_id>"
 }
 ```
@@ -87,7 +87,7 @@
 {
   "event": "CUSTOMER_RELOCATION_TASK_WAS_CREATED",
   "id": "<order-delivery-id>",
-  "url": "<api-2.1-url for order-delivery>",
+  "url": "<api-2.0-url for order-delivery>",
   "external_id": "<external_id>"
 }
 ```
@@ -95,7 +95,7 @@
 {
   "event": "CUSTOMER_RELOCATION_TASK_WAS_COMPLETED",
   "id": "<order-delivery-id>",
-  "url": "<api-2.1-url for order-delivery>",
+  "url": "<api-2.0-url for order-delivery>",
   "external_id": "<external_id>"
 }
 ```

@@ -71,7 +71,7 @@
 
 <p>Used to retrieve a customer using the customer id</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -82,7 +82,7 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}' \
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -111,7 +111,7 @@
         &quot;phone_cell&quot;: &quot;0700000000&quot;,
         &quot;position_lat&quot;: 57.699432,
         &quot;position_lng&quot;: 11.950743,
-        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}&quot;,
+        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}&quot;,
         &quot;service&quot;: {
             &quot;type&quot;: &quot;dropoff&quot;,
             &quot;sms_sender&quot;: &quot;Ovning&quot;,
@@ -134,7 +134,7 @@
 <h1 id="get-customer-using-external-id">Get customer using external id</h1>
 <p>Used to retrieve a customer using the customer external id</p>
 <h3 id="endpoint-1">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/get/extid/{external_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_0/customer/get/extid/{external_id}
 </code></pre>
 <h3 id="authentication-1">Authentication</h3>
 <pre><code>Headers:
@@ -145,7 +145,7 @@
 <pre><code>GET
 </code></pre>
 <h3 id="example-request-1">Example request</h3>
-<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/customer/get/extid/{external_id}' \
+<pre><code class="lang-C">curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/customer/get/extid/{external_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -174,7 +174,7 @@
         &quot;phone_cell&quot;: &quot;0700000000&quot;,
         &quot;position_lat&quot;: 57.699432,
         &quot;position_lng&quot;: 11.950743,
-        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}&quot;,
+        &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}&quot;,
         &quot;service&quot;: {
             &quot;type&quot;: &quot;dropoff&quot;,
             &quot;sms_sender&quot;: &quot;Ovning&quot;,
@@ -196,7 +196,7 @@
 <hr>
 <h1 id="query-parameters">Query parameters</h1>
 <h3 id="endpoint-example">Endpoint example</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}?all
+<pre><code>https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}?all
 </code></pre>
 <p>If you want to use multiple parameters at the same time you can add them after the first parameter using &quot;&amp;&quot;.
 For example: ?all&amp;order&amp;routes.</p>

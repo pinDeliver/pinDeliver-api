@@ -4,7 +4,7 @@ Used to update data on an existing customer using the customer id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}
+https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/update/{customer_id}' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/update/{customer_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -56,7 +56,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/u
     "result": "ok",
     "status": 200,
     "data": "{customer_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}"
 }
 ```
 
@@ -68,7 +68,7 @@ Used to update data on an existing customer using the customer external id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/customer/update/extid/{external_id}
+https://cloud.pindeliver.com/api/v2_0/customer/update/extid/{external_id}
 ```
 
 ### Authentication
@@ -85,7 +85,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/update/extid/{external_id}' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/update/extid/{external_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -124,7 +124,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/u
     "result": "ok",
     "status": 200,
     "data": "{external_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{external_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_0/customer/get/{external_id}"
 }
 ```
 

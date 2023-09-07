@@ -4,7 +4,7 @@ Used to retrieve a vehicle type using the vehicle type id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/vehicle/type/get/{vehicle_type_id}
+https://cloud.pindeliver.com/api/v2_0/vehicle/type/get/{vehicle_type_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ GET
 
 ### Example request
 ```C
-curl --location 'https://cloud.pindeliver.com/api/v2_1/vehicle/type/get/{vehicle_type_id}' \
+curl --location 'https://cloud.pindeliver.com/api/v2_0/vehicle/type/get/{vehicle_type_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data ''
@@ -62,7 +62,7 @@ Used to retrieve a vehicle type using the external id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/vehicle/type/get/extid/pb
+https://cloud.pindeliver.com/api/v2_0/vehicle/type/get/extid/pb
 ```
 
 ### Authentication
@@ -79,7 +79,7 @@ GET
 
 ### Example request
 ```C
-curl --location 'https://cloud.pindeliver.com/api/v2_1/vehicle/type/get/extid/pb' \
+curl --location 'https://cloud.pindeliver.com/api/v2_0/vehicle/type/get/extid/pb' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data ''
@@ -115,7 +115,7 @@ Used to retrieve all vehicle types
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/vehicle/type/get/
+https://cloud.pindeliver.com/api/v2_0/vehicle/type/get/
 ```
 
 ### Authentication
@@ -132,7 +132,7 @@ GET
 
 ### Example request
 ```C
-curl --location 'https://martinservera-test.pindeliver.com/api/v2_1/vehicle/type/get' \
+curl --location 'https://martinservera-test.pindeliver.com/api/v2_0/vehicle/type/get' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data ''

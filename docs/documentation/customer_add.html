@@ -73,7 +73,7 @@
 which order it should be added to.
 A customer order is needed to be able to add packages. It is possible to add packages in the same request when adding a customer order. See below for more details.</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/add
+<pre><code>https://cloud.pindeliver.com/api/v2_0/customer/add
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -84,7 +84,7 @@ A customer order is needed to be able to add packages. It is possible to add pac
 <pre><code>POST
 </code></pre>
 <h3 id="simple-example-request">Simple example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/add' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -116,7 +116,7 @@ A customer order is needed to be able to add packages. It is possible to add pac
 }
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/add' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -265,7 +265,7 @@ A customer order is needed to be able to add packages. It is possible to add pac
     &quot;result&quot;: &quot;ok&quot;,
     &quot;status&quot;: 200,
     &quot;data&quot;: &quot;{customer_id}&quot;,
-    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}&quot;
+    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}&quot;
 }
 </code></pre>
 <hr>

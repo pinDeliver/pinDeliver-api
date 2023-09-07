@@ -4,7 +4,7 @@ Used to delete a vehicle type using the vehicle type id.
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/vehicle/type/delete/{vehicle_type_id}
+https://cloud.pindeliver.com/api/v2_0/vehicle/type/delete/{vehicle_type_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ POST
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/vehicle/type/delete/{vehicle_type_id}' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/vehicle/type/delete/{vehicle_type_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data ''

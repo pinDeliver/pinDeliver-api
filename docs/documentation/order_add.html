@@ -72,7 +72,7 @@
 <p>Make sure a <a href="delivery_group_add.html">delivery group</a> is created before creating an order.
 You need to create an order before being able to create a <a href="route_add.html">route</a>.</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/order/add
+<pre><code>https://cloud.pindeliver.com/api/v2_0/order/add
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -83,7 +83,7 @@ You need to create an order before being able to create a <a href="route_add.htm
 <pre><code>POST
 </code></pre>
 <h3 id="simple-example-request">Simple example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/add' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/order/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -107,7 +107,7 @@ You need to create an order before being able to create a <a href="route_add.htm
 }
 </code></pre>
 <h3 id="advanced-example-request">Advanced example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/add' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/order/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -149,7 +149,7 @@ You need to create an order before being able to create a <a href="route_add.htm
     &quot;result&quot;: &quot;ok&quot;,
     &quot;status&quot;: 200,
     &quot;data&quot;: &quot;{order_id}&quot;,
-    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/Order/get/{order_id}&quot;
+    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/Order/get/{order_id}&quot;
 }
 </code></pre>
 <hr>

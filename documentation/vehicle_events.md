@@ -6,7 +6,7 @@
 {
   "event": "VEHICLE_WAS_UPDATED",
   "id": "{vehicle_id}",
-  "url": "https://localhost/api/v2_1/vehicle/get/{vehicle_id}",
+  "url": "https://localhost/api/v2_0/vehicle/get/{vehicle_id}",
     "external_id": "B1"
 }
 ```
@@ -18,7 +18,7 @@
 {  
   "event": "VEHICLE_WAS_CREATED",
   "id": "<vehicle-id>",
-  "url": "<api-2.1-url for vehicle>",
+  "url": "<api-2.0-url for vehicle>",
   "external_id": "<external_id>"
 }
 ```
@@ -26,7 +26,7 @@
 {  
   "event": "VEHICLE_WAS_DELETED",
   "id": "<vehicle-id>",
-  "url": "<api-2.1-url for vehicle>",
+  "url": "<api-2.0-url for vehicle>",
   "external_id": "<external_id>"
 }
 ```
@@ -34,7 +34,7 @@
 {  
   "event": "VEHICLE_WAS_UPDATED",
   "id": "<vehicle-id>",
-  "url": "<api-2.1-url for vehicle>",
+  "url": "<api-2.0-url for vehicle>",
   "external_id": "<external_id>"
 }
 ```

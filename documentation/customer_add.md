@@ -6,7 +6,7 @@ A customer order is needed to be able to add packages. It is possible to add pac
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/customer/add
+https://cloud.pindeliver.com/api/v2_0/customer/add
 ```
 
 ### Authentication
@@ -23,7 +23,7 @@ POST
 
 ### Simple example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/add' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -59,7 +59,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
 
 ### Example request
 ```C
-curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/add' \
+curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/add' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -214,7 +214,7 @@ curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/a
     "result": "ok",
     "status": 200,
     "data": "{customer_id}",
-    "url": "https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}"
+    "url": "https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}"
 }
 ```
 

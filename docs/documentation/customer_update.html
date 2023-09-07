@@ -71,7 +71,7 @@
 
 <p>Used to update data on an existing customer using the customer id</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -82,7 +82,7 @@
 <pre><code>POST
 </code></pre>
 <h3 id="example-request">Example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/update/{customer_id}' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/update/{customer_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -111,14 +111,14 @@
     &quot;result&quot;: &quot;ok&quot;,
     &quot;status&quot;: 200,
     &quot;data&quot;: &quot;{customer_id}&quot;,
-    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{customer_id}&quot;
+    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/customer/get/{customer_id}&quot;
 }
 </code></pre>
 <hr>
 <h1 id="update-customer-using-external-id">Update customer using external id</h1>
 <p>Used to update data on an existing customer using the customer external id</p>
 <h3 id="endpoint-1">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/customer/update/extid/{external_id}
+<pre><code>https://cloud.pindeliver.com/api/v2_0/customer/update/extid/{external_id}
 </code></pre>
 <h3 id="authentication-1">Authentication</h3>
 <pre><code>Headers:
@@ -129,7 +129,7 @@
 <pre><code>POST
 </code></pre>
 <h3 id="example-request-1">Example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/customer/update/extid/{external_id}' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/customer/update/extid/{external_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -162,7 +162,7 @@
     &quot;result&quot;: &quot;ok&quot;,
     &quot;status&quot;: 200,
     &quot;data&quot;: &quot;{external_id}&quot;,
-    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/customer/get/{external_id}&quot;
+    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/customer/get/{external_id}&quot;
 }
 </code></pre>
 <hr>

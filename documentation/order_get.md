@@ -4,7 +4,7 @@ Used to retrieve an order using the order id
 
 ### Endpoint
 ```
-https://cloud.pindeliver.com/api/v2_1/Order/get/{order_id}
+https://cloud.pindeliver.com/api/v2_0/Order/get/{order_id}
 ```
 
 ### Authentication
@@ -21,7 +21,7 @@ GET
 
 ### Example request
 ```C
-curl --location --request GET 'https://cloud.pindeliver.com/api/v2_1/order/get/{order_id}' \
+curl --location --request GET 'https://cloud.pindeliver.com/api/v2_0/order/get/{order_id}' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --data-raw ''
@@ -49,12 +49,12 @@ Success Response
         "id": "{order_id}",
         "name": "Scandinavium 1980-10-10",
         "order_type": "DELIVERY",
-        "scheduled_date": "1980-10-10",
-        "created_date": "1980-10-10 21:00:00",
+        "scheduled_date": "2023-09-07",
+        "created_date": "2023-09-07 09:34:21",
         "delivery_group": "DeliveryGroup",
-        "status": "NOT_ROUTED",
-        "num_customers": 0,
-        "url": "https://cloud.pindeliver.com/api/v2_1/order/get/{order_id}"
+        "status": "NOT_STARTED",
+        "num_customers": 6,
+        "url": "https://cloud.pindeliver.com/api/v2_0/order/get/order_id"
     }
 }
 ```
@@ -65,7 +65,7 @@ Success Response
 
 ### Endpoint example
 ```
-https://cloud.pindeliver.com/api/v2_1/order/get/{order_id}?all
+https://cloud.pindeliver.com/api/v2_0/order/get/{order_id}?all
 ```
 
 If you want to use multiple parameters at the same time you can add them after the first parameter using "&".

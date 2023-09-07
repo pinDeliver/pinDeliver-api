@@ -71,7 +71,7 @@
 
 <p>Used to import an order</p>
 <h3 id="endpoint">Endpoint</h3>
-<pre><code>https://cloud.pindeliver.com/api/v2_1/order/import
+<pre><code>https://cloud.pindeliver.com/api/v2_0/order/import
 </code></pre>
 <h3 id="authentication">Authentication</h3>
 <pre><code>Headers:
@@ -82,7 +82,7 @@
 <pre><code>POST
 </code></pre>
 <h3 id="simple-example-request">Simple example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/import' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/order/import' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -106,7 +106,7 @@
 }
 </code></pre>
 <h3 id="advanced-example-request">Advanced example request</h3>
-<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_1/order/import' \
+<pre><code class="lang-C">curl --location --request POST 'https://cloud.pindeliver.com/api/v2_0/order/import' \
 --header 'X-PINDELIVER-API-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'X-PINDELIVER-API-CLIENT-KEY: XXXX-XXXX-XXXX-XXXX' \
 --header 'Content-Type: application/json' \
@@ -148,7 +148,7 @@
     &quot;result&quot;: &quot;ok&quot;,
     &quot;status&quot;: 200,
     &quot;data&quot;: &quot;{order_id}&quot;,
-    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_1/Order/get/{order_id}&quot;
+    &quot;url&quot;: &quot;https://cloud.pindeliver.com/api/v2_0/Order/get/{order_id}&quot;
 }
 </code></pre>
 <hr>
