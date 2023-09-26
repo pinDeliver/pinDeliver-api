@@ -41,6 +41,13 @@
   "url": "<api-2.0-url for order>"
 }
 ```
+```JSON
+{  
+  "event": "ORDER_WAS_RENAMED",
+  "id": "<order-id>",
+  "url": "<api-2.0-url for order>"
+}
+```
 
 ---
 
@@ -52,3 +59,4 @@
 |ORDER_WAS_DELETED|An order was deleted|
 |ORDER_WAS_MERGED|An order was merged with another order|
 |ALL_ROUTES_LOCKED|All routes on an order was locked|
+|ORDER_WAS_RENAMED|An order was renamed|

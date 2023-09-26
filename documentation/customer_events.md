@@ -99,6 +99,14 @@
   "external_id": "<external_id>"
 }
 ```
+```JSON
+{
+  "event": "CUSTOMER_RECYCLING_WAS_UPDATED",
+  "id": "<order-delivery-id>",
+  "url": "<api-2.0-url for order-delivery>",
+  "external_id": "<external_id>"
+}
+```
 
 ---
 
@@ -116,3 +124,4 @@
 |DRIVER_HAS_ARRIVED|A driver has arrived at a customer|
 |CUSTOMER_RELOCATION_TASK_WAS_CREATED|A relocation task to relocate packages from one customer to another was created|
 |CUSTOMER_RELOCATION_TASK_WAS_COMPLETED|A relocation task to relocate packages from one customer to another was completed|
+|CUSTOMER_RECYCLING_WAS_UPDATED|When recycling on a customer on a route is updated|

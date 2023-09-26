@@ -68,6 +68,13 @@
   "url": "<api-2.0-url for route>"
 }
 ```
+```JSON
+{  
+  "event": "ROUTE_JOURNAL_WAS_UPDATED",
+  "id": "<route-id>",
+  "url": "<api-2.0-url for route>"
+}
+```
 
 ---
 
@@ -82,3 +89,4 @@
 |ROUTE_WAS_STARTED|A route was started|
 |ROUTE_WAS_COMPLETED|A route was completed|
 |LOADING_WAS_COMPLETED|The loading of a route was completed|
+|ROUTE_JOURNAL_WAS_UPDATED|The journal of a route was updated|
