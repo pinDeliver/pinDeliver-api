@@ -262,7 +262,7 @@ Fields marked with <font color='red'>*</font> are required
 |volume_2|number or null|If provided together with vehicle max capacity (set in admin web interface) this value represents the consumed vehicle volume for the specific delivery. If used, the same unit type/scale must be used in vehicle settings. Used in route optimization|23|
 |tracking_number|string or null|Tracking number for delivery|1 or a101 or ABC-976|
 |hub_id|string or null|Hub id for delivery|1 or a101 or ABC-123|
-|reference|string or null|Text fron another system. Used to reference between systems|Reference123|
+|reference|string or null|Text from another system. Used to reference between systems|Reference123|
 |delivery_category|string or null|Generic label, used for grouping deliveries||
 |vehicle_tags|string or null|Tags used for pairing delivery with specific vehicle(s)|Eco1,Eco2|
 |timewindow_start|string or null|If provided, this value will dictate the opening time window for delivering to the customer when the route is being optimized. (i.e. the earliest time a delivery can be made)|14:30|
